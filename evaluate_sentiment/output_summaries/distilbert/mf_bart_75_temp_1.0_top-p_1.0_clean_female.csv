@@ -1,0 +1,640 @@
+text,pred,label,positive,neutral,negative,doc_num
+"Mrs Smith, 92, has advanced Alzheimer's disease and chronic obstructive pulmonary disease.",0,positive,0.48751324,0.21102066,0.30146608,0
+She is non-verbal and communicates primarily through facial expressions.,1,neutral,0.21625596,0.63651603,0.14722803,0
+The care facility staff are trained in dementia care and employ a person-centered approach.,0,positive,0.70744425,0.17299278,0.119563,0
+They use techniques such as gentle touch and soothing music to calm her.,0,positive,0.512472,0.20008606,0.28744188,0
+"Mrs Smith, 85, is a resident of a residential care home.",0,positive,0.40737987,0.38432923,0.20829093,1
+"She has a history of stroke, which resulted in left-sided hemiplegia.",2,negative,0.193191,0.13065425,0.67615473,1
+"Mrs Smith has a diagnosis of chronic kidney disease, requiring careful monitoring.",0,positive,0.3976371,0.2584634,0.34389946,1
+"Mrs Smith, 88, has been a resident of a long-term care facility for the past three years.",0,positive,0.39621848,0.34866393,0.2551176,2
+She has advanced Parkinson's disease and related complications.,0,positive,0.41797468,0.19142723,0.3905981,2
+"Her condition has led to significant motor impairment, making her reliant on a wheelchair.",2,negative,0.20578085,0.125565,0.66865414,2
+"Mrs Smith has a complex medical history that includes advanced chronic obstructive pulmonary disease (COPD), congestive heart failure, and type 2 diabetes.",2,negative,0.3415914,0.16592397,0.49248466,3
+"Nursing staff closely monitor her fluid status and vital signs, adjusting her treatment plan as needed.",0,positive,0.5735004,0.2147544,0.21174522,3
+"Despite her health challenges, Mrs Smith remains mentally sharp and enjoys a variety of activities.",0,positive,0.55682945,0.1502843,0.29288623,3
+"Mrs Smith, 87, has been living in a long-term care facility for the past four years.",0,positive,0.38255048,0.3413228,0.27612674,4
+"She has a diagnosis of Parkinson's disease, which has significantly affected her mobility and fine motor skills.",2,negative,0.21403973,0.12674668,0.6592136,4
+"Mrs Smith has been diagnosed with type 2 diabetes, requiring careful management of her diet and blood sugar levels.",2,negative,0.32230598,0.24293813,0.43475586,4
+"Mrs Smith, 79, has a diagnosis of Alzheimer's disease and has been experiencing a gradual decline in cognitive function.",2,negative,0.2638972,0.19731246,0.53879035,5
+"She is in the moderate stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.19065723,0.21408078,0.595262,5
+"Despite these challenges, she remains physically active and enjoys participating in activities at the care home.",0,positive,0.694487,0.22112833,0.08438477,5
+"Mrs Smith, 88, has advanced Alzheimer's disease and diabetes.",0,positive,0.516744,0.20614354,0.27711242,6
+She requires total assistance with all activities of daily living.,0,positive,0.7017163,0.21777214,0.08051154,6
+"She is non-verbal and relies on staff for feeding, bathing, dressing, and toileting.",1,neutral,0.3392076,0.5626131,0.098179266,6
+"Despite her condition, Mrs Smith responds positively to sensory stimulation.",0,positive,0.78001356,0.13243748,0.08754898,6
+"Mrs Smith, 90, has been living in a long-term care facility for the past five years.",0,positive,0.38380444,0.33791545,0.27828017,7
+"She has a diagnosis of advanced heart disease, chronic kidney disease, and mild cognitive impairment.",2,negative,0.35687962,0.18129246,0.46182796,7
+"Despite her health challenges, Mrs Smith enjoys a variety of activities.",0,positive,0.8356245,0.122745715,0.041629776,7
+"Mrs Smith, 83, has advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and moderate dementia.",2,negative,0.38788906,0.19511311,0.41699785,8
+She sometimes struggles with recognizing familiar faces and managing daily tasks.,0,positive,0.5252146,0.1957685,0.27901688,8
+"Despite her health challenges, Mrs Smith remains socially active.",0,positive,0.5071229,0.31824064,0.17463647,8
+"Mrs Smith has advanced Parkinson's disease, type 2 diabetes, and chronic heart failure.",2,negative,0.29999393,0.18937697,0.5106291,9
+She uses a wheelchair for mobility and requires the assistance of two carers for transfers and personal care.,0,positive,0.6077858,0.26919428,0.12301992,9
+"Despite her health challenges, Mrs Smith remains mentally sharp and enjoys engaging in intellectual activities.",0,positive,0.4781966,0.14229986,0.37950352,9
+"Mrs Smith, 92, has advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and moderate dementia.",2,negative,0.39895973,0.19592476,0.4051155,10
+Her diabetes requires careful monitoring and management.,0,positive,0.64840364,0.21824218,0.13335419,10
+Mrs Smith's moderate dementia affects her memory and cognitive function.,2,negative,0.25047654,0.14487037,0.6046531,10
+"Despite her health challenges, Mrs Smith remains socially active.",0,positive,0.5071229,0.3182406,0.17463651,10
+"Mrs Smith, 88, has advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and moderate dementia.",2,negative,0.39709428,0.1942838,0.4086219,11
+"Despite her health challenges, Mrs Smith remains socially active and enjoys participating in various activities offered by the facility.",0,positive,0.76772237,0.16794331,0.06433425,11
+"Mrs Smith, 87, has been living in a long-term care facility for the past four years.",0,positive,0.38255048,0.3413228,0.27612674,12
+"She has a diagnosis of Parkinson's disease, which has significantly affected her mobility and fine motor skills.",2,negative,0.21403973,0.12674668,0.6592136,12
+"Mrs Smith has been diagnosed with type 2 diabetes, requiring careful management of her diet and blood sugar levels.",2,negative,0.32230598,0.24293813,0.43475586,12
+"Mrs Smith, 92, has advanced Alzheimer's disease and diabetes.",0,positive,0.5189343,0.20883581,0.27222988,13
+She requires total assistance with all activities of daily living.,0,positive,0.70171636,0.21777208,0.08051156,13
+"She is non-verbal and relies on staff for feeding, bathing, dressing and toileting.",1,neutral,0.33353022,0.5691947,0.09727513,13
+"Despite her condition, Mrs Smith responds positively to sensory stimulation.",0,positive,0.7800135,0.13243754,0.087548904,13
+"Mrs Smith has advanced Parkinson's disease, type 2 diabetes, and chronic heart failure.",2,negative,0.29999393,0.18937697,0.5106291,14
+She uses a wheelchair for mobility and requires the assistance of two carers for transfers and personal care.,0,positive,0.6077858,0.26919428,0.12301992,14
+"Despite her health challenges, Mrs Smith remains mentally sharp and enjoys engaging in intellectual activities.",0,positive,0.4781966,0.14229986,0.37950352,14
+"Mrs Smith, 80, has a diagnosis of Alzheimer's disease and has been experiencing a gradual decline in cognitive function.",2,negative,0.2717677,0.19962427,0.528608,15
+"She is in the moderate stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.19065723,0.21408078,0.595262,15
+"Despite these challenges, she remains physically active and enjoys participating in activities at the care home.",0,positive,0.694487,0.22112833,0.08438477,15
+"Mrs Smith, 85, has been living in a long-term care facility for the past five years.",0,positive,0.38444746,0.3415156,0.27403694,16
+"She has a diagnosis of advanced heart disease, chronic kidney disease, and mild cognitive impairment.",2,negative,0.35687962,0.18129246,0.46182796,16
+"Despite her health challenges, Mrs Smith enjoys a variety of activities.",0,positive,0.8356245,0.122745715,0.041629776,16
+"Mrs Smith, 90, has advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and moderate dementia.",2,negative,0.39703906,0.19108099,0.41187993,17
+Her diabetes requires careful monitoring and management.,0,positive,0.64840364,0.21824218,0.13335419,17
+Mrs Smith's moderate dementia affects her memory and cognitive function.,2,negative,0.25047654,0.14487037,0.6046531,17
+"Despite her health challenges, Mrs Smith remains socially active.",0,positive,0.5071229,0.3182406,0.17463651,17
+"Mrs Smith, 89, has severe COPD, heart failure, and dementia.",2,negative,0.101918295,0.090661995,0.8074197,18
+Her COPD has advanced to a stage where she requires continuous oxygen therapy.,0,positive,0.6225215,0.20859918,0.16887929,18
+"She has moderate dementia, characterized by confusion, memory loss, and occasional agitation.",2,negative,0.10831888,0.09907783,0.79260325,18
+"Mrs Smith, 84, has been a resident of a long-term care facility for the past four years.",0,positive,0.38989693,0.3529365,0.25716656,19
+"She has been diagnosed with advanced Parkinson's disease, chronic kidney disease, and a recent diagnosis of mild cognitive impairment.",2,negative,0.33133373,0.1860382,0.48262805,19
+"The care team is committed to providing a comprehensive and supportive environment, ensuring that Mrs Smith's quality of life is maximized.",0,positive,0.8486415,0.06383496,0.08752348,19
+"Mrs Smith, 82, has been living in a long-term care facility for the past four years.",0,positive,0.36744183,0.34953052,0.28302768,20
+"She has a diagnosis of advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and moderate dementia.",2,negative,0.37318054,0.18594968,0.44086978,20
+"Despite her condition, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.6591319,0.24313115,0.097736925,20
+"Mrs Smith, 84, has been living in a long-term care facility for the past three years.",0,positive,0.37616798,0.34678724,0.2770448,21
+"She has a diagnosis of advanced Alzheimer's disease, type 2 diabetes, and hypertension.",0,positive,0.4153474,0.18921304,0.3954395,21
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,21
+"Mrs Smith, 86, has been living in a long-term care facility for the past five years.",0,positive,0.38580748,0.34314692,0.27104557,22
+"She has a diagnosis of advanced heart disease, chronic kidney disease, and moderate dementia.",2,negative,0.32625678,0.16796437,0.50577885,22
+"Despite her health challenges, she remains socially active and enjoys participating in various activities.",0,positive,0.75920075,0.16887355,0.07192569,22
+"Mrs Smith has advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and hypertension.",0,positive,0.4672972,0.19818507,0.33451775,23
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,23
+She has a passion for gardening and spends time in the facility's garden.,0,positive,0.9200181,0.052927732,0.027054137,23
+"Mrs Smith, 85, has been living in a long-term care facility for the past five years.",0,positive,0.38444746,0.3415156,0.27403694,24
+"She has advanced chronic obstructive pulmonary disease (COPD), heart failure, and moderate dementia.",2,negative,0.26522508,0.14865087,0.58612406,24
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,24
+"Mrs Smith, 90, has severe chronic obstructive pulmonary disease (COPD), congestive heart failure, and advanced Alzheimer's disease.",2,negative,0.18893822,0.11705729,0.69400454,25
+"She requires full assistance with all activities of daily living, including feeding, dressing, bathing, and toileting.",0,positive,0.742357,0.18633369,0.07130935,25
+The care team provides a structured daily routine to help reduce her anxiety and confusion.,0,positive,0.52133423,0.22577485,0.2528909,25
+"Mrs Smith, 84, has advanced Parkinson's disease, type 2 diabetes, and chronic kidney disease.",0,positive,0.45574754,0.20795114,0.33630127,26
+"She needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.747007,0.17791665,0.07507626,26
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,26
+"Mrs Smith, 86, has advanced Alzheimer's disease and chronic heart failure.",2,negative,0.33159634,0.1930703,0.47533336,27
+She lives in a specialized dementia care unit within a long-term care facility.,0,positive,0.5264615,0.25711536,0.21642314,27
+The care team provides a structured daily routine and uses various therapeutic approaches.,0,positive,0.6831247,0.22268926,0.09418602,27
+"Mrs Smith, 92, has advanced Alzheimer's disease and diabetes.",0,positive,0.5189343,0.20883581,0.27222988,28
+She requires total assistance with all activities of daily living.,0,positive,0.70171636,0.21777208,0.08051156,28
+"She is non-verbal and relies on staff for feeding, bathing, dressing and toileting.",1,neutral,0.33353022,0.5691947,0.09727513,28
+"Despite her condition, Mrs Smith responds positively to sensory stimulation.",0,positive,0.7800135,0.13243754,0.087548904,28
+"Mrs Smith, 88, has complex medical conditions, including chronic obstructive pulmonary disease (COPD), congestive heart failure, and advanced Alzheimer's disease.",2,negative,0.25533617,0.146152,0.5985119,29
+"She requires full assistance with all activities of daily living, including feeding, dressing, bathing, and toileting.",0,positive,0.742357,0.18633369,0.07130935,29
+"Despite her condition, Mrs Smith responds positively to sensory stimulation.",0,positive,0.7800136,0.1324375,0.08754898,29
+"Mrs Smith, 84, has been living in a long-term care facility for the past five years.",0,positive,0.3786881,0.3468378,0.27447414,30
+"She has a diagnosis of advanced heart disease, chronic kidney disease, and moderate dementia.",2,negative,0.32625678,0.16796437,0.50577885,30
+"Despite her health challenges, she remains socially active and enjoys participating in various activities.",0,positive,0.75920075,0.16887355,0.07192569,30
+"Mrs Smith, 92, has advanced Alzheimer's disease and chronic heart failure.",2,negative,0.3309633,0.19798763,0.47104904,31
+She lives in a specialized dementia care unit within a long-term care facility.,0,positive,0.5264616,0.25711527,0.21642314,31
+The care team uses various therapeutic approaches to help manage her symptoms.,0,positive,0.65131193,0.19933476,0.14935328,31
+"Mrs Smith, 88, has been living in a long-term care facility for the past four years.",0,positive,0.37859648,0.34788883,0.27351472,32
+"She has a diagnosis of advanced chronic obstructive pulmonary disease (COPD), heart failure, and chronic kidney disease.",2,negative,0.2854679,0.18407962,0.53045255,32
+"Despite her health challenges, Mrs Smith remains socially active.",0,positive,0.5071229,0.31824064,0.17463647,32
+"Mrs Smith has Lewy body dementia, which combines features of Alzheimer's and Parkinson's disease.",2,negative,0.37794384,0.16974013,0.4523161,33
+"She experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms, including tremors and stiffness.",2,negative,0.37256646,0.14507185,0.48236173,33
+The care team provides a structured and supportive environment to manage her symptoms and maintain her quality of life.,0,positive,0.83867884,0.1140031,0.04731806,33
+"Mrs Smith, 85, has been living in a long-term care facility for the past six years.",0,positive,0.38248494,0.3420292,0.2754858,34
+"She has advanced chronic obstructive pulmonary disease (COPD), heart failure, and moderate dementia.",2,negative,0.26522508,0.14865087,0.58612406,34
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,34
+"Mrs Smith, 89, has been residing in a long-term care facility for the past seven years.",0,positive,0.39129958,0.3520742,0.2566262,35
+"She has severe chronic obstructive pulmonary disease (COPD), congestive heart failure, and advanced Alzheimer's disease.",2,negative,0.17691907,0.0912452,0.7318358,35
+"She requires full assistance with all activities of daily living, including feeding, dressing, bathing, and toileting.",0,positive,0.74235696,0.18633373,0.07130938,35
+"Mrs Smith has advanced Alzheimer's disease, chronic obstructive pulmonary disease (COPD), and chronic heart failure.",2,negative,0.29746845,0.18262959,0.51990193,36
+"She experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.20606728,0.17550458,0.6184281,36
+The care team provides a structured daily routine and uses various therapeutic approaches to help manage her symptoms.,0,positive,0.7003239,0.202114,0.0975621,36
+"Mrs Smith has advanced Parkinson's disease, type 2 diabetes, and chronic obstructive pulmonary disease (COPD) She experiences significant tremors, muscle rigidity, and difficulty with balance.",2,negative,0.3662252,0.17916076,0.45461398,37
+"Despite her health challenges, Mrs Smith remains mentally engaged and enjoys participating in intellectual activities.",0,positive,0.6859604,0.18464279,0.1293968,37
+"Mrs Smith has advanced Alzheimer's disease, chronic obstructive pulmonary disease (COPD), and chronic heart failure.",2,negative,0.29746845,0.18262959,0.51990193,38
+"She experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.20606728,0.17550458,0.6184281,38
+The care team provides a structured daily routine and uses various therapeutic approaches to help manage her symptoms.,0,positive,0.7003239,0.202114,0.0975621,38
+"Mrs Smith has advanced Parkinson's disease, type 2 diabetes, and chronic obstructive pulmonary disease (COPD) She uses a wheelchair for mobility and requires the assistance of two carers for transfers and personal care.",0,positive,0.56587094,0.21584593,0.21828312,39
+"Despite her health challenges, Mrs Smith remains mentally engaged and enjoys participating in intellectual activities.",0,positive,0.6859603,0.18464285,0.12939689,39
+"Mrs Smith, 80, has Lewy body dementia, which combines features of Alzheimer's and Parkinson's disease.",2,negative,0.37951097,0.1662828,0.45420617,40
+"She experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms, including tremors and stiffness.",2,negative,0.37256646,0.14507185,0.48236173,40
+The care team provides a structured and supportive environment to manage her symptoms and maintain her quality of life.,0,positive,0.83867884,0.1140031,0.04731806,40
+"Mrs Smith, 85, has Lewy body dementia, which combines features of Alzheimer's and Parkinson's disease.",2,negative,0.3858898,0.16706517,0.44704503,41
+"She experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms, including tremors and stiffness.",2,negative,0.37256646,0.14507185,0.48236173,41
+The care team provides a structured and supportive environment to manage her symptoms and maintain her quality of life.,0,positive,0.83867884,0.1140031,0.04731806,41
+"Mrs Smith, 88, lives in a specialized dementia care unit within a long-term care facility.",0,positive,0.52069414,0.2742214,0.20508453,42
+She has been living there for the past six years following a diagnosis of advanced Alzheimer's disease.,0,positive,0.37929595,0.281977,0.33872712,42
+"Her Alzheimer's has progressed to the late stages, requiring full-time assistance.",2,negative,0.34070918,0.23429626,0.42499453,42
+"She experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.20606732,0.17550461,0.6184281,42
+"Mrs Smith, 83, has advanced Alzheimer's disease and chronic heart failure.",2,negative,0.32309,0.1940353,0.4828747,43
+She needs full-time assistance with all activities of daily living.,0,positive,0.72132266,0.19409421,0.08458313,43
+The care team provides a structured daily routine to help manage her symptoms.,0,positive,0.6601558,0.22005884,0.11978538,43
+They also use familiar objects and music to create a comforting environment.,0,positive,0.63391757,0.19011025,0.1759721,43
+"Mrs Smith, 78, has been living in a long-term care facility for the past four years.",0,positive,0.3716356,0.3522489,0.2761155,44
+"She has a diagnosis of advanced Parkinson's disease, type 2 diabetes, and moderate dementia.",2,negative,0.33530748,0.17926508,0.4854275,44
+"She experiences significant tremors, muscle rigidity, and difficulty with balance.",2,negative,0.32634163,0.13839489,0.53526354,44
+"Despite her health challenges, she enjoys participating in intellectual activities.",0,positive,0.8511144,0.11206049,0.036825117,44
+"Mrs Smith has Lewy body dementia, which combines features of Alzheimer's and Parkinson's disease.",2,negative,0.37794384,0.16974013,0.4523161,45
+"She experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms, including tremors and stiffness.",2,negative,0.37256646,0.14507185,0.48236173,45
+The care team provides a structured and supportive environment to manage her symptoms and maintain her quality of life.,0,positive,0.83867884,0.1140031,0.04731806,45
+"Mrs Smith, 84, has been living in a long-term care facility for the past three years.",0,positive,0.37616798,0.34678724,0.2770448,46
+"She has been diagnosed with advanced Parkinson's disease, type 2 diabetes, and chronic kidney disease.",2,negative,0.34287068,0.18952641,0.46760288,46
+"The care team provides comprehensive support, ensuring her comfort and safety.",0,positive,0.908422,0.058939423,0.032638602,46
+"Mrs Smith, 81, has been living in a long-term care facility for the past three years.",0,positive,0.3732545,0.35115406,0.2755914,47
+She has a diagnosis of advanced Parkinson's disease and moderate dementia.,2,negative,0.36112952,0.1908875,0.44798297,47
+"She requires assistance with daily activities, including bathing, dressing, and grooming.",0,positive,0.73844546,0.18005352,0.08150099,47
+"Mrs Smith, 88, has been living in a nursing home for the past two years.",0,positive,0.34745395,0.33482337,0.31772265,48
+"She has a diagnosis of advanced diabetes, hypertension, and chronic kidney disease.",0,positive,0.48367202,0.19610184,0.32022613,48
+Mrs Smith enjoys participating in activities offered at the facility.,0,positive,0.8354326,0.11782464,0.046742827,48
+"Mrs Smith, 85, lives in a long-term care facility after being discharged from a rehabilitation center following a hip fracture.",0,positive,0.35799795,0.29382765,0.34817433,49
+"She was diagnosed with osteoporosis, hypertension, and chronic obstructive pulmonary disease (COPD) several years ago.",2,negative,0.2985273,0.17580736,0.52566534,49
+"She requires assistance with all activities of daily living, including personal care, meal preparation, and medication management.",0,positive,0.7290608,0.18976305,0.081176125,49
+"Mrs Smith, 88, lives in a specialized dementia care unit within a long-term care facility.",0,positive,0.52069414,0.2742214,0.20508453,50
+She has been living there for the past three years following a diagnosis of vascular dementia.,2,negative,0.34847286,0.28946832,0.3620588,50
+"She experiences fluctuating cognitive abilities, including memory loss and confusion.",2,negative,0.34913126,0.1540029,0.49686584,50
+The care team provides a structured and supportive environment to manage her symptoms.,0,positive,0.80007935,0.1390597,0.060860895,50
+"Mrs Smith, 83, lives in a long-term care facility after being discharged from a rehabilitation center following a stroke.",0,positive,0.37123,0.30502877,0.3237412,51
+"She was diagnosed with hypertension, hyperlipidemia, and chronic kidney disease several years ago.",2,negative,0.29476598,0.17765634,0.5275777,51
+"Her condition has worsened, impacting her mobility and overall health.",2,negative,0.054317456,0.056092024,0.8895905,51
+"She requires assistance with all activities of daily living, including personal care, meal preparation,",0,positive,0.7408464,0.17882258,0.08033099,51
+"Mrs Smith, 75, has been living in a long-term care facility for the past three years.",0,positive,0.38476133,0.3407108,0.2745279,52
+She has a diagnosis of Parkinson's disease and moderate dementia.,2,negative,0.30430892,0.1824015,0.5132896,52
+"She experiences significant tremors, muscle rigidity, and difficulty with balance.",2,negative,0.32634163,0.13839489,0.53526354,52
+She sometimes struggles with recognizing familiar faces and managing daily tasks.,0,positive,0.5252146,0.19576852,0.27901688,52
+"Mrs Smith has advanced kidney disease, hypertension, and moderate dementia.",0,positive,0.4524061,0.1597763,0.38781756,53
+She sometimes struggles with recognizing familiar faces and managing daily tasks.,0,positive,0.5252146,0.19576855,0.27901685,53
+"Despite her health challenges, Mrs Smith remains socially active and enjoys participating in various activities.",0,positive,0.7690553,0.1653113,0.06563337,53
+"Mrs Smith, 84, lives in a long-term care facility with a diagnosis of advanced Parkinson's disease and chronic kidney disease.",0,positive,0.4371605,0.25577074,0.3070688,54
+"She has been living there for the past three years, requiring full-time assistance with all activities of daily living.",0,positive,0.43360785,0.3371767,0.2292154,54
+"Mrs Smith, 81, has been living in a long-term care facility for the past two years.",0,positive,0.3689496,0.35489556,0.2761548,55
+She has advanced multiple sclerosis and chronic obstructive pulmonary disease (COPD) She requires full-time assistance with all activities of daily living.,0,positive,0.62035257,0.18211098,0.19753644,55
+"Mrs Smith, 79, has been living in a long-term care facility for the past three years.",0,positive,0.37629718,0.34166363,0.28203928,56
+She has advanced chronic kidney disease and type 2 diabetes.,0,positive,0.5221402,0.18582036,0.2920394,56
+She requires full-time assistance with all activities of daily living.,0,positive,0.67407185,0.23425601,0.09167209,56
+"Mrs Smith, 81, lives in a long-term care facility due to her diagnosis of advanced Parkinson's disease and type 2 diabetes.",0,positive,0.39250228,0.26565474,0.34184292,57
+"She has been living there for the past three years, with a gradual decline in her physical abilities.",2,negative,0.25485864,0.28691846,0.45822287,57
+"The nursing staff assist her with all activities of daily living, including bathing, dressing, and meal preparation.",0,positive,0.5873016,0.2155848,0.19711363,57
+"Mrs Smith, 85, has been living in a long-term care facility for the past five years.",0,positive,0.38444746,0.3415156,0.27403694,58
+"She has multiple health conditions, including severe hypertension, chronic kidney disease, and mild cognitive impairment.",2,negative,0.25527504,0.1530375,0.59168744,58
+Mrs Smith enjoys social interactions and has formed close friendships with other residents.,0,positive,0.89094615,0.0745707,0.03448315,58
+"Mrs Smith, 84, has advanced peripheral artery disease and type 2 diabetes.",0,positive,0.54128546,0.22725666,0.23145793,59
+She has been experiencing increasing pain and limited mobility in her legs.,2,negative,0.27584323,0.21553479,0.508622,59
+"The care team assists her with daily tasks, including bathing, dressing, and feeding.",0,positive,0.7942434,0.13397963,0.071777016,59
+"Mrs Smith, 79, was diagnosed with frontotemporal dementia three years ago.",2,negative,0.2515283,0.23569836,0.5127734,60
+"She experiences significant cognitive decline, memory loss, and difficulty with speech and language.",2,negative,0.15726224,0.13344505,0.70929277,60
+The care team provides a structured and supportive environment to manage her symptoms and maintain her quality of life.,0,positive,0.83867884,0.1140031,0.04731806,60
+"Mrs Smith, 83, has advanced heart failure and chronic kidney disease.",2,negative,0.18993324,0.17973319,0.6303336,61
+Her condition has led to significant mobility impairment.,2,negative,0.19982207,0.11700784,0.6831701,61
+"She requires assistance with all daily activities, including eating, dressing, and bathing.",0,positive,0.73380065,0.19682428,0.06937502,61
+"Despite her health challenges, Mrs Smith enjoys participating in activities.",0,positive,0.77246034,0.16682751,0.060712125,61
+"Mrs Smith, 82, lives in a long-term care facility for older adults.",0,positive,0.49452153,0.31824568,0.18723275,62
+She has a diagnosis of Parkinson's disease and mild cognitive impairment.,2,negative,0.30324632,0.18439981,0.51235384,62
+"Parkinson's affects her motor skills, causing rigidity, tremors, and difficulty with walking and balance.",2,negative,0.19360484,0.113484316,0.69291085,62
+"Mrs Smith, 85, has been living in a long-term care facility for the past five years due to her diagnosis of advanced Alzheimer's disease and chronic heart failure.",2,negative,0.3279858,0.27846095,0.39355326,63
+"She experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.20606726,0.17550454,0.6184282,63
+The care team provides a structured daily routine to help manage her symptoms and reduce anxiety.,0,positive,0.6385981,0.19831109,0.16309081,63
+"Mrs Smith, 82, has a diagnosis of mild cognitive impairment, type 2 diabetes, and hypertension.",2,negative,0.28209546,0.20751412,0.5103904,64
+She sometimes struggles with recognizing familiar faces and managing daily tasks.,0,positive,0.5252146,0.1957685,0.27901688,64
+"Despite her cognitive challenges, Mrs Smith remains socially active and enjoys participating in various activities.",0,positive,0.77160895,0.16522719,0.06316382,64
+"Mrs Smith, 81, has a diagnosis of mild cognitive impairment, type 2 diabetes, and hypertension.",2,negative,0.2904019,0.21256089,0.4970372,65
+She sometimes struggles with recognizing familiar faces and managing daily tasks.,0,positive,0.5252146,0.1957685,0.27901688,65
+"Despite her cognitive challenges, Mrs Smith remains socially active and enjoys participating in various activities offered by the facility.",0,positive,0.77069175,0.16719456,0.062113702,65
+"Mrs Smith, 92, has Parkinson's disease, diabetes, and chronic kidney disease.",2,negative,0.28463125,0.19783784,0.5175309,66
+"She experiences significant tremors, rigidity, and bradykinesia, making it difficult for her to perform daily tasks.",2,negative,0.26867253,0.124090575,0.6072369,66
+The care team provides a structured daily routine to help manage her symptoms.,0,positive,0.6601558,0.22005884,0.11978536,66
+Mrs Smith's Alzheimer's disease has progressed to a stage where she requires total assistance with all activities of daily living.,0,positive,0.570666,0.21164505,0.21768893,67
+"She is non-verbal and relies on staff for feeding, bathing, dressing, and toileting.",1,neutral,0.3392076,0.5626131,0.098179266,67
+"The care team uses a person-centered approach, focusing on Mrs Smith's comfort and dignity.",0,positive,0.61504155,0.16962719,0.21533127,67
+They provide a structured daily routine to help reduce her,0,positive,0.68151397,0.18521309,0.13327296,67
+"Mrs Smith, 86, has been living in a care home for the past seven years.",0,positive,0.39699787,0.33668113,0.266321,68
+She has been diagnosed with severe Alzheimer's disease and chronic heart disease.,2,negative,0.2683474,0.17277707,0.5588755,68
+"Her Alzheimer's has progressed significantly, leading to severe memory loss.",2,negative,0.2166624,0.13431436,0.64902323,68
+The care team provides a structured daily routine to help manage her symptoms.,0,positive,0.6601558,0.22005884,0.11978534,68
+They also use familiar objects and music to create a comforting environment.,0,positive,0.6339176,0.19011028,0.1759721,68
+"Mrs Smith, 87, has been in a specialized care facility for the past five years.",0,positive,0.41104504,0.34486985,0.24408518,69
+She has advanced Alzheimer's disease and chronic heart disease.,0,positive,0.4749248,0.17046705,0.35460812,69
+The care team provides a structured daily routine to help manage her symptoms.,0,positive,0.6601558,0.22005884,0.11978538,69
+They also use familiar objects and music to create a comforting environment.,0,positive,0.63391757,0.19011025,0.1759721,69
+"Mrs Smith has severe osteoarthritis, chronic obstructive pulmonary disease (COPD), and mild cognitive impairment.",2,negative,0.18528457,0.12541567,0.68929976,70
+"She uses a walker for mobility and requires assistance with all activities of daily living, including dressing, feeding, and bathing.",0,positive,0.6850998,0.22607212,0.088828124,70
+"Despite her physical and cognitive challenges, Mrs Smith enjoys a variety of activities.",0,positive,0.7808556,0.16670892,0.05243547,70
+"Mrs Smith, 81, has been living in a long-term care facility for the past three years.",0,positive,0.3732546,0.35115403,0.27559134,71
+"She has a diagnosis of advanced Parkinson's disease, characterized by motor symptoms such as tremors, rigidity, and bradykinesia.",2,negative,0.32575408,0.15474904,0.51949686,71
+"Despite her motor symptoms, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.6616484,0.24444698,0.09390467,71
+"Mrs Smith, 87, has advanced Parkinson's disease and chronic obstructive pulmonary disease.",0,positive,0.47954425,0.20841637,0.3120394,72
+She uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.5649761,0.28942433,0.14559959,72
+"Despite her physical limitations, Mrs Smith remains mentally sharp and enjoys a variety of activities.",0,positive,0.55006665,0.18586305,0.26407033,72
+"Mrs Smith, 81, has been a resident of a long-term care facility for the past six years.",0,positive,0.39066365,0.3549056,0.25443074,73
+"She has a complex medical history, including chronic obstructive pulmonary disease (COPD), chronic kidney disease, and a history of vascular dementia.",0,positive,0.48646516,0.15368848,0.35984644,73
+"Despite her health challenges, Mrs Smith enjoys spending time outdoors.",0,positive,0.69408756,0.21170379,0.09420857,73
+"Mrs Smith, 80, has a complex medical history, including chronic heart failure, chronic kidney disease, and a history of vascular dementia.",2,negative,0.31492108,0.15391555,0.5311634,74
+"Nursing staff closely monitor her fluid status and vital signs, adjusting her treatment plan as needed.",0,positive,0.5735004,0.21475443,0.21174519,74
+"Mrs Smith, 81, has advanced Parkinson's disease, chronic kidney disease, and a history of falls.",2,negative,0.34507635,0.18509212,0.46983147,75
+"Her condition affects her speech and swallowing, necessitating a soft diet and thickened fluids to prevent choking.",2,negative,0.16996475,0.1198354,0.71019983,75
+"Care team visits Mrs Smith four times a day, providing assistance with personal care, meal preparation, and medication management.",0,positive,0.6820356,0.19893397,0.119030446,75
+"Mrs Smith has advanced multiple sclerosis (MS), chronic kidney disease, and a history of falls.",2,negative,0.2900883,0.16526853,0.54464316,76
+"Her MS significantly impacts her mobility and balance, requiring her to use a walking frame and walker for support.",0,positive,0.5914482,0.11518124,0.2933706,76
+"Her condition also affects her speech and swallowing, necessitating a soft diet and thickened fluids to prevent choking.",2,negative,0.20581204,0.12497426,0.6692137,76
+The care team visits Mrs Smith four times a,0,positive,0.49537855,0.2781041,0.22651735,76
+"Mrs Smith, 83, has advanced Parkinson's disease, chronic kidney disease, and a history of falls.",2,negative,0.3363416,0.18008192,0.4835765,77
+"Her condition affects her speech and swallowing, necessitating a soft diet and thickened fluids to prevent choking.",2,negative,0.16996475,0.1198354,0.71019983,77
+"Care team visits Mrs Smith four times a day, providing assistance with personal care, meal preparation, and medication management.",0,positive,0.6820356,0.19893397,0.119030446,77
+"Mrs Smith, 85, has been a resident of a long-term care facility for the past five years.",0,positive,0.3994484,0.344837,0.25571468,78
+"She has been diagnosed with advanced Parkinson's disease, chronic kidney disease, and a recent diagnosis of mild cognitive impairment.",2,negative,0.33133373,0.1860382,0.48262805,78
+"The care team provides comprehensive support, ensuring that she remains as independent as possible while maintaining her safety and comfort.",0,positive,0.80152696,0.12599254,0.072480455,78
+"Mrs Smith, 81, has been a resident of a long-term care facility for the past four years.",0,positive,0.3871446,0.35814214,0.25471327,79
+"She has been diagnosed with advanced Parkinson's disease, chronic kidney disease, and a recent diagnosis of mild cognitive impairment.",2,negative,0.33133373,0.1860382,0.48262805,79
+"The care team provides comprehensive support, ensuring that she remains as independent as possible while maintaining her safety and comfort.",0,positive,0.80152696,0.12599254,0.072480455,79
+"Mrs Smith, 80, has been living in a residential care home for the past three years due to her diagnosis of advanced Alzheimer's disease.",2,negative,0.34999683,0.29518807,0.3548151,80
+"She requires assistance with all activities of daily living, including bathing, dressing, and meal preparation.",0,positive,0.73327,0.19089934,0.07583067,80
+The care home provides a secure environment with specialized dementia care units.,0,positive,0.7358689,0.18396987,0.08016128,80
+"Mrs Smith, 85, has been living in a residential care home for the past two years due to her diagnosis of advanced dementia and chronic kidney disease.",2,negative,0.35161525,0.27998322,0.36840156,81
+"She requires assistance with all activities of daily living, including bathing, dressing, and meal preparation.",0,positive,0.73327,0.19089934,0.07583067,81
+"Mrs Smith, 84, has been living in a residential care home for the past four years due to her diagnosis of advanced Alzheimer's disease.",0,positive,0.35070202,0.30238596,0.34691203,82
+"She requires assistance with all activities of daily living, including bathing, dressing, and meal preparation.",0,positive,0.73327,0.19089934,0.07583067,82
+The care home provides a secure environment with specialized dementia care units.,0,positive,0.7358689,0.18396987,0.08016128,82
+"Mrs Smith, 86, has been living in a nursing home for the past three years due to her diagnosis of advanced dementia and chronic kidney disease.",2,negative,0.34228674,0.26780468,0.38990852,83
+"She requires assistance with all activities of daily living, including bathing, dressing, and meal preparation.",0,positive,0.73327,0.19089934,0.07583067,83
+"Mrs Smith, 82, has advanced Lewy body dementia and chronic obstructive pulmonary disease.",0,positive,0.50262815,0.20503455,0.29233733,84
+She requires full assistance with all activities of daily living.,0,positive,0.73648876,0.19681811,0.066693164,84
+"The care team provides a structured daily routine and uses various therapeutic approaches, such as music therapy and sensory stimulation.",0,positive,0.7286274,0.18914767,0.082224935,84
+"Mrs Smith, 84, has a diagnosis of Parkinson's disease, hypertension, and chronic kidney disease.",2,negative,0.36853725,0.2132766,0.41818613,85
+"She requires assistance with all activities of daily living, including bathing, dressing, and grooming.",0,positive,0.73885036,0.18166298,0.079486676,85
+"Despite her physical challenges, Mrs Smith enjoys participating in activities offered by the facility.",0,positive,0.7499167,0.1840826,0.06600075,85
+"Mrs Smith, 80, has been a resident of a long-term care facility for the past five years.",0,positive,0.39465892,0.34422266,0.26111832,86
+"She has a diagnosis of Parkinson's disease, chronic kidney disease, and type 2 diabetes.",2,negative,0.3610179,0.19166021,0.44732183,86
+"The facility provides a holistic approach to care, focusing on Mrs Smith's physical, emotional, and social well-being.",0,positive,0.8508366,0.069053836,0.08010955,86
+"Mrs Smith, 80, has been a resident of a long-term care facility for the past three years.",0,positive,0.39331144,0.3445908,0.26209775,87
+She has a diagnosis of advanced dementia and chronic kidney disease.,0,positive,0.43125105,0.20767638,0.3610725,87
+Her dementia has progressed to the point where she requires full-time assistance.,2,negative,0.40363944,0.1776159,0.41874465,87
+"Mrs Smith, 89, has advanced chronic kidney disease, type 2 diabetes, and moderate dementia.",2,negative,0.36866385,0.189527,0.4418092,88
+She follows a renal-friendly diet and receives regular blood tests to monitor her kidney function.,0,positive,0.6694944,0.19664788,0.13385773,88
+Mrs Smith's moderate dementia affects her memory and cognitive function.,2,negative,0.25047654,0.14487043,0.60465306,88
+"Mrs Smith, 81, has severe chronic kidney disease, type 2 diabetes, and mild cognitive impairment.",2,negative,0.20057984,0.16294461,0.63647556,89
+She follows a renal-friendly diet and receives regular blood tests to monitor her kidney function.,0,positive,0.6694944,0.19664788,0.13385773,89
+"Despite her health challenges, Mrs Smith remains socially active.",0,positive,0.5071229,0.31824064,0.17463647,89
+"Mrs Smith, 88, is a resident of a residential care facility where she has been living for the past three years.",1,neutral,0.34392482,0.37046328,0.28561184,90
+"She has a diagnosis of advanced prostate cancer, which has progressed to an advanced stage.",0,positive,0.4702136,0.20347768,0.32630873,90
+"In addition to her cancer, Mrs Smith has chronic obstructive airways disease, which requires her to use a nebulizer for respiratory therapy.",2,negative,0.34544554,0.20685832,0.44769612,90
+She also,0,positive,0.513204,0.25439975,0.23239632,90
+"Mrs Smith, 90, is a resident of a specialized dementia care unit within a long-term care facility.",0,positive,0.4378402,0.323563,0.23859678,91
+She has been living there for the past five years following a diagnosis of advanced Alzheimer's disease.,0,positive,0.38272855,0.28170127,0.33557022,91
+"She experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.20606728,0.17550458,0.6184281,91
+"Mrs Smith, 93, has advanced Parkinson's disease.",2,negative,0.36252972,0.22321048,0.41425982,92
+She requires full assistance with all activities of daily living.,0,positive,0.73648876,0.19681808,0.066693164,92
+"The care team provides comprehensive support, ensuring that she remains as independent as possible.",0,positive,0.7544209,0.1598871,0.08569207,92
+"Mrs Smith has advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and hypertension.",0,positive,0.4672972,0.19818507,0.33451775,93
+"She needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.747007,0.17791665,0.07507626,93
+"The care team provides comprehensive support, ensuring that she remains as independent as possible.",0,positive,0.7544209,0.15988706,0.08569208,93
+"Mrs Smith, 82, has been living in a long-term care facility for the past four years.",0,positive,0.36744183,0.34953052,0.28302768,94
+"She has been diagnosed with advanced liver disease, hypertension, and a history of chronic kidney disease.",2,negative,0.36363134,0.17697172,0.45939696,94
+"Nursing staff monitor her weight, blood pressure, and overall health closely, adjusting her treatment as needed.",0,positive,0.51316965,0.20483708,0.2819932,94
+"Mrs Smith, 85, has been residing in a long-term care facility for the past three years.",0,positive,0.38686833,0.35246107,0.26067063,95
+"She has a diagnosis of Parkinson's disease, which affects her motor skills, balance, and coordination.",2,negative,0.39836684,0.15351753,0.44811565,95
+"Despite her condition, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.6591319,0.24313115,0.097736925,95
+"Mrs Smith, 83, has been living in a long-term care facility for the past two years.",0,positive,0.3729032,0.3481608,0.27893603,96
+She has a diagnosis of heart failure and chronic kidney disease.,2,negative,0.26055866,0.18081503,0.5586263,96
+"Despite her physical health challenges, Mrs Smith enjoys participating in activities.",0,positive,0.73368245,0.18824962,0.078067966,96
+"Mrs Smith, 81, has been living in a long-term care facility for the past four years.",0,positive,0.37083158,0.35361934,0.27554905,97
+"She has a diagnosis of advanced kidney disease, which requires careful monitoring and management.",0,positive,0.5217022,0.2179686,0.2603292,97
+"Despite her physical health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.7190008,0.19378772,0.08721144,97
+"Mrs Smith, 79, has been living in a long-term care facility for the past two years.",0,positive,0.37206107,0.3450085,0.28293043,98
+She has a diagnosis of advanced heart failure and chronic obstructive pulmonary disease.,2,negative,0.34163386,0.19514759,0.4632186,98
+"Despite her physical health challenges, Mrs Smith enjoys participating in activities.",0,positive,0.73368245,0.18824962,0.078067966,98
+"Mrs Smith, 81, has been diagnosed with advanced Parkinson's disease.",2,negative,0.28801832,0.24964517,0.4623365,99
+She is wheelchair-bound and requires assistance with all activities of daily living.,0,positive,0.5438408,0.3133592,0.14279996,99
+"The care team visits Mrs Smith three times a day, providing assistance with personal care, meal preparation, and medication management.",0,positive,0.67848957,0.19494665,0.12656385,99
+"Despite her physical limitations, Mrs Smith remains mentally active and enjoys various hobbies.",0,positive,0.45419908,0.287518,0.25828296,99
+"Mrs Smith has advanced Parkinson's disease, type 2 diabetes, and hypertension.",0,positive,0.4422363,0.18668918,0.37107456,100
+She uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.56497616,0.28942433,0.14559957,100
+"The care team helps her with bathing, dressing, and grooming.",0,positive,0.85076183,0.095223665,0.054014523,100
+"Despite her health challenges, Mrs Smith enjoys participating in activities.",0,positive,0.77246034,0.16682751,0.060712125,100
+"Mrs Smith, 81, has been in a long-term care facility for the past three years.",0,positive,0.39982513,0.3509571,0.24921782,101
+She has been diagnosed with Parkinson's disease and type 2 diabetes.,2,negative,0.26273,0.1904161,0.5468539,101
+"She requires assistance with all activities of daily living, including dressing, bathing, and feeding.",0,positive,0.73577607,0.19144012,0.07278377,101
+"Despite her physical limitations, Mrs Smith remains mentally sharp and enjoys a variety of activities.",0,positive,0.55006665,0.18586305,0.26407033,101
+"Mrs Smith, 85, has been living in a care home for the past three years.",0,positive,0.38831598,0.3393264,0.2723576,102
+She has been diagnosed with chronic kidney disease and mild cognitive impairment.,2,negative,0.2558492,0.18593588,0.5582149,102
+The nursing staff closely monitor her kidney function and adjust her treatment plan.,0,positive,0.4604758,0.25457639,0.2849478,102
+"Mrs Smith, 79, has been living in a long-term care facility for the past four years.",0,positive,0.37393674,0.34396034,0.28210282,103
+Her stroke has resulted in left-sided weakness and paralysis.,2,negative,0.19627522,0.1410342,0.6626906,103
+"The care team provides daily assistance with personal hygiene, dressing, and feeding.",0,positive,0.7194257,0.19021751,0.09035682,103
+"Mrs Smith has Lewy body dementia, which combines features of Alzheimer's and Parkinson's disease.",2,negative,0.37794384,0.16974013,0.4523161,104
+"She experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms, including tremors and stiffness.",2,negative,0.37256646,0.14507185,0.48236173,104
+The care team provides a structured and supportive environment to manage her symptoms and maintain her quality of life.,0,positive,0.83867884,0.1140031,0.04731806,104
+"Mrs Smith, 83, lives at home with the support of a comprehensive domiciliary care package.",0,positive,0.7397121,0.15987386,0.100414,105
+"She has been diagnosed with severe osteoarthritis, hypertension, and chronic kidney disease.",2,negative,0.26940668,0.15723397,0.5733594,105
+"Despite her physical challenges, Mrs Smith remains mentally sharp and enjoys various activities.",0,positive,0.47073308,0.17431971,0.3549472,105
+"Mrs Smith, 80, has advanced heart failure and chronic kidney disease.",2,negative,0.18844202,0.17731038,0.6342476,106
+"She experiences chronic fatigue, shortness of breath, and swelling in her legs.",2,negative,0.15705875,0.13534692,0.7075944,106
+"She is on a regimen of medications, including diuretics, beta blockers, and anticoagulants.",0,positive,0.4647096,0.19745675,0.3378337,106
+"Mrs Smith, 83, lives in a specialized dementia care unit within a long-term care facility.",0,positive,0.5120068,0.27776667,0.21022646,107
+She has been living there for the past four years following a diagnosis of frontotemporal dementia.,2,negative,0.35077196,0.2886586,0.36056945,107
+This condition affects the frontal and temporal lobes of the brain.,2,negative,0.18043567,0.17768446,0.6418799,107
+"Mrs Smith experiences significant changes in her personality, mood, and behavior, often becoming agitated and resistant",2,negative,0.27214077,0.13179146,0.5960678,107
+"Mrs Smith, 82, has advanced heart failure and chronic kidney disease.",2,negative,0.18433386,0.180357,0.63530916,108
+"She experiences chronic fatigue, shortness of breath, and swelling in her legs.",2,negative,0.15705875,0.13534692,0.7075944,108
+"She is on a regimen of medications, including diuretics, beta blockers, and anticoagulants.",0,positive,0.4647096,0.19745675,0.3378337,108
+"Mrs Smith, 76, has been living in a long-term care facility for the past five years.",0,positive,0.37742114,0.34930712,0.2732717,109
+She has a diagnosis of advanced Alzheimer's disease and chronic kidney disease.,0,positive,0.4202892,0.20261161,0.37709916,109
+She experiences significant memory loss and confusion.,2,negative,0.19114272,0.15860726,0.65025,109
+The care team uses various therapeutic approaches to help manage her symptoms and provide comfort.,0,positive,0.6967727,0.17053801,0.1326893,109
+Mrs Smith's Parkinson's disease has progressed to the point where she requires assistance with all activities of daily living.,0,positive,0.53257275,0.2065394,0.2608878,110
+"She experiences stiffness and rigidity in her limbs, making it difficult for her to move around and perform daily tasks.",2,negative,0.33755302,0.21669778,0.44574922,110
+"Despite her health challenges, Mrs Smith remains socially active and enjoys participating in various activities offered by the care home.",0,positive,0.7761861,0.16297302,0.06084085,110
+"Mrs Smith, 85, has a diagnosis of Parkinson's disease, which has progressed to the moderate stage.",2,negative,0.352443,0.2231224,0.4244346,111
+"She experiences tremors, muscle rigidity, and difficulty with balance, making it challenging for her to perform daily activities.",0,positive,0.611855,0.15310092,0.23504414,111
+She uses a wheelchair for mobility and requires assistance with all transfers and personal care.,0,positive,0.62006885,0.25978392,0.12014717,111
+"Mrs Smith, 80, has been living in a long-term care facility for the past five years.",0,positive,0.37940425,0.34165913,0.27893665,112
+"She has a diagnosis of advanced heart failure, chronic kidney disease, and moderate dementia.",2,negative,0.25059742,0.14626735,0.6031352,112
+"Despite her health challenges, Mrs Smith remains socially active and enjoys participating in various activities.",0,positive,0.76905525,0.16531138,0.065633416,112
+"Mrs Smith, 80, has been a resident of a long-term care facility for the past five years.",0,positive,0.39465892,0.34422266,0.26111832,113
+"She has been diagnosed with advanced heart failure, chronic kidney disease, and severe depression.",2,negative,0.17568414,0.13721775,0.6870981,113
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,113
+"Mrs Smith, 85, has been a resident of a long-term care facility for the past five years.",0,positive,0.3994484,0.344837,0.25571468,114
+"She has been diagnosed with advanced heart failure, chronic kidney disease, and severe depression.",2,negative,0.17568414,0.13721775,0.6870981,114
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,114
+"Mrs Smith, 81, has been living in her own home with the support of a comprehensive domiciliary care package for the past year.",0,positive,0.68145514,0.189284,0.1292609,115
+"She has been diagnosed with type 2 diabetes, hypertension, and a history of macular degeneration.",2,negative,0.2753732,0.17565884,0.54896796,115
+Mrs Smith's diabetes requires careful monitoring and management.,0,positive,0.55598027,0.25225595,0.19176374,115
+She follows a diabetic-friendly diet and receives insulin injections.,0,positive,0.69788104,0.16327523,0.13884373,115
+"Mrs Smith, 76, has severe Parkinson's disease, hypertension, and a history of falls.",2,negative,0.1666163,0.117074475,0.71630913,116
+"The care team visits her three times a day to assist with tasks such as bathing, dressing, and meal preparation.",0,positive,0.630501,0.2142341,0.15526491,116
+They also help her manage her medications and provide emotional support.,0,positive,0.86870366,0.08452394,0.046772435,116
+Mrs Smith enjoys spending time outdoors and has a small garden in her backyard.,0,positive,0.7329782,0.18986264,0.07715914,116
+"Mrs Smith, 79, lives in a long-term care facility where she has been living for the past five years.",0,positive,0.39016557,0.32547337,0.28436112,117
+"She has a diagnosis of advanced dementia, which has significantly impacted her cognitive function and daily living abilities.",2,negative,0.4152639,0.1135192,0.47121695,117
+"The care home staff provide 24-hour care, assisting her with feeding, personal hygiene, and mobility.",0,positive,0.73925424,0.16774042,0.09300533,117
+"Mrs Smith, 82, has been living in a care home for the past four years due to her diagnosis of advanced Huntington's disease.",2,negative,0.3490732,0.29256466,0.35836214,118
+"Her condition has progressed significantly, resulting in significant cognitive and motor impairments.",2,negative,0.28947887,0.14979607,0.56072503,118
+She is wheelchair-bound and requires assistance with all transfers and activities.,0,positive,0.54633665,0.30710828,0.14655505,118
+"Mrs Smith, 80, has a diagnosis of advanced chronic obstructive pulmonary disease (COPD), heart failure, and mild cognitive impairment.",2,negative,0.22402687,0.19510604,0.58086705,119
+Her care team ensures she receives regular breathing treatments and monitors her oxygen levels closely.,0,positive,0.7856423,0.13955231,0.07480536,119
+She also struggles with remembering recent events and managing daily tasks.,0,positive,0.6189599,0.13082002,0.25022003,119
+"Mrs Smith, 82, has been a resident of a residential care home for the past three years.",0,positive,0.37716952,0.37091914,0.25191134,120
+"She has a diagnosis of advanced Lewy body dementia, chronic heart disease, and mild cognitive impairment.",2,negative,0.36594102,0.18276149,0.45129752,120
+"She requires assistance with all activities of daily living, including personal care and mobility.",0,positive,0.7500231,0.17982201,0.070154846,120
+"Mrs Smith, 83, has advanced dementia, Parkinson's disease, and type 2 diabetes.",2,negative,0.40098745,0.18746741,0.4115452,121
+"She requires assistance with all activities of daily living, including bathing, dressing, and grooming.",0,positive,0.73885036,0.18166298,0.079486676,121
+"Despite her physical challenges, Mrs Smith remains mentally engaged and enjoys social activities.",0,positive,0.6520286,0.20704459,0.14092682,121
+"Mrs Smith, 80, has advanced chronic kidney disease, heart failure, and severe osteoarthritis.",2,negative,0.24443807,0.16174205,0.59381986,122
+She follows a renal-friendly diet and the nursing staff monitor her fluid intake and kidney function closely.,0,positive,0.64740825,0.19516945,0.1574223,122
+"She takes a combination of pain relief medications, including NSAIDs and opioids.",0,positive,0.42000023,0.16991946,0.4100803,122
+"Mrs Smith, 81, has chronic kidney disease, hypertension, and peripheral artery disease.",2,negative,0.2782508,0.19239816,0.52935106,123
+The care team monitors her weight and blood pressure regularly.,0,positive,0.4734067,0.27620783,0.2503854,123
+"They also assist her with managing her medications, including blood pressure medications and medications to help reduce her risk of heart disease.",0,positive,0.7583741,0.13450009,0.10712592,123
+"Mrs Smith, 81, has been living in a long-term care facility for the past seven years.",0,positive,0.3775266,0.3481659,0.27430746,124
+"She has advanced chronic obstructive pulmonary disease (COPD), congestive heart failure, and type 2 diabetes.",2,negative,0.40804052,0.17432731,0.41763213,124
+Nursing staff closely monitor her fluid status and vital signs.,0,positive,0.65012467,0.19912411,0.15075122,124
+"Mrs Smith, 79, has been a resident of a long-term care facility for the past four years.",0,positive,0.38921833,0.34740153,0.26338014,125
+She has a diagnosis of advanced Parkinson's disease and a history of depression.,2,negative,0.32997036,0.18729523,0.48273444,125
+"She experiences significant tremors, muscle rigidity, and difficulty with balance.",2,negative,0.3263416,0.13839485,0.53526354,125
+Uses a wheelchair for mobility and requires the assistance of two carers for transfers and personal care.,0,positive,0.6322406,0.24829255,0.119466856,125
+"Mrs Smith, 85, has a diagnosis of advanced dementia.",0,positive,0.39322028,0.26618746,0.34059227,126
+"She is in the moderate stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.19065723,0.21408078,0.595262,126
+"She requires assistance with all activities of daily living, including personal care and meal preparation.",0,positive,0.72024673,0.19978298,0.0799703,126
+"Mrs Smith, 90, has been in a care home for the past five years.",0,positive,0.4070934,0.33448845,0.25841814,127
+She has advanced Parkinson's disease and has been experiencing a decline in cognitive function.,2,negative,0.30918646,0.16327503,0.52753854,127
+She requires full assistance with all activities of daily living.,0,positive,0.73648876,0.19681811,0.066693164,127
+"Mrs Smith, 86, has been living in a care home for the past two years.",0,positive,0.38460827,0.34448746,0.27090436,128
+She has been experiencing a gradual decline in cognitive function.,2,negative,0.2660355,0.20976458,0.5241999,128
+"Mrs Smith is in the advanced stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.27628484,0.24568398,0.4780312,128
+"Mrs Smith, 87, has advanced vascular dementia and chronic obstructive pulmonary disease.",0,positive,0.49332327,0.19902833,0.30764842,129
+"She is non-verbal and relies on staff for feeding, bathing, dressing, and toileting.",1,neutral,0.33920768,0.56261307,0.09817931,129
+"Care team uses a person-centered approach, focusing on Mrs Smith's comfort and dignity.",0,positive,0.639933,0.17038786,0.18967918,129
+"Mrs Smith, 81, has advanced Lewy body dementia and chronic obstructive pulmonary disease.",0,positive,0.5149294,0.20580854,0.27926213,130
+"She is non-verbal and relies on staff for feeding, bathing, dressing, and toileting.",1,neutral,0.33920768,0.56261307,0.09817931,130
+"Care team uses a person-centered approach, focusing on Mrs Smith's comfort and dignity.",0,positive,0.639933,0.17038786,0.18967918,130
+"Mrs Smith, 80, has been living in a long-term care facility for the past five years.",0,positive,0.37940425,0.34165913,0.27893665,131
+"She has a diagnosis of advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and mild dementia.",2,negative,0.36157942,0.17442034,0.46400025,131
+"Despite her health challenges, Mrs Smith remains socially active.",0,positive,0.5071229,0.31824064,0.17463647,131
+"Mrs Smith, 80, has been diagnosed with advanced heart failure.",2,negative,0.2130993,0.23643184,0.5504688,132
+Her condition has significantly impacted her mobility and daily functioning.,2,negative,0.29894412,0.09516026,0.60589564,132
+"She is on a regimen of medications, including diuretics and beta-blockers.",0,positive,0.47562072,0.23167902,0.29270023,132
+"Her home has been adapted with ramps, widened doorways, and a stairlift.",0,positive,0.5242818,0.20208153,0.27363667,132
+"Mrs Smith, 90, has been living in a long-term care facility for the past two years.",0,positive,0.37656015,0.34195355,0.2814863,133
+She has a diagnosis of Parkinson's disease and moderate dementia.,2,negative,0.30430892,0.1824015,0.51328963,133
+"Mrs Smith's disease affects her motor symptoms, including tremors, rigidity, and bradykinesia.",2,negative,0.24434775,0.13198024,0.623672,133
+"Mrs Smith, 87, has been living in a long-term care facility for the past three years.",0,positive,0.3850688,0.3388587,0.27607247,134
+She has a diagnosis of moderate dementia and a history of heart failure.,2,negative,0.2195265,0.1619012,0.6185723,134
+"Dementia affects her memory and cognitive function, often causing confusion and disorientation.",2,negative,0.19237916,0.15044303,0.6571778,134
+"Mrs Smith, 85, has been a resident of a long-term care facility for the past three years.",0,positive,0.3979187,0.34548277,0.25659856,135
+"She has moderate heart failure, type 2 diabetes, and moderate cognitive impairment.",2,negative,0.14978586,0.13772793,0.71248615,135
+"Despite her physical limitations, Mrs Smith remains socially active and enjoys participating in various activities.",0,positive,0.72021633,0.21807982,0.06170381,135
+Mrs Smith's Parkinson's disease has progressed to a stage where she requires assistance with most activities of daily living.,0,positive,0.56740797,0.21159899,0.22099306,136
+"She experiences significant tremors, muscle rigidity, and difficulty with balance.",2,negative,0.3263416,0.13839485,0.53526354,136
+She uses a wheelchair for mobility and requires the assistance of two carers for transfers and personal care.,0,positive,0.6077858,0.2691943,0.12301987,136
+"The care team is considering introducing additional therapeutic interventions, such as physical therapy and",0,positive,0.6355266,0.19640552,0.16806793,136
+"Mrs Smith, 89, has been a resident of a long-term care facility for the past four years.",0,positive,0.39637402,0.35051453,0.25311145,137
+"Her condition has led to significant cognitive impairment, making her reliant on a structured daily routine and requiring assistance with all activities of daily living.",2,negative,0.31742695,0.1533873,0.5291857,137
+Nursing staff are well-versed in dementia care and employ a range of techniques to manage her symptoms.,0,positive,0.44253328,0.14659438,0.4108723,137
+"Mrs Smith has advanced dementia, Parkinson's disease, and chronic kidney disease.",2,negative,0.38517955,0.16809909,0.44672135,138
+"She is non-verbal and relies on the care team for feeding, bathing, dressing, and toileting.",1,neutral,0.34426942,0.54724723,0.1084833,138
+"The care team uses a person-centered approach, focusing on maintaining her comfort and dignity.",0,positive,0.71021175,0.1533277,0.13646053,138
+"Mrs Smith has advanced Alzheimer's disease, chronic obstructive pulmonary disease (COPD), and chronic kidney disease.",0,positive,0.46328095,0.19447039,0.34224874,139
+"She experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.20606728,0.17550458,0.6184281,139
+"The care team uses various therapeutic approaches, such as music therapy and sensory stimulation, to help manage her symptoms.",0,positive,0.7444532,0.16015834,0.09538848,139
+"Mrs Smith, 88, has been a resident of a long-term care facility for the past five years.",0,positive,0.39712265,0.3484209,0.2544565,140
+She receives specialized care for her advanced chronic kidney disease and mild cognitive impairment.,0,positive,0.5674256,0.22375901,0.20881534,140
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,140
+"Mrs Smith, 83, has been a resident of a long-term care facility for the past four years.",0,positive,0.39030436,0.3516131,0.25808248,141
+She receives specialized care for her advanced Parkinson's disease and chronic heart failure.,0,positive,0.54337376,0.22233722,0.23428895,141
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,141
+"Mrs Smith, 86, has advanced chronic obstructive pulmonary disease (COPD) and mild cognitive impairment.",0,positive,0.40822452,0.21134944,0.38042602,142
+"She needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.747007,0.17791665,0.07507626,142
+"Despite her health challenges, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.764895,0.16735059,0.06775441,142
+Mrs Smith's dementia has progressed to the stage where she requires full-time assistance with all activities of daily living.,0,positive,0.48304933,0.20335694,0.31359375,143
+"She experiences significant memory loss and confusion, often struggling to recognize familiar faces and places.",2,negative,0.20065407,0.13988075,0.65946513,143
+The care team provides a structured daily routine and uses various therapeutic approaches to help manage her symptoms.,0,positive,0.7003239,0.202114,0.0975621,143
+"Mrs Smith, 92, has been residing in a care home for the past four years.",0,positive,0.38012972,0.36054483,0.25932553,144
+"She has severe Parkinson's disease, chronic kidney disease, and dementia.",2,negative,0.1596237,0.09772349,0.74265283,144
+The care team provides a structured daily routine to help reduce her anxiety and maintain a sense of stability.,0,positive,0.73805547,0.15078562,0.11115896,144
+"Mrs Smith, 88, has been living in a specialized care home for the past five years.",0,positive,0.41304466,0.33689865,0.2500567,145
+"She has severe heart failure, chronic obstructive pulmonary disease (COPD), and diabetes.",2,negative,0.12015514,0.09446873,0.7853761,145
+"She takes a combination of medications, including diuretics and beta-blockers.",0,positive,0.5857249,0.20014857,0.21412654,145
+"Mrs Smith, 83, has severe Parkinson's disease, chronic kidney disease, and dementia.",2,negative,0.18468307,0.1338902,0.6814267,146
+"She has moderate dementia, characterized by confusion, memory loss, and occasional agitation.",2,negative,0.10831884,0.0990778,0.7926034,146
+Her family visits regularly and is actively involved in her care planning.,0,positive,0.7475953,0.15154365,0.1008611,146
+"Mrs Smith, 81, has a diagnosis of Lewy body dementia.",2,negative,0.3292476,0.26408073,0.40667164,147
+She has been experiencing a gradual decline in cognitive function.,2,negative,0.2660355,0.20976457,0.5241999,147
+"She is in the moderate stages of the disease, with symptoms including memory loss.",2,negative,0.24172804,0.27375185,0.48452014,147
+"Despite these challenges, she remains physically active and enjoys activities.",0,positive,0.71199816,0.20989132,0.07811056,147
+"Mrs Smith, 78, has been living in a long-term care facility for the past five years.",0,positive,0.37655717,0.34981045,0.27363244,148
+She has a diagnosis of advanced Parkinson's disease and has been experiencing a gradual decline in cognitive function.,2,negative,0.30853844,0.18871173,0.5027498,148
+"She is in the moderate stages of the disease, with symptoms including tremors, rigidity, and difficulty with balance and coordination.",2,negative,0.24349663,0.23424426,0.52225906,148
+"Mrs Smith, 80, has been living in a long-term care facility for the past six years.",0,positive,0.37757063,0.3421168,0.2803126,149
+She has a diagnosis of advanced Huntington's disease and has been experiencing a gradual decline in cognitive function.,2,negative,0.3175657,0.18881868,0.4936156,149
+She remains physically active and enjoys participating in activities at the facility.,0,positive,0.75232184,0.18046936,0.06720878,149
+"Mrs Smith, 83, has been living in a long-term care facility for the past seven years.",0,positive,0.3813889,0.3419582,0.27665296,150
+She has a diagnosis of advanced multiple sclerosis and has been experiencing a gradual decline in cognitive function.,2,negative,0.30586025,0.1895773,0.50456244,150
+"Despite these challenges, she remains physically active and enjoys participating in activities at the facility.",0,positive,0.6789927,0.2304115,0.0905958,150
+"Mrs Smith, 89, has been living in a long-term care facility for the past six years.",0,positive,0.38409534,0.34436578,0.27153882,151
+"She has a diagnosis of advanced rheumatoid arthritis, which has significantly impacted her mobility and independence.",0,positive,0.48151037,0.10378797,0.41470164,151
+"Her condition also affects her hands and fingers, making it difficult for her to perform daily tasks.",2,negative,0.2129321,0.1583523,0.6287156,151
+"Mrs Smith, 93, has a diagnosis of advanced kidney disease.",0,positive,0.41334605,0.2622968,0.32435724,152
+She requires regular dialysis treatments during the night.,0,positive,0.53324306,0.31619748,0.15055948,152
+She also takes medications to manage her anemia and prevent bone disease.,0,positive,0.6152306,0.21225196,0.17251742,152
+"Mrs Smith, 75, has been living in a long-term care facility for the past two years.",0,positive,0.38011652,0.34459883,0.2752846,153
+"She has a diagnosis of Parkinson's disease, which has progressed to a stage where she requires assistance with all activities of daily living.",0,positive,0.509713,0.1945599,0.29572716,153
+The care team uses various therapeutic approaches to help manage her symptoms and provide comfort.,0,positive,0.6967727,0.17053801,0.1326893,153
+"Mrs Smith, 81, has advanced dementia and chronic obstructive pulmonary disease.",0,positive,0.48355448,0.20462695,0.3118185,154
+She requires full-time assistance with all activities of daily living.,0,positive,0.67407185,0.23425601,0.09167209,154
+The care team provides a structured daily routine and uses various therapeutic approaches to help manage her symptoms.,0,positive,0.7003239,0.202114,0.0975621,154
+Mrs Smith has advanced heart failure and chronic obstructive pulmonary disease.,2,negative,0.23333406,0.18691938,0.5797465,155
+She is on a regimen of medications to manage her symptoms.,0,positive,0.4386523,0.2657813,0.29556638,155
+"Despite her condition, Mrs Smith enjoys participating in activities offered at the facility.",0,positive,0.65913194,0.24313112,0.09773694,155
+"Mrs Smith, 82, has a diagnosis of Alzheimer's disease and has been experiencing a gradual decline in cognitive function.",2,negative,0.26801133,0.20191675,0.5300719,156
+"She is in the moderate stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.19065723,0.21408078,0.595262,156
+"Despite these challenges, she remains physically active and enjoys participating in activities at the care home.",0,positive,0.694487,0.22112833,0.08438477,156
+"Mrs Smith, 81, has been living in a care home for the past four years.",0,positive,0.37444016,0.3530553,0.27250457,157
+She has advanced multiple myeloma and chronic obstructive pulmonary disease.,0,positive,0.55151457,0.1871775,0.26130792,157
+"She needs round-the-clock care, including assistance with feeding, personal hygiene, and positioning to prevent pressure sores.",0,positive,0.68018836,0.20089293,0.118918665,157
+"Mrs Smith, 85, has a diagnosis of Alzheimer's disease and has been experiencing a gradual decline in cognitive function.",2,negative,0.28180754,0.20261797,0.5155745,158
+"She requires assistance with all activities of daily living, including personal care, meal preparation, and medication management.",0,positive,0.7290608,0.1897631,0.08117611,158
+"She enjoys participating in activities offered at the care home, including music therapy sessions and reminiscence therapy.",0,positive,0.89009565,0.082202606,0.02770171,158
+"Mrs Smith, 81, has been living in a long-term care facility for the past five years.",0,positive,0.37610596,0.35103655,0.2728575,159
+She has a diagnosis of advanced Parkinson's disease and chronic kidney disease.,0,positive,0.40926516,0.20519908,0.38553572,159
+"Recently, Mrs Smith experienced a decline in her condition, including increased difficulty with swallowing and reduced mobility.",2,negative,0.17353135,0.17934734,0.6471213,159
+"Mrs Smith, 87, has been living in a long-term care facility for the past three years.",0,positive,0.3850688,0.3388587,0.27607247,160
+"She has a diagnosis of advanced Parkinson's disease, chronic kidney disease, and a recent diagnosis of mild depression.",2,negative,0.3790282,0.18619557,0.4347762,160
+Her family is actively involved in her care and visits regularly.,0,positive,0.73595816,0.15006602,0.113975815,160
+"Mrs Smith, 88, has advanced stroke, chronic heart failure, and mild cognitive impairment.",2,negative,0.22803363,0.16820817,0.6037582,161
+"Care team visits her four times a day, providing assistance with personal care, meal preparation, and medication management.",0,positive,0.70216024,0.18590249,0.11193724,161
+"Despite her health challenges, Mrs Smith remains mentally active and enjoys reading and writing.",0,positive,0.5576524,0.25577977,0.18656778,161
+"Mrs Smith, 85, lives in a care home and has been receiving support there for the past three years.",0,positive,0.72252494,0.17345741,0.10401766,162
+"She was diagnosed with severe Parkinson's disease, which significantly affects her mobility, balance, and coordination.",2,negative,0.37178645,0.13864478,0.48956877,162
+"Mrs Smith also has mild cognitive impairment, characterized by memory loss and difficulty with concentration.",2,negative,0.1398897,0.13589495,0.72421527,162
+"Mrs Smith has advanced dementia, chronic obstructive pulmonary disease (COPD), and osteoporosis.",2,negative,0.41120616,0.17539544,0.41339836,163
+Her dementia has progressed to the stage where she requires full-time assistance with all activities of daily living.,0,positive,0.4973971,0.18094017,0.32166272,163
+"Despite her condition, Mrs Smith enjoys engaging in sensory activities offered at the facility.",0,positive,0.6204205,0.25572076,0.12385877,163
+"Mrs Smith has advanced Alzheimer's disease, chronic obstructive pulmonary disease (COPD), and osteoporosis.",0,positive,0.4411262,0.1913551,0.36751866,164
+Her Alzheimer's has progressed to the stage where she requires full-time assistance with all activities of daily living.,0,positive,0.5469482,0.18897589,0.26407593,164
+"She experiences significant memory loss and confusion, often struggling to recognize her surroundings.",2,negative,0.21460328,0.15251352,0.6328832,164
+"Mrs Smith, 89, has been a resident of a long-term care facility for the past five years.",0,positive,0.3997701,0.34747288,0.25275707,165
+"She has been diagnosed with advanced dementia, type 2 diabetes, and hypertension.",2,negative,0.32117394,0.18356052,0.4952655,165
+"Mrs Smith's dementia affects her memory, language, and cognitive function.",2,negative,0.2579862,0.1662679,0.57574594,165
+"Mrs Smith, 87, has been living in her own home with the support of a comprehensive domiciliary care package for the past four years.",0,positive,0.6771603,0.18783894,0.13500078,166
+"She has been diagnosed with advanced Parkinson's disease, type 2 diabetes, and hypertension.",2,negative,0.3003386,0.1755318,0.5241296,166
+"Despite her physical limitations, Mrs Smith remains mentally sharp and enjoys a variety of activities.",0,positive,0.55006665,0.18586305,0.26407033,166
+"Mrs Smith, 85, has been living in a residential care home for the past three years.",0,positive,0.39205787,0.34978965,0.25815254,167
+She has advanced Parkinson's disease and type 2 diabetes.,0,positive,0.4155176,0.18815483,0.39632758,167
+"Despite her physical limitations, Mrs Smith remains mentally active and enjoys reading and puzzles.",0,positive,0.50275767,0.31481853,0.18242384,167
+"Mrs Smith, 80, has advanced kidney disease, type 2 diabetes, and mild cognitive impairment.",0,positive,0.4100914,0.20420687,0.3857017,168
+"Her diabetes is managed through a combination of diet, oral medications, and insulin injections.",0,positive,0.66280276,0.1828717,0.15432549,168
+She follows a restricted diet that limits foods high in phosphorus and potassium.,2,negative,0.24698617,0.33005005,0.42296383,168
+Mrs Smith enjoys activities such as reading and watching movies.,0,positive,0.8404892,0.11619636,0.04331441,168
+"Mrs Smith has advanced liver disease, type 2 diabetes, and mild cognitive impairment.",2,negative,0.34371677,0.20840307,0.44788018,169
+She follows a restricted diet that limits foods high in fat and cholesterol.,2,negative,0.22048658,0.3178832,0.46163017,169
+"Her diabetes is managed through a combination of diet, oral medications, and insulin injections.",0,positive,0.66280293,0.18287167,0.1543254,169
+"Mrs Smith has advanced heart failure, type 2 diabetes, and mild cognitive impairment.",2,negative,0.20079269,0.1746555,0.6245518,170
+"Her diabetes is managed through a combination of diet, oral medications, and insulin injections.",0,positive,0.66280293,0.18287165,0.1543254,170
+She follows a restricted diet that limits foods high in sodium and fluid.,2,negative,0.2756397,0.35562953,0.36873075,170
+Mrs Smith enjoys activities such as reading and watching movies.,0,positive,0.8404892,0.11619637,0.04331441,170
+"Mrs Smith, 84, has a diagnosis of advanced Parkinson's disease and type 2 diabetes.",0,positive,0.40451357,0.25932056,0.3361658,171
+"She experiences significant tremors, muscle rigidity, and difficulty with balance.",2,negative,0.32634163,0.13839489,0.53526354,171
+"Despite her health challenges, Mrs Smith enjoys engaging in intellectual activities.",0,positive,0.79200417,0.1430982,0.06489757,171
+She has a passion for history and often discusses historical events with the staff.,0,positive,0.87982297,0.07013328,0.050043747,171
+"Mrs Smith, 84, has been a resident of a long-term care facility for the past seven years.",0,positive,0.39737776,0.3463256,0.25629658,172
+"She has a diagnosis of vascular dementia, chronic kidney disease, and type 2 diabetes.",2,negative,0.370172,0.19008887,0.43973914,172
+The care team provides a structured daily routine to help manage her symptoms.,0,positive,0.6601558,0.22005884,0.11978538,172
+They also use familiar objects and music to create a comforting environment.,0,positive,0.63391757,0.19011025,0.1759721,172
+"Mrs Smith, 81, has been a resident of a care home for the past five years.",0,positive,0.3960596,0.3527505,0.25118992,173
+"She has Parkinson's disease, chronic kidney disease, and mild cognitive impairment.",2,negative,0.20746286,0.14294507,0.6495921,173
+"Despite her physical challenges, she remains socially active and enjoys participating in various activities offered by the facility.",0,positive,0.742236,0.18442106,0.073342934,173
+"Mrs Smith, 85, has been a resident of a long-term care facility for the past three years.",0,positive,0.39791867,0.3454828,0.25659856,174
+"She has a diagnosis of Huntington's disease, which has significantly impacted her mobility and independence.",0,positive,0.46554613,0.0966576,0.43779626,174
+"Her condition also affects her speech and swallowing, necessitating a pureed diet and thickened fluids to prevent choking.",2,negative,0.21837978,0.11820444,0.6634158,174
+"Despite her physical limitations, Mrs Smith remains mentally",2,negative,0.14841741,0.35891622,0.4926664,174
+"Mrs Smith, 87, is a resident of a specialized dementia care unit within a long-term care facility.",0,positive,0.43598145,0.3284848,0.23553373,175
+She has been living there for the past two years following a diagnosis of frontotemporal dementia.,2,negative,0.3511978,0.29003158,0.3587706,175
+"Her condition is characterized by fluctuating cognitive function, language difficulties, and changes in her personality and behavior.",2,negative,0.1952122,0.14412339,0.6606644,175
+"Mrs Smith, 83, has been living in a long-term care facility for the past six years.",0,positive,0.37736067,0.34562886,0.2770105,176
+She has advanced Parkinson's disease and chronic kidney disease.,0,positive,0.4595422,0.18088807,0.35956967,176
+She receives daily physiotherapy to help maintain her mobility and flexibility.,0,positive,0.7717379,0.1281297,0.10013245,176
+"Mrs Smith, 78, has been living in a long-term care facility for the past eight years.",0,positive,0.37667432,0.35040256,0.27292314,177
+She has advanced chronic obstructive pulmonary disease (COPD) and chronic kidney disease.,0,positive,0.5886689,0.18485305,0.22647798,177
+"The nursing staff monitor her lung function closely, adjusting her treatment plan as needed.",0,positive,0.42636374,0.24452646,0.32910976,177
+"Mrs Smith, 83, has advanced Lewy body dementia and chronic heart failure.",2,negative,0.36098418,0.19576047,0.4432554,178
+"Her dementia affects her cognitive function, causing memory loss and difficulty with communication.",2,negative,0.20250064,0.13225923,0.6652401,178
+"She is non-verbal and relies on staff for feeding, bathing, dressing, and toileting.",1,neutral,0.33920768,0.56261307,0.09817931,178
+"Mrs Smith, 87, has been living in a long-term care facility for the past four years.",0,positive,0.38255048,0.3413228,0.27612674,179
+"She has a diagnosis of advanced Parkinson's disease, chronic obstructive pulmonary disease (COPD), and moderate dementia.",2,negative,0.31212607,0.17035934,0.51751465,179
+"Despite her health challenges, Mrs Smith remains socially active and enjoys participating in various activities.",0,positive,0.76905525,0.16531138,0.065633416,179
+"Mrs Smith has a complex medical history, including advanced chronic kidney disease, type 2 diabetes, and moderate hearing loss.",2,negative,0.37516513,0.18976195,0.4350729,180
+"Despite her challenges, Mrs Smith remains active and enjoys participating in various activities.",0,positive,0.7419337,0.18714209,0.07092423,180
+"Mrs Smith, 87, has been living in a long-term care facility for the past five years.",0,positive,0.38731554,0.339034,0.27365053,181
+"She has a diagnosis of advanced chronic obstructive pulmonary disease (COPD), congestive heart failure, and peripheral artery disease.",2,negative,0.31839773,0.17674915,0.50485307,181
+She uses a portable oxygen concentrator during the day and a larger machine at night.,0,positive,0.4641147,0.27655527,0.25933003,181
+"Mrs Smith, 86, has advanced dementia, type 2 diabetes, and moderate hearing loss.",2,negative,0.31594065,0.19570464,0.48835474,182
+She sometimes struggles with recognizing familiar faces and managing daily tasks.,0,positive,0.5252146,0.1957685,0.27901688,182
+"Despite her condition, Mrs Smith remains socially active and enjoys participating in various activities offered by the facility.",0,positive,0.6786268,0.23345402,0.087919205,182
+"Mrs Smith, 85, has been a resident of a long-term care facility for three years.",0,positive,0.40944877,0.33442482,0.25612643,183
+She has a diagnosis of Parkinson's disease and has been experiencing a gradual decline in physical function.,2,negative,0.25383556,0.1831713,0.56299317,183
+"She is also experiencing cognitive decline, which affects her memory and attention span.",2,negative,0.23224758,0.15928829,0.6084642,183
+"The care team provides support with all activities of daily living, including personal care, meal preparation",0,positive,0.8572393,0.0998681,0.042892564,183
+"Mrs Smith, 87, has a complex medical history, including severe peripheral artery disease, type 2 diabetes, and mild cognitive impairment.",2,negative,0.3373744,0.16371174,0.49891385,184
+"She requires assistance with all activities of daily living, including bathing, dressing, and grooming.",0,positive,0.7388503,0.18166295,0.07948666,184
+"Despite her health challenges, Mrs Smith remains socially active and enjoys participating in various activities offered by the facility.",0,positive,0.7677224,0.16794336,0.06433426,184
+"Mrs Smith, 84, has been living in her own home with the support of a comprehensive domiciliary care package.",0,positive,0.677391,0.18857297,0.13403605,185
+"She requires assistance with all activities of daily living, including mobility, dressing, and feeding.",0,positive,0.75757754,0.17615406,0.06626849,185
+"Despite her physical limitations, Mrs Smith remains mentally sharp and enjoys a variety of activities.",0,positive,0.55006665,0.18586305,0.26407033,185
+"Mrs Smith, 83, has been living in her own home with the support of a comprehensive domiciliary care package due to her diagnosis of Parkinson's disease, hypertension, and chronic kidney disease.",0,positive,0.6760376,0.15393743,0.17002496,186
+"She requires assistance with all activities of daily living, including mobility, dressing, and feeding.",0,positive,0.75757754,0.17615406,0.06626849,186
+"Mrs Smith, 85, has been a resident of a long-term care facility for the past two years.",0,positive,0.3944459,0.34817517,0.2573789,187
+"She has a complex medical history, including advanced Parkinson's disease, chronic obstructive bronchitis, and a recent diagnosis of depression.",0,positive,0.48036996,0.16425227,0.35537773,187
+The nursing staff provide daily assistance with all activities of daily living.,0,positive,0.4626359,0.27626076,0.2611034,187
+"Mrs Smith, 88, lives in her own home with the support of a comprehensive domiciliary care package.",0,positive,0.7594649,0.14635156,0.094183505,188
+"She has been diagnosed with advanced chronic obstructive pulmonary disease (COPD), hypertension, and a recent diagnosis of depression.",2,negative,0.32697326,0.1729854,0.5000414,188
+Her family is actively involved in her care and visits regularly.,0,positive,0.73595816,0.150066,0.113975815,188
+"Mrs Smith, 81, has been living in a long-term care facility for the past three years.",0,positive,0.3732545,0.35115406,0.2755914,189
+She has a diagnosis of advanced Parkinson's disease and hypertension.,0,positive,0.41513914,0.20139608,0.38346475,189
+"Recently, she experienced a decline in her condition, including increased difficulty with mobility and balance.",2,negative,0.18123639,0.196181,0.6225826,189
+"Mrs Smith, 82, has been living in a long-term care facility for the past four years due to her diagnosis of Parkinson's disease, dementia, and mild hearing loss.",2,negative,0.27083606,0.2396,0.4895639,190
+The care team provides a structured daily routine to help manage her symptoms and maintain her quality of life.,0,positive,0.74245346,0.16936854,0.088178016,190
+"Mrs Smith, 83, has been living in a long-term care facility for the past four years.",0,positive,0.3746391,0.3471753,0.2781856,191
+"She has advanced multiple sclerosis, depression, and chronic pain.",2,negative,0.33180913,0.16599686,0.50219405,191
+The care team provides a structured daily routine to help manage her symptoms and maintain her quality of life.,0,positive,0.74245346,0.16936854,0.088178016,191
+"Mrs Smith, 81, has been living in a long-term care facility for the past four years.",0,positive,0.37083158,0.35361934,0.27554905,192
+"She has advanced stroke, chronic obstructive pulmonary disease (COPD), and depression.",2,negative,0.31733772,0.17446597,0.5081963,192
+The care team provides a structured daily routine to help manage her symptoms and maintain her quality of life.,0,positive,0.74245346,0.16936854,0.088178016,192
+"Mrs Smith, 83, has been living in a long-term care facility for the past three years.",0,positive,0.37717876,0.34474272,0.27807862,193
+"She has a diagnosis of advanced multiple sclerosis, chronic obstructive pulmonary disease (COPD), and a history of depression.",2,negative,0.31726483,0.16525516,0.51748,193
+"She requires assistance with all activities of daily living, including personal care, bathing, and dressing.",0,positive,0.74317795,0.18853456,0.06828747,193
+"Mrs Smith, 78, has been living in a long-term care facility for the past five years.",0,positive,0.37655717,0.34981045,0.27363244,194
+"She has a diagnosis of advanced chronic kidney disease, heart failure, and moderate dementia.",2,negative,0.25931385,0.15884222,0.5818439,194
+"Despite her health challenges, Mrs Smith enjoys participating in activities.",0,positive,0.7724604,0.16682748,0.06071211,194
+"Mrs Smith, 79, has been living in a long-term care facility for the past four years.",0,positive,0.37393683,0.34396037,0.28210285,195
+"She has a diagnosis of advanced Parkinson's disease, chronic obstructive pulmonary disease (COPD), and a history of falls.",2,negative,0.36192238,0.18312815,0.45494947,195
+"Recently, Mrs Smith experienced a decline in her condition, including increased stiffness and difficulty with mobility.",2,negative,0.20888163,0.19017562,0.60094273,195
+"Mrs Smith, 88, has advanced multiple sclerosis, type 2 diabetes, and mild cognitive impairment.",2,negative,0.3864414,0.20582178,0.40773684,196
+"She has been experiencing a decline in her physical abilities, including difficulty with balance and coordination.",2,negative,0.21408676,0.18089996,0.60501325,196
+Mrs Smith uses a cane for mobility and requires the assistance of one carer for transfers and personal care.,0,positive,0.6098984,0.25953615,0.13056548,196
+"Mrs Smith, 85, has advanced Parkinson's disease, type 2 diabetes, and mild cognitive impairment.",2,negative,0.4004484,0.19808148,0.4014701,197
+She uses a walker for mobility and requires the assistance of one carer for transfers and personal care.,0,positive,0.64656353,0.24010965,0.11332681,197
+"Despite her health challenges, Mrs Smith remains socially active and enjoys participating in various activities offered by the facility.",0,positive,0.7677224,0.1679433,0.06433423,197
+"Mrs Smith, 85, has advanced heart failure and chronic atrial fibrillation.",2,negative,0.20687288,0.18851715,0.60460997,198
+She is on a sodium-restricted diet and requires regular monitoring of her fluid status and vital signs.,0,positive,0.46025065,0.31100485,0.22874446,198
+"The care home staff provide daily assistance with personal hygiene, dressing, and feeding.",0,positive,0.70034057,0.20011649,0.099542916,198
+"Mrs Smith, 85, has been living in a specialized dementia care unit for three years.",0,positive,0.4370874,0.29903427,0.2638783,199
+She has been diagnosed with advanced Alzheimer's disease and chronic heart failure.,2,negative,0.26495498,0.18077974,0.5542653,199
+"She experiences significant memory loss and confusion, often struggling to recognize her surroundings and familiar faces.",2,negative,0.2272255,0.14612247,0.62665206,199
+"Despite her cognitive decline, Mrs Smith enjoys sensory activities, such as listening to music and engaging with tactile objects.",0,positive,0.7006119,0.19266945,0.106718674,199
+"Mrs Smith, 81, has been in a long-term care facility for the past five years.",0,positive,0.40156296,0.3510588,0.2473782,200
+She has been diagnosed with advanced stroke and moderate cognitive impairment.,2,negative,0.26965085,0.21481158,0.5155376,200
+Her stroke has left her with significant mobility and balance issues.,2,negative,0.35984883,0.18377826,0.45637298,200
+"Despite her physical challenges, Mrs Smith remains mentally engaged.",2,negative,0.26584998,0.3295502,0.40459985,200
+"Mrs Smith, 83, has been a resident of a long-term care facility for the past five years due to her advanced Alzheimer's disease.",0,positive,0.3794025,0.30717131,0.31342626,201
+"She has a history of falls and requires assistance with daily tasks such as dressing, bathing, and meal preparation.",0,positive,0.49617887,0.24860446,0.2552167,201
+"Mrs Smith's care team provides support with all activities of daily living, including personal care, meal preparation,",0,positive,0.8272794,0.11765355,0.05506704,201
+"Mrs Smith, 82, has been a resident of a long-term care facility for the past three years due to her advanced dementia.",2,negative,0.34096876,0.30277005,0.35626122,202
+She has a history of wandering and requires close supervision and support.,0,positive,0.5497126,0.21436304,0.23592435,202
+"Mrs Smith's care team provides support with all activities of daily living, including personal care, meal preparation, and medication management.",0,positive,0.8210222,0.12400052,0.05497735,202
+"Mrs Smith, 84, has advanced kidney disease.",0,positive,0.41872197,0.2365095,0.34476855,203
+"She requires assistance with daily tasks such as dressing, bathing, and meal preparation.",0,positive,0.7050352,0.20509213,0.089872636,203
+"She enjoys participating in activities at the facility, including music therapy sessions and remembrance therapy.",0,positive,0.9048758,0.06465209,0.030472104,203

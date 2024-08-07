@@ -1,0 +1,576 @@
+text,pred,label,positive,neutral,negative,doc_num
+92-year-old has been living in a long-term care facility for the past five years.,0,positive,0.37824276,0.3132635,0.30849373,0
+she has advanced Alzheimer's disease and chronic obstructive pulmonary disease.,0,positive,0.4992386,0.17808257,0.32267883,0
+she communicates primarily through facial expressions and occasional gestures.,0,positive,0.6269192,0.23795837,0.13512242,0
+"a stroke has left her wheelchair-bound, and she requires assistance with all transfers.",0,positive,0.4092558,0.27412903,0.31661525,1
+she is on a regimen of medications to control her blood pressure and manage symptoms.,0,positive,0.49248305,0.24379556,0.26372135,1
+"she has a diagnosis of chronic kidney disease, requiring careful monitoring and management.",0,positive,0.4230942,0.2164228,0.36048293,1
+88-year-old has been a resident of a long-term care facility for the past three years.,0,positive,0.40194708,0.31740427,0.2806487,2
+"her condition has led to significant motor impairment, making her reliant on a wheelchair.",2,negative,0.19891736,0.12836243,0.6727202,2
+the facility employs a range of techniques to manage her symptoms.,0,positive,0.57336795,0.22073337,0.20589861,2
+"86-year-old has advanced chronic obstructive pulmonary disease (COPD) she has congestive heart failure, type 2 diabetes, and needs continuous oxygen therapy.",2,negative,0.35046533,0.20228316,0.44725147,3
+nursing staff are trained in respiratory care and provide regular monitoring of her oxygen levels.,0,positive,0.5689929,0.23886791,0.19213916,3
+87-year-old has been living in a long-term care facility for the past four years.,0,positive,0.3734771,0.3111653,0.31535757,4
+"she has a diagnosis of Parkinson's disease, which has significantly affected her mobility.",2,negative,0.16824417,0.13294859,0.69880724,4
+she has been diagnosed with type 2 diabetes and needs careful management of her diet.,0,positive,0.41643584,0.22766939,0.3558947,4
+79-year-old has been a resident of a care home specializing in dementia care.,0,positive,0.4794571,0.26616138,0.25438157,5
+she has a diagnosis of Alzheimer's disease and has been experiencing a gradual decline in cognitive function.,2,negative,0.2691401,0.17853807,0.5523218,5
+"she is in the moderate stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.18350452,0.20834291,0.60815257,5
+88-year-old has been a resident of a long-term care facility for the past six years.,0,positive,0.40328407,0.3170305,0.27968547,6
+she has a diagnosis of advanced Alzheimer's disease and diabetes.,0,positive,0.42951244,0.20729594,0.36319163,6
+"she relies on staff for feeding, bathing, dressing, and toileting.",0,positive,0.6191761,0.22885807,0.1519658,6
+a 90-year-old woman has been living in a long-term care facility for the past five years.,2,negative,0.3502476,0.2985065,0.3512459,7
+"she has a diagnosis of advanced heart disease, chronic kidney disease, and mild cognitive impairment.",2,negative,0.34548864,0.17868493,0.47582647,7
+her chronic kidney disease requires a restricted diet that limits foods high in potassium and phosphorus.,2,negative,0.29617506,0.23920478,0.46462017,7
+83-year-old has a diagnosis of advanced chronic obstructive pulmonary disease.,0,positive,0.40748706,0.24639589,0.34611708,8
+she relies on a portable oxygen concentrator when moving around the facility.,0,positive,0.49345997,0.24542888,0.2611111,8
+she follows a diabetic-friendly diet and follows a diabetic-friendly diet.,0,positive,0.7062307,0.17872672,0.11504257,8
+"89-year-old has advanced Parkinson's disease, type 2 diabetes and heart failure.",2,negative,0.23520543,0.1813869,0.58340764,9
+she uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.53836066,0.29741228,0.16422713,9
+92-year-old has a diagnosis of advanced chronic obstructive pulmonary disease.,0,positive,0.4186978,0.24504595,0.33625627,10
+she relies on a portable oxygen concentrator when moving around the facility.,0,positive,0.49345997,0.24542888,0.2611111,10
+she follows a diabetic-friendly diet and follows a diabetic-friendly diet.,0,positive,0.7062307,0.17872672,0.11504257,10
+88-year-old has a diagnosis of advanced chronic obstructive pulmonary disease.,0,positive,0.41437984,0.24535258,0.34026754,11
+she relies on a portable oxygen concentrator when moving around the facility.,0,positive,0.49345997,0.24542888,0.2611111,11
+she follows a diabetic-friendly diet and follows a diabetic-friendly diet.,0,positive,0.7062307,0.17872672,0.11504257,11
+87-year-old has been living in a long-term care facility for the past four years.,0,positive,0.3734771,0.3111653,0.31535757,12
+"she has a diagnosis of Parkinson's disease, which has significantly affected her mobility.",2,negative,0.16824417,0.13294859,0.69880724,12
+she has been diagnosed with type 2 diabetes and needs careful management of her diet.,0,positive,0.41643584,0.22766939,0.3558947,12
+92-year-old has been living in a long-term care facility for the past five years.,0,positive,0.37824276,0.3132635,0.30849373,13
+she has a diagnosis of advanced Alzheimer's disease and diabetes.,0,positive,0.42951244,0.20729594,0.36319163,13
+she requires total assistance with all activities of daily living.,0,positive,0.6896714,0.2225673,0.087761335,13
+"88-year-old has advanced Parkinson's disease, type 2 diabetes and heart failure.",2,negative,0.23623951,0.18001206,0.5837484,14
+she uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.53836066,0.29741228,0.16422713,14
+a dementia care home resident has been experiencing a gradual decline in cognitive function.,2,negative,0.2109802,0.16790792,0.62111187,15
+"she is in the moderate stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.18350452,0.20834291,0.60815257,15
+"the care team provides support with all activities of daily living, including personal care, meal preparation, and medication management.",0,positive,0.8653974,0.09429482,0.040307734,15
+"a diagnosis of advanced heart disease, chronic kidney disease and mild cognitive impairment.",2,negative,0.3728468,0.18157005,0.4455831,16
+"Mrs Smith, 85, has been living in a long-term care facility for the past five years.",0,positive,0.38444746,0.3415156,0.27403694,16
+"she takes diuretics to manage fluid retention, which is a common complication of her condition.",2,negative,0.32375413,0.22245494,0.45379087,16
+a diagnosis of advanced chronic obstructive pulmonary disease (COPD) requires continuous oxygen therapy.,0,positive,0.514385,0.25674793,0.22886705,17
+she also relies on a portable oxygen concentrator when moving around the facility.,0,positive,0.52111495,0.23797578,0.24090926,17
+89-year-old has been residing in a specialized care home for the past six years.,0,positive,0.4157038,0.3181868,0.26610935,18
+she receives continuous oxygen therapy through a portable oxygen concentrator during the day and a larger unit at night.,0,positive,0.578139,0.24831504,0.17354588,18
+her heart failure necessitates close monitoring of her fluid intake and regular assessments of her heart function.,2,negative,0.188953,0.19085869,0.6201883,18
+"84-year-old has advanced Parkinson's disease, chronic kidney disease, mild cognitive impairment.",2,negative,0.30837363,0.17003039,0.521596,19
+"she needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.74112236,0.180105,0.0787727,19
+she is able to use a wheelchair and has been in a long-term care facility for four years.,0,positive,0.5334963,0.26736444,0.19913927,19
+"82-year-old has a diagnosis of advanced chronic obstructive pulmonary disease (COPD), type 2 diabetes, and moderate dementia.",2,negative,0.32452258,0.19105448,0.48442295,20
+she relies on a portable oxygen concentrator during the day and a larger unit at night.,0,positive,0.50540036,0.2438437,0.2507559,20
+she follows a diabetic-friendly diet and receives insulin injections.,0,positive,0.680567,0.1633181,0.15611488,20
+"84-year-old has advanced Alzheimer's disease, type 2 diabetes, and hypertension.",2,negative,0.40590686,0.18369843,0.41039467,21
+"she experiences memory loss, confusion, and occasional agitation.",2,negative,0.18172924,0.21183796,0.6064328,21
+she is able to maintain a sense of stability and is able to do her daily tasks.,0,positive,0.7890719,0.13039875,0.08052939,21
+"86-year-old has a diagnosis of advanced heart disease, chronic kidney disease, and dementia.",2,negative,0.34662083,0.19929165,0.4540875,22
+"she takes diuretics to manage fluid retention, a common complication of her condition.",0,positive,0.43913448,0.21445824,0.34640732,22
+her chronic kidney disease requires a restricted diet that limits foods high in potassium and phosphorus.,2,negative,0.29617506,0.23920478,0.46462017,22
+78-year-old has advanced chronic obstructive pulmonary disease (COPD) she relies on a portable oxygen concentrator during the day and a larger unit at night.,0,positive,0.5035144,0.2269297,0.26955587,23
+she follows a diabetic-friendly diet and receives insulin injections.,0,positive,0.68056697,0.16331813,0.15611488,23
+"mrs Smith, 85, has a diagnosis of advanced chronic obstructive pulmonary disease (COPD), heart failure, and moderate dementia.",2,negative,0.2229178,0.15774785,0.6193344,24
+"she is on a regimen of medications to manage her symptoms, including dizziness and dizziness.",2,negative,0.23475406,0.14635926,0.61888665,24
+a 90-year-old woman has been residing in a specialized care facility for the past seven years.,0,positive,0.3806032,0.31155053,0.3078463,25
+her COPD requires continuous oxygen therapy.,0,positive,0.5464617,0.2677381,0.18580024,25
+her congestive heart failure requires careful management.,2,negative,0.2738571,0.20871004,0.51743287,25
+"84-year-old suffers from advanced Parkinson's disease, type 2 diabetes, and kidney disease.",2,negative,0.3094516,0.1797071,0.51084137,26
+"she needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.74112236,0.180105,0.0787727,26
+the care team provides comprehensive support while maintaining her safety and comfort.,0,positive,0.82581836,0.12177011,0.052411564,26
+86-year-old has been living in a specialized dementia care unit for six years.,0,positive,0.43472943,0.27805114,0.28721946,27
+she has been diagnosed with advanced Alzheimer's disease and chronic heart failure.,2,negative,0.2532519,0.17622739,0.5705207,27
+"she experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.19539696,0.1718223,0.6327808,27
+92-year-old has been living in a long-term care facility for the past five years.,0,positive,0.37824276,0.3132635,0.30849373,28
+she has a diagnosis of advanced Alzheimer's disease and diabetes.,0,positive,0.42951244,0.20729594,0.36319163,28
+she requires total assistance with all activities of daily living.,0,positive,0.6896714,0.2225673,0.087761335,28
+88-year-old has been residing in a long-term care facility for the past seven years.,0,positive,0.3937616,0.32160518,0.28463328,29
+"her COPD requires continuous oxygen therapy, and she uses a portable oxygen concentrator during the day and a stationary unit at night.",0,positive,0.5122167,0.2871092,0.2006741,29
+"her congestive heart failure requires careful management, including a low-sodium diet and diuretics to prevent fluid retention.",2,negative,0.340069,0.2124982,0.44743276,29
+"84-year-old has a diagnosis of advanced heart disease, chronic kidney disease, and dementia.",2,negative,0.34121948,0.20140725,0.4573733,30
+"she takes diuretics to manage fluid retention, a common complication of her condition.",0,positive,0.43913448,0.21445824,0.34640732,30
+her chronic kidney disease requires a restricted diet that limits foods high in potassium and phosphorus.,2,negative,0.29617506,0.23920478,0.46462017,30
+92-year-old has been living in a specialized dementia care unit for six years.,0,positive,0.43329227,0.280141,0.2865667,31
+she has advanced Alzheimer's disease and chronic heart failure.,2,negative,0.33010095,0.16249906,0.5074,31
+"she experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.19539696,0.1718223,0.6327808,31
+88-year-old has a diagnosis of advanced chronic obstructive pulmonary disease.,0,positive,0.41437984,0.24535258,0.34026754,32
+"she uses supplemental oxygen, particularly at night and during physical exertion.",0,positive,0.5575237,0.2807184,0.16175792,32
+she is also prone to heart failure and chronic kidney disease.,2,negative,0.09314481,0.10614718,0.80070806,32
+81-year-old has been living in a specialized dementia care unit for five years.,0,positive,0.4290928,0.28529635,0.28561082,33
+she has been diagnosed with Lewy body dementia.,2,negative,0.22652736,0.19659957,0.57687306,33
+condition combines features of Alzheimer's disease and Parkinson's disease.,0,positive,0.5664069,0.14702834,0.2865648,33
+a diagnosis of advanced chronic obstructive pulmonary disease (COPD) requires her to use supplemental oxygen.,0,positive,0.55071443,0.23593499,0.21335061,34
+she is on a ventilator and has been living in a long-term care facility for six years.,0,positive,0.3502245,0.30112472,0.34865072,34
+89-year-old has been residing in a long-term care facility for the past seven years.,0,positive,0.395191,0.32270497,0.28210407,35
+"her COPD requires continuous oxygen therapy, and she uses a portable oxygen concentrator during the day and a stationary unit at night.",0,positive,0.5122167,0.2871092,0.2006741,35
+"her congestive heart failure requires careful management, including a low-sodium diet and diuretics.",2,negative,0.32014796,0.21479677,0.4650553,35
+91-year-old has been residing in a specialized dementia care facility for six years.,0,positive,0.4268628,0.30116752,0.27196965,36
+"she has been diagnosed with advanced Alzheimer's disease, chronic obstructive pulmonary disease (COPD), and chronic heart failure.",2,negative,0.22666213,0.15649053,0.61684734,36
+"88-year-old has advanced Parkinson's disease, type 2 diabetes and COPD.",2,negative,0.38071012,0.1954287,0.42386115,37
+she uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.53836066,0.29741228,0.16422713,37
+91-year-old has been residing in a specialized dementia care facility for five years.,0,positive,0.42893308,0.30053738,0.27052954,38
+"she has been diagnosed with advanced Alzheimer's disease, chronic obstructive pulmonary disease (COPD), and chronic heart failure.",2,negative,0.22666213,0.15649053,0.61684734,38
+"86-year-old has advanced Parkinson's disease, type 2 diabetes and COPD.",2,negative,0.38138878,0.19427513,0.4243361,39
+she uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.53836066,0.29741228,0.16422713,39
+specialized dementia care unit in a long-term care facility provides unique challenges.,0,positive,0.73607063,0.1227186,0.14121073,40
+condition combines features of Alzheimer's disease and Parkinson's disease.,0,positive,0.5664069,0.14702834,0.2865648,40
+condition presents unique challenges in her care.,0,positive,0.7780413,0.08822135,0.1337374,40
+specialized dementia care unit in a long-term care facility provides unique challenges.,0,positive,0.73607063,0.1227186,0.14121073,41
+condition combines features of Alzheimer's disease and Parkinson's disease.,0,positive,0.5664069,0.14702834,0.2865648,41
+condition presents unique challenges in her care.,0,positive,0.7780413,0.08822135,0.1337374,41
+88-year-old has been living in a specialized dementia care unit for six years.,0,positive,0.43075162,0.28080258,0.28844574,42
+she has been diagnosed with advanced Alzheimer's disease.,2,negative,0.27449405,0.19219345,0.5333125,42
+the care team provides a structured daily routine to help manage her symptoms.,0,positive,0.65826666,0.21973471,0.12199866,42
+83-year-old has a diagnosis of advanced Alzheimer's disease and chronic heart failure.,2,negative,0.30377442,0.2210722,0.47515342,43
+"she experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.19539696,0.1718223,0.6327808,43
+"she is on a regimen of medications to manage her symptoms, including diuretics.",0,positive,0.44748637,0.24468659,0.307827,43
+"78-year-old has a diagnosis of advanced Parkinson's disease, type 2 diabetes, and moderate dementia.",2,negative,0.29186064,0.1889412,0.5191982,44
+she uses a wheelchair for mobility and requires the assistance of two carers for transfers and personal care.,0,positive,0.58909816,0.27493396,0.13596793,44
+82-year-old has been living in a specialized dementia care unit for five years.,0,positive,0.41689664,0.283743,0.2993603,45
+she has been diagnosed with Lewy body dementia.,2,negative,0.22652736,0.19659957,0.57687306,45
+condition combines features of Alzheimer's disease and Parkinson's disease.,0,positive,0.5664069,0.14702834,0.2865648,45
+"84-year-old has advanced Parkinson's disease, type 2 diabetes, and chronic kidney disease.",0,positive,0.40671605,0.19570474,0.39757922,46
+she relies on a wheelchair for mobility and requires assistance with daily activities.,0,positive,0.6692802,0.22251946,0.10820036,46
+"she manages type 2 diabetes, which necessitates careful blood sugar monitoring.",0,positive,0.41113675,0.19558968,0.39327353,46
+81-year-old has moderate dementia and advanced Parkinson's disease.,2,negative,0.2323492,0.15053517,0.6171156,47
+"she needs assistance with daily activities, including bathing, dressing, and grooming.",0,positive,0.7428847,0.16727722,0.089838095,47
+"her moderate dementia affects her memory and cognitive function, causing confusion.",2,negative,0.15840271,0.10104873,0.74054855,47
+"88-year-old has a diagnosis of advanced diabetes, hypertension, and chronic kidney disease.",0,positive,0.43949816,0.21780382,0.342698,48
+she is on a regimen of medications to manage her condition.,0,positive,0.42316505,0.2547986,0.32203633,48
+she is on a regimen of medications to manage her condition.,0,positive,0.42316505,0.2547986,0.32203633,48
+"a hip fracture has left her with osteoporosis, hypertension, and COPD.",2,negative,0.23483674,0.1684484,0.59671485,49
+"she receives assistance with all activities of daily living, including personal care.",0,positive,0.73853683,0.17268243,0.088780716,49
+"she receives care from the facility's staff, who assist her with getting up in the morning.",0,positive,0.49584585,0.25246015,0.251694,49
+"vascular dementia sufferer, 88, has been living in a specialized dementia care unit.",0,positive,0.40702844,0.1962509,0.39672074,50
+she receives medication to help control her anxiety and agitation.,0,positive,0.5976139,0.15524091,0.2471452,50
+the care team provides a structured and supportive environment to manage her symptoms.,0,positive,0.7992578,0.13881724,0.06192498,50
+"83-year-old suffers from hypertension, hyperlipidemia, and chronic kidney disease.",2,negative,0.2558401,0.1590371,0.5851228,51
+she was discharged from a rehabilitation center after a stroke.,2,negative,0.34490028,0.2468078,0.40829194,51
+"due to her stroke, she experiences significant weakness and numbness in her left side.",2,negative,0.16350813,0.14005421,0.69643766,51
+a diagnosis of Parkinson's disease and moderate dementia has led to her needing help.,2,negative,0.2618956,0.13191412,0.60619026,52
+she uses a wheelchair and needs the assistance of two carers for transfers and personal care.,0,positive,0.61449295,0.24643177,0.13907523,52
+"she has significant tremors, muscle rigidity, and difficulty with balance.",2,negative,0.23528773,0.1344326,0.6302797,52
+moderate dementia affects her memory and cognitive function.,2,negative,0.26522768,0.13536757,0.59940475,53
+she struggles with recognizing familiar faces and recognizing familiar faces.,0,positive,0.5983299,0.11023699,0.29143313,53
+"she has a diagnosis of advanced kidney disease, hypertension, and dementia.",2,negative,0.3902087,0.18126193,0.42852944,53
+84-year-old resides in a long-term care facility with a diagnosis of advanced Parkinson's disease.,0,positive,0.4359401,0.28063673,0.28342322,54
+"she has been living there for the past three years, requiring full-time assistance with daily living.",0,positive,0.41187572,0.33229932,0.25582492,54
+"the care team provides a structured daily routine, including regular physical therapy sessions.",0,positive,0.620089,0.26885223,0.11105877,54
+81-year-old has multiple sclerosis and chronic obstructive pulmonary disease.,2,negative,0.23950273,0.17280321,0.5876941,55
+she requires full-time assistance with all activities of daily living due to her condition.,0,positive,0.56092554,0.26911518,0.16995925,55
+"the care team provides a structured daily routine, including regular physical therapy sessions.",0,positive,0.620089,0.26885223,0.11105877,55
+79-year-old has type 2 diabetes and chronic kidney disease.,2,negative,0.31318003,0.21960244,0.46721753,56
+she requires full-time assistance with all activities of daily living.,0,positive,0.66451424,0.23930843,0.09617728,56
+"care team uses physical therapy exercises, bracing, adaptive equipment.",0,positive,0.7419208,0.15293837,0.10514078,56
+81-year-old has been living in a long-term care facility for the past three years.,0,positive,0.37078497,0.31922424,0.3099908,57
+she has advanced Parkinson's disease and type 2 diabetes.,2,negative,0.40773156,0.1844056,0.40786287,57
+she has been living there for the past three years with a gradual decline in her physical abilities.,2,negative,0.2727539,0.27704793,0.45019817,57
+a nurse has been caring for 85-year-old neil smith for the past five years.,2,negative,0.2971883,0.25997007,0.44284162,58
+she has been experiencing difficulty with mobility and balance.,2,negative,0.30071026,0.21254785,0.4867419,58
+her hypertension requires regular monitoring and management.,0,positive,0.545538,0.24823071,0.20623127,58
+84-year-old has been residing in a long-term care facility for the past three years.,0,positive,0.387332,0.32505816,0.28760988,59
+she has been experiencing increasing pain and limited mobility in her legs.,2,negative,0.26149485,0.21098891,0.52751625,59
+her diagnosis of advanced peripheral artery disease and type 2 diabetes has made it difficult for her to perform daily tasks independently.,2,negative,0.12935455,0.2144968,0.6561487,59
+79-year-old suffers from frontotemporal dementia.,2,negative,0.23782064,0.17954826,0.5826311,60
+she receives medication to help control her symptoms.,0,positive,0.6833422,0.18332875,0.13332899,60
+83-year-old has been a resident of a long-term care facility for the past four years.,0,positive,0.39586395,0.31928635,0.2848497,61
+"her condition has led to significant mobility impairment, making her dependent on a wheelchair.",2,negative,0.21454698,0.14090148,0.6445515,61
+the nursing staff are well-versed in heart failure care and employ a range of techniques.,2,negative,0.23909779,0.11575476,0.6451475,61
+82-year-old resides in a long-term care facility for older adults.,0,positive,0.46840283,0.32552403,0.20607314,62
+she has been living there for the past three years following a decline in her mobility and balance due to her Parkinson's disease.,2,negative,0.30199885,0.2563554,0.4416457,62
+the care team provides regular physical therapy sessions to help improve her mobility and balance.,0,positive,0.7588701,0.15969084,0.08143905,62
+a caregiver has been caring for 85-year-old alumna dr.,2,negative,0.3338185,0.2127777,0.4534038,63
+samuel smith for five years.,0,positive,0.45175362,0.24284802,0.30539837,63
+she has been diagnosed with advanced Alzheimer's disease and chronic heart failure.,2,negative,0.25325194,0.17622742,0.57052064,63
+the care team provides a structured daily routine to help manage her symptoms.,0,positive,0.65826666,0.21973471,0.12199865,63
+"82-year-old has mild cognitive impairment, type 2 diabetes, and hypertension.",2,negative,0.1576645,0.130135,0.7122005,64
+she struggles with recognizing familiar faces and managing daily tasks.,0,positive,0.6265155,0.107506335,0.26597816,64
+she enjoys participating in various activities offered by the facility.,0,positive,0.9198069,0.059595115,0.020598004,64
+"81-year-old has mild cognitive impairment, type 2 diabetes, and hypertension.",2,negative,0.16369423,0.13309336,0.7032124,65
+she struggles with recognizing familiar faces and managing daily tasks.,0,positive,0.6265155,0.107506335,0.26597816,65
+she enjoys attending music therapy sessions and listening to her favorite artists.,0,positive,0.931183,0.05231448,0.016502567,65
+92-year-old has been residing in a care home for the past five years.,0,positive,0.39129692,0.32321548,0.28548762,66
+"she has Parkinson's disease, diabetes, and chronic kidney disease.",2,negative,0.2816958,0.1635496,0.5547546,66
+"she experiences significant tremors, rigidity, and bradykinesia.",0,positive,0.45987535,0.104915105,0.43520954,66
+a resident of a long-term care facility has been diagnosed with Alzheimer's disease.,2,negative,0.26378068,0.23394695,0.50227237,67
+"she has hypertension, and chronic kidney disease.",2,negative,0.27293247,0.14979734,0.5772702,67
+"she relies on staff for feeding, bathing, dressing, and toileting.",0,positive,0.6191761,0.22885808,0.15196578,67
+86-year-old has been living in a care home for the past seven years.,0,positive,0.38323846,0.30199403,0.3147675,68
+"she has severe memory loss, confusion, and occasional agitation.",2,negative,0.11380362,0.1391953,0.7470011,68
+her chronic heart disease is managed with a combination of medications.,0,positive,0.48464105,0.20884639,0.30651253,68
+87-year-old has been living in a specialized care facility for the past five years.,0,positive,0.39316085,0.3093288,0.2975104,69
+she has advanced Alzheimer's and chronic heart disease.,0,positive,0.4304252,0.16859016,0.40098464,69
+the care team provides a structured daily routine to help manage her symptoms.,0,positive,0.65826666,0.21973471,0.12199866,69
+"81-year-old has osteoarthritis, chronic obstructive pulmonary disease and mild cognitive impairment.",2,negative,0.23512079,0.16862963,0.5962495,70
+she uses a walker for mobility and requires assistance with all activities of daily living.,0,positive,0.65502536,0.24008887,0.10488574,70
+"nursing staff provide daily assistance with personal hygiene, dressing, and feeding.",0,positive,0.55298644,0.25389475,0.19311883,70
+81-year-old has advanced Parkinson's disease.,2,negative,0.31784576,0.21139519,0.470759,71
+she receives medication to help control her motor symptoms.,0,positive,0.6812881,0.18348654,0.13522537,71
+she enjoys participating in activities offered at the facility.,0,positive,0.9135757,0.0654411,0.020983122,71
+87-year-old has advanced Parkinson's disease and chronic obstructive pulmonary disease (COPD) she uses a wheelchair and requires the assistance of two carers for transfers and personal care.,0,positive,0.5336374,0.2324522,0.2339104,72
+81-year-old has a medical history including chronic obstructive pulmonary disease.,0,positive,0.41705674,0.23302947,0.34991375,73
+she has a portable oxygen concentrator for use around the facility.,0,positive,0.4862014,0.24979162,0.26400697,73
+she has a history of vascular dementia and a history of chronic kidney disease.,2,negative,0.33822238,0.16212699,0.49965066,73
+a resident of a long-term care facility for the past eight years has a complex medical history.,0,positive,0.49823374,0.24252388,0.2592424,74
+"she has a complex medical history, including chronic heart failure, chronic kidney disease.",2,negative,0.273568,0.14367913,0.5827529,74
+the nursing staff closely monitor her fluid status and vital signs.,0,positive,0.4748534,0.23858462,0.28656194,74
+"81-year-old has advanced Parkinson's disease, chronic kidney disease, and a history of falls.",2,negative,0.29304802,0.17278682,0.53416514,75
+she needs a walking frame and walker for support and a soft diet to prevent choking.,0,positive,0.66595566,0.20983292,0.1242114,75
+"care team visits her four times a day, providing assistance with personal care.",0,positive,0.70444655,0.1896435,0.10590992,75
+"78-year-old has multiple sclerosis, chronic kidney disease and a history of falls.",2,negative,0.18948433,0.13726644,0.67324924,76
+she has been living in her own home with substantial support from carers and community health services.,0,positive,0.7708191,0.12719041,0.10199048,76
+"83-year-old has advanced Parkinson's disease, chronic kidney disease, and a history of falls.",2,negative,0.28502998,0.16769658,0.54727346,77
+she needs a walking frame and walker for support and thickened fluids to prevent choking.,0,positive,0.568175,0.22383796,0.20798697,77
+"care team visits her four times a day, providing assistance with personal care.",0,positive,0.70444655,0.1896435,0.10590992,77
+"a resident of a long-term care facility, 85, has advanced Parkinson's disease.",0,positive,0.46286264,0.22436509,0.31277233,78
+she has been diagnosed with chronic kidney disease and mild cognitive impairment.,2,negative,0.24520761,0.18164448,0.5731479,78
+"she needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.74112236,0.180105,0.0787727,78
+"81-year-old has advanced Parkinson's disease, chronic kidney disease, mild cognitive impairment.",2,negative,0.30784476,0.17233317,0.519822,79
+"she needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.74112236,0.180105,0.0787727,79
+she is able to use a wheelchair and has been in a long-term care facility for four years.,0,positive,0.5334963,0.26736444,0.19913927,79
+a care home for elderly woman with advanced Alzheimer's disease provides a secure environment.,0,positive,0.7387888,0.17397343,0.08723777,80
+the staff are trained in dementia care techniques to manage behaviors and reduce anxiety.,0,positive,0.5972588,0.17998867,0.22275248,80
+the care home provides a secure environment with specialized dementia care units.,0,positive,0.7288753,0.18656498,0.08455976,80
+a care home provides a secure environment with specialized dementia care units.,0,positive,0.74166965,0.18143176,0.076898605,81
+the staff are trained in dementia care techniques.,0,positive,0.6070115,0.22485757,0.16813093,81
+the care home provides daily activities to ensure the safety and comfort of residents.,0,positive,0.8304118,0.102067724,0.06752052,81
+84-year-old has been living in a residential care home for the past four years.,0,positive,0.3863104,0.32101965,0.2926699,82
+"she requires assistance with all activities of daily living, including bathing, dressing, and meal preparation.",0,positive,0.72606516,0.19520265,0.07873224,82
+the care home provides a secure environment with specialized dementia care units.,0,positive,0.7288753,0.186565,0.084559746,82
+86-year-old has been living in a nursing home for the past three years.,2,negative,0.33242437,0.2902023,0.3773733,83
+"she requires assistance with all activities of daily living, including bathing, dressing, and meal preparation.",0,positive,0.72606516,0.19520265,0.07873224,83
+the nursing home provides a secure environment with specialized dementia care units.,0,positive,0.609038,0.22822785,0.16273412,83
+82-year-old has advanced Lewy body dementia and COPD.,0,positive,0.40771717,0.20350479,0.38877803,84
+she experiences significant memory loss and confusion.,2,negative,0.18634179,0.15689722,0.656761,84
+she requires full assistance with all activities of daily living.,0,positive,0.7253861,0.2035313,0.07108267,84
+84-year-old has been a resident of a long-term care facility for the past three years.,0,positive,0.39942726,0.31725562,0.28331706,85
+"she has a diagnosis of Parkinson's disease, hypertension, and chronic kidney disease.",2,negative,0.34570578,0.16913466,0.48515958,85
+"she requires assistance with all activities of daily living, including bathing, dressing, and grooming.",0,positive,0.7325036,0.18611088,0.08138554,85
+a resident of a long-term care facility has a diagnosis of Parkinson's disease.,0,positive,0.37784237,0.27145824,0.35069942,86
+she has a chronic kidney disease and type 2 diabetes.,2,negative,0.28088775,0.18235213,0.53676015,86
+she follows a renal transplant and is on medication for her condition.,0,positive,0.49803087,0.22788563,0.27408347,86
+a resident of a long-term care facility has a diagnosis of advanced dementia.,0,positive,0.39951167,0.26054338,0.33994496,87
+she has a chronic kidney disease and is on a restricted diet.,2,negative,0.2275534,0.26609412,0.5063525,87
+the facility provides a structured daily routine and uses therapeutic approaches.,0,positive,0.66837734,0.23668934,0.09493328,87
+a specialized assisted living facility is available to help with dementia.,0,positive,0.67450094,0.21196173,0.11353733,88
+the facility's dietitian carefully plans her meals and administers insulin injections.,0,positive,0.48460066,0.22582352,0.28957576,88
+"she has a diagnosis of advanced chronic kidney disease, type 2 diabetes, and moderate dementia.",2,negative,0.3312921,0.1849995,0.48370844,88
+81-year-old resides in a long-term care facility due to her advanced age.,0,positive,0.46277055,0.2882358,0.24899368,89
+she follows a renal-friendly diet and receives regular blood tests to monitor her kidney function.,0,positive,0.6637365,0.19657104,0.13969243,89
+"she has severe chronic kidney disease, type 2 diabetes and mild cognitive impairment.",2,negative,0.19508974,0.1227817,0.6821286,89
+88-year-old has advanced prostate cancer.,2,negative,0.36542737,0.2325792,0.40199336,90
+she has chronic obstructive airways disease.,2,negative,0.22216862,0.17775068,0.60008067,90
+she has limited mobility due to severe osteoarthritis.,2,negative,0.29081076,0.34207326,0.367116,90
+a resident of a specialized dementia care unit in a long-term care facility has been diagnosed with advanced Alzheimer's disease.,2,negative,0.30911204,0.2392329,0.451655,91
+she has been living there for the past five years following a diagnosis of advanced Alzheimer's disease.,0,positive,0.37215504,0.27791584,0.34992912,91
+"she experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.19539693,0.1718223,0.6327808,91
+93-year-old has advanced Parkinson's disease.,2,negative,0.33517468,0.20468333,0.46014196,92
+she uses a wheelchair for mobility and requires assistance with all transfers.,0,positive,0.58308065,0.27359787,0.14332147,92
+she also uses a wheelchair for mobility.,0,positive,0.55118686,0.27476057,0.17405252,92
+81-year-old suffers from advanced chronic obstructive pulmonary disease (COPD) her type 2 diabetes and hypertension require assistance with all activities of daily living.,0,positive,0.4129919,0.24729353,0.33971456,93
+82-year-old has been living in a long-term care facility for the past four years.,0,positive,0.36144966,0.3178631,0.32068723,94
+"she has been diagnosed with advanced liver disease, hypertension, and a history of chronic kidney disease.",2,negative,0.34956002,0.17300458,0.47743538,94
+"her hypertension is managed with a combination of medications, including beta-blockers and diuretics.",0,positive,0.6740346,0.17443576,0.15152963,94
+"a diagnosis of Parkinson's disease affects her motor skills, balance, and coordination.",0,positive,0.4325022,0.1615688,0.40592894,95
+she uses a walker for longer distances and a wheelchair for shorter trips.,0,positive,0.5180487,0.2837152,0.19823614,95
+the care team provides a structured daily routine to help reduce her anxiety.,0,positive,0.62751985,0.20615233,0.16632777,95
+83-year-old has been living in a long-term care facility for the past two years.,0,positive,0.36474428,0.3155238,0.31973198,96
+"she has a diagnosis of heart failure, which requires careful monitoring and management.",2,negative,0.2960691,0.21782029,0.48611063,96
+"she experiences chronic kidney disease, which requires careful monitoring and management.",0,positive,0.4433677,0.19908905,0.3575433,96
+81-year-old has been living in a long-term care facility for the past four years.,0,positive,0.36813596,0.32134223,0.3105218,97
+"she has a diagnosis of advanced kidney disease, which requires careful monitoring and management.",0,positive,0.5099291,0.2168704,0.27320048,97
+she follows a strict diet to manage her condition and receives dialysis three times a week.,0,positive,0.475558,0.35243014,0.1720119,97
+79-year-old has a diagnosis of advanced heart failure.,2,negative,0.26056957,0.23304276,0.50638765,98
+she experiences chronic obstructive pulmonary disease (COPD),2,negative,0.36653063,0.19905628,0.43441316,98
+"81-year-old has advanced Parkinson's disease, which has significantly impacted her mobility.",2,negative,0.30611056,0.11120382,0.58268565,99
+she is wheelchair-bound and requires assistance with all activities of daily living.,0,positive,0.531162,0.31383955,0.15499845,99
+"care team visits her three times a day, providing assistance with personal care.",0,positive,0.7062098,0.18600424,0.10778601,99
+"89-year-old has advanced Parkinson's disease, type 2 diabetes, and hypertension.",2,negative,0.39495414,0.186598,0.41844785,100
+she uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.5383607,0.29741225,0.16422701,100
+"she has type 2 diabetes, which requires careful management.",0,positive,0.48166427,0.23997256,0.2783632,100
+81-year-old has been residing in a long-term care facility for the past three years.,0,positive,0.38585192,0.32986474,0.28428337,101
+she has been diagnosed with Parkinson's disease and type 2 diabetes.,2,negative,0.25125417,0.18676291,0.56198287,101
+"she also experiences tremors, rigidity, and bradykinesia.",2,negative,0.4175013,0.1425668,0.43993196,101
+a care home for a patient with chronic kidney disease has been opened.,0,positive,0.5967166,0.22464067,0.17864281,102
+the 85-year-old has been living in the care home for the past three years.,0,positive,0.35609716,0.30340892,0.34049392,102
+she follows a strict diet and has been diagnosed with mild cognitive impairment.,2,negative,0.25939125,0.33223325,0.40837553,102
+79-year-old has been living in a long-term care facility for the past four years.,0,positive,0.36007053,0.31422555,0.32570386,103
+"she has stroke and type 2 diabetes, which affects her ability to perform daily tasks.",2,negative,0.29157022,0.15568075,0.55274904,103
+she uses a wheelchair for mobility and the care team assists her with transfers.,0,positive,0.69748247,0.18778928,0.114728294,103
+81-year-old has been living in a specialized care unit for the past five years.,0,positive,0.41138452,0.30942437,0.27919108,104
+she has been diagnosed with Lewy body dementia.,2,negative,0.22652736,0.19659957,0.57687306,104
+"she experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms.",0,positive,0.4608208,0.1437533,0.39542586,104
+"83-year-old has severe osteoarthritis, hypertension, and chronic kidney disease.",2,negative,0.2087319,0.13240312,0.658865,105
+she takes pain relief and anti-inflammatory drugs to manage her symptoms.,2,negative,0.31009653,0.19811329,0.49179018,105
+she follows a strict diet and fluid intake plan.,0,positive,0.47057462,0.39555177,0.13387366,105
+a heart failure diagnosis has significantly impacted her ability to live independently.,2,negative,0.22966444,0.11866146,0.6516741,106
+she is on a regimen of medications to manage her condition.,0,positive,0.42316505,0.2547986,0.32203633,106
+"she is on diuretics, beta blockers, and anticoagulants to control her symptoms.",0,positive,0.49754027,0.20207897,0.30038077,106
+83-year-old suffers from frontotemporal dementia.,2,negative,0.24351043,0.17935354,0.57713604,107
+"she experiences significant changes in her personality, mood, and behavior.",2,negative,0.36748812,0.12215576,0.5103561,107
+she receives medication and is monitored regularly.,0,positive,0.51751876,0.2869429,0.19553831,107
+82-year-old has a diagnosis of advanced heart failure and chronic kidney disease.,2,negative,0.29973638,0.21533942,0.48492417,108
+"she experiences chronic fatigue, shortness of breath, and swelling in her legs.",2,negative,0.15039295,0.1306944,0.71891266,108
+"to manage her condition, she is on a regimen of medications to control her symptoms.",0,positive,0.48246548,0.24675348,0.270781,108
+76-year-old has advanced Alzheimer's disease and chronic kidney disease.,0,positive,0.4217773,0.20032707,0.37789565,109
+she experiences significant memory loss and confusion.,2,negative,0.18634178,0.15689723,0.65676093,109
+the care team uses various therapeutic approaches to help manage her symptoms.,0,positive,0.6466755,0.1997007,0.15362377,109
+82-year-old suffers from a diagnosis of Parkinson's disease and type 2 diabetes.,2,negative,0.27125627,0.20123698,0.52750677,110
+she has been living in a residential care home for the past three years.,0,positive,0.3570984,0.34211186,0.30078974,110
+the care home provides a range of therapies to help manage her symptoms.,0,positive,0.6782086,0.18184744,0.13994399,110
+a resident of a care home has a diagnosis of Parkinson's disease.,2,negative,0.33083063,0.27268663,0.39648283,111
+"she has tremors, muscle rigidity, and difficulty with balance.",2,negative,0.2645643,0.2049893,0.53044635,111
+the care home staff are trained in Parkinson's care.,0,positive,0.54835004,0.23652613,0.21512383,111
+"a diagnosis of advanced heart failure, chronic kidney disease, and moderate dementia.",2,negative,0.23450486,0.13517639,0.63031876,112
+"the nursing staff regularly check her vital signs, including weight and blood pressure.",0,positive,0.40899575,0.2316466,0.35935766,112
+"she is on a regimen of medications to manage her symptoms, including diuretics and beta-blockers.",0,positive,0.45656404,0.235129,0.30830693,112
+a resident of a long-term care facility has been diagnosed with heart failure.,2,negative,0.18282695,0.22724992,0.58992314,113
+she is on a regimen of medications to manage her symptoms.,0,positive,0.42698947,0.26369575,0.30931476,113
+she also experiences severe depression.,2,negative,0.14470927,0.15238173,0.702909,113
+"a resident of a long-term care facility, 85, has been diagnosed with heart failure.",2,negative,0.19822517,0.23983665,0.5619382,114
+"she is on a regimen of medications to manage her symptoms, including diuretics.",0,positive,0.44748637,0.24468659,0.307827,114
+"she also experiences severe depression, which can be a sign of her condition.",2,negative,0.18096025,0.14176697,0.67727274,114
+81-year-old has been living in her own home with a comprehensive care package.,0,positive,0.54248744,0.26208723,0.19542535,115
+"she has been diagnosed with type 2 diabetes, hypertension, and a history of macular degeneration.",2,negative,0.26244906,0.17120233,0.5663486,115
+her diabetes requires careful monitoring and management.,0,positive,0.6221628,0.22592261,0.15191455,115
+76-year-old has been living in her own home with a comprehensive care package.,0,positive,0.5397793,0.26115844,0.19906227,116
+"she has been diagnosed with severe Parkinson's disease, hypertension, and a history of falls.",2,negative,0.21033533,0.13810457,0.6515601,116
+"the care team visits her three times a day to assist with tasks such as bathing, dressing, and meal preparation.",0,positive,0.62221247,0.21587273,0.16191486,116
+"79-year-old has advanced dementia, which has significantly impacted her cognitive function.",2,negative,0.38543174,0.117714405,0.49685386,117
+she is wheelchair-bound and requires assistance with mobility and transfers.,0,positive,0.55289286,0.28807294,0.15903422,117
+care home staff train in feeding techniques for individuals with dysphagia.,0,positive,0.5135891,0.23569573,0.25071514,117
+82-year-old suffers from advanced Huntington's disease.,2,negative,0.28409246,0.1835714,0.5323361,118
+she is wheelchair-bound and requires assistance with all transfers.,0,positive,0.5064118,0.31632474,0.17726338,118
+the care home provides round-the-clock care.,0,positive,0.55922186,0.28345773,0.15732047,118
+a diagnosis of advanced chronic obstructive pulmonary disease (COPD) requires her to use supplemental oxygen.,0,positive,0.55071443,0.23593499,0.21335061,119
+she also has heart failure and mild cognitive impairment.,2,negative,0.12230529,0.13212515,0.7455695,119
+"82-year-old has advanced Lewy body dementia, chronic heart disease, mild cognitive impairment.",2,negative,0.35503122,0.16114736,0.48382145,120
+"she requires assistance with all activities of daily living, including personal care and mobility.",0,positive,0.739533,0.18677205,0.07369495,120
+the care home provides a secure environment with specialized care units designed to ensure the safety and comfort of residents.,0,positive,0.81211656,0.12592578,0.061957628,120
+"83-year-old has advanced dementia, Parkinson's disease, and type 2 diabetes.",2,negative,0.36320412,0.17696051,0.4598354,121
+"she requires assistance with all activities of daily living, including bathing, dressing, and grooming.",0,positive,0.7325036,0.18611088,0.08138554,121
+facility staff are trained in dementia care and provide daily care and support.,0,positive,0.73777926,0.16572572,0.09649502,121
+"a diagnosis of advanced chronic kidney disease, heart failure, and severe osteoarthritis.",2,negative,0.2514138,0.16101204,0.5875742,122
+she follows a renal-friendly diet and the nursing staff monitor her fluid intake.,0,positive,0.59591997,0.21020353,0.1938765,122
+"she is on a regimen of medications to manage her symptoms, including diuretics.",0,positive,0.4474864,0.24468659,0.30782703,122
+81-year-old has been residing in a long-term care facility for the past three years.,0,positive,0.38585192,0.32986474,0.28428337,123
+"her chronic kidney disease requires careful management, including a strict diet and fluid intake.",0,positive,0.5640116,0.23745728,0.19853114,123
+"her hypertension is controlled with a combination of medications, which are administered by the care team.",0,positive,0.5797084,0.22030845,0.19998316,123
+"81-year-old has advanced chronic obstructive pulmonary disease (COPD) she has congestive heart failure, type 2 diabetes and congestive heart failure.",2,negative,0.22016077,0.16395563,0.61588365,124
+she has been living in a long-term care facility for the past seven years.,0,positive,0.34803668,0.32560214,0.32636112,124
+79-year-old has advanced Parkinson's disease and a history of depression.,2,negative,0.25366473,0.16734892,0.57898635,125
+she uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.53836066,0.29741228,0.16422713,125
+a care home provides assistance with all activities of daily living.,0,positive,0.7367394,0.18436737,0.07889326,126
+she has a diagnosis of advanced dementia and has been experiencing a gradual decline in cognitive function.,2,negative,0.30101606,0.19389978,0.50508416,126
+a care home for elderly woman with advanced Parkinson's disease.,0,positive,0.53124523,0.22061816,0.2481366,127
+she has been experiencing a gradual decline in cognitive function.,2,negative,0.25308108,0.20399633,0.5429226,127
+"the care team provides support with bathing, dressing, and grooming.",0,positive,0.8318061,0.115878806,0.052315082,127
+86-year-old has dementia and has been experiencing a gradual decline in cognitive function.,2,negative,0.15551361,0.15479617,0.68969023,128
+"she requires full assistance with all activities of daily living, including personal care.",0,positive,0.7447722,0.18604648,0.06918132,128
+"she has a history of hypertension, which is managed with medication.",0,positive,0.5285887,0.19841233,0.272999,128
+87-year-old has advanced vascular dementia and chronic obstructive pulmonary disease.,0,positive,0.4511501,0.18911152,0.35973838,129
+"she relies on staff for feeding, bathing, dressing, and toileting.",0,positive,0.6191761,0.22885807,0.1519658,129
+"care team uses person-centered approach, focusing on her comfort and dignity.",0,positive,0.699593,0.15200686,0.14840016,129
+81-year-old has advanced Lewy body dementia and chronic obstructive pulmonary disease.,0,positive,0.457952,0.20064083,0.34140718,130
+"she relies on staff for feeding, bathing, dressing, and toileting.",0,positive,0.6191761,0.22885807,0.1519658,130
+"care team uses person-centered approach, focusing on her comfort and dignity.",0,positive,0.699593,0.15200686,0.14840016,130
+a diagnosis of advanced chronic obstructive pulmonary disease (COPD) requires her to use supplemental oxygen.,0,positive,0.55071443,0.23593499,0.21335061,131
+she follows a strict diet and exercise program.,0,positive,0.45382917,0.418241,0.12792985,131
+a heart failure diagnosis has severely impacted her mobility and daily functioning.,2,negative,0.10150047,0.111524194,0.7869753,132
+"she is on a regimen of medications, including diuretics and beta-blockers.",0,positive,0.45704553,0.22838429,0.31457013,132
+"she also has a diagnosis of hypertension, which is managed through medication and lifestyle changes.",0,positive,0.52940905,0.20991863,0.26067236,132
+a dementia patient with a diagnosis of Parkinson's disease is in a long-term care facility.,2,negative,0.2827257,0.21222812,0.5050461,133
+she receives medication to help control her tremors and stiffness.,0,positive,0.5937442,0.18328823,0.22296754,133
+the care team monitors her motor symptoms and assists her with daily activities.,0,positive,0.6125255,0.20606355,0.18141092,133
+87-year-old has been living in a long-term care facility for the past three years.,0,positive,0.37608546,0.30899897,0.31491557,134
+she has a diagnosis of moderate dementia and a history of heart failure.,2,negative,0.20860834,0.15603822,0.63535345,134
+she is on a regimen of medications to help slow the progression of her dementia.,2,negative,0.38515553,0.21454717,0.4002973,134
+"a diagnosis of moderate heart failure, type 2 diabetes, and moderate cognitive impairment.",2,negative,0.21599975,0.17606072,0.60793954,135
+she follows a low-sodium diet and receives medication to manage her symptoms.,0,positive,0.5395251,0.2507901,0.2096849,135
+her cognitive impairment primarily affects her short-term memory.,2,negative,0.20758054,0.19718702,0.5952325,135
+84-year-old suffers from advanced Parkinson's disease.,2,negative,0.2862894,0.18990944,0.5238012,136
+she uses a wheelchair and requires the assistance of two carers.,0,positive,0.51970804,0.31105348,0.16923848,136
+she has been living in a residential care home for the past three years.,0,positive,0.35709837,0.34211183,0.30078977,136
+89-year-old has been a resident of a long-term care facility for the past four years.,0,positive,0.39950544,0.32124957,0.279245,137
+her condition has led to significant cognitive impairment and related complications.,2,negative,0.21987714,0.12750798,0.65261483,137
+the facility manages her symptoms through counseling and music therapy.,0,positive,0.5946636,0.20605178,0.19928454,137
+"specialized care home for 94-year-old woman with dementia, Parkinson's disease.",0,positive,0.46294382,0.22362359,0.31343266,138
+"she relies on the care team for feeding, bathing, dressing, and toileting.",0,positive,0.63122827,0.2195863,0.14918539,138
+"care team uses person-centered approach, focusing on maintaining her comfort.",0,positive,0.7103763,0.16880547,0.12081819,138
+89-year-old has been residing in a specialized dementia care facility for the past four years.,0,positive,0.4092747,0.31630704,0.27441826,139
+"she has been diagnosed with advanced Alzheimer's disease, chronic obstructive pulmonary disease (COPD), and chronic kidney disease.",2,negative,0.31506246,0.17233886,0.5125987,139
+88-year-old has been a resident of a long-term care facility for the past five years.,0,positive,0.40215778,0.31771997,0.28012216,140
+she follows a renal-friendly diet that restricts potassium and phosphorus intake.,0,positive,0.59183264,0.1789812,0.22918615,140
+her mild cognitive impairment affects her memory and decision-making abilities.,2,negative,0.16400643,0.093190536,0.74280304,140
+83-year-old suffers from advanced Parkinson's disease and chronic heart failure.,2,negative,0.23066656,0.1588333,0.61050016,141
+"she needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.74112236,0.18010499,0.0787727,141
+86-year-old suffers from chronic obstructive pulmonary disease (COPD) and mild cognitive impairment.,2,negative,0.23398101,0.16717985,0.59883916,142
+"she needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.74112225,0.18010496,0.07877271,142
+81-year-old has a diagnosis of advanced dementia and chronic heart failure.,2,negative,0.3114571,0.2275776,0.46096534,143
+she experiences significant memory loss and confusion.,2,negative,0.18634179,0.15689722,0.656761,143
+she is on a regimen of medications to manage her symptoms.,0,positive,0.42698947,0.26369575,0.30931476,143
+92-year-old has been residing in a care home for the past four years.,0,positive,0.38558158,0.32443517,0.2899832,144
+"she has severe Parkinson's disease, chronic kidney disease, and dementia.",2,negative,0.15118328,0.0947688,0.75404793,144
+the care team provides a structured daily routine to help reduce her anxiety.,0,positive,0.62751985,0.20615233,0.16632777,144
+"88-year-old has severe heart failure, chronic obstructive pulmonary disease (COPD), and diabetes.",2,negative,0.14487816,0.12394782,0.73117405,145
+"she takes a combination of medications, including diuretics and beta-blockers, to manage her symptoms.",0,positive,0.5326335,0.21175078,0.25561574,145
+83-year-old has been residing in a care home for the past four years.,0,positive,0.37672433,0.32457277,0.2987029,146
+"she has severe Parkinson's disease, chronic kidney disease, and dementia.",2,negative,0.15118328,0.0947688,0.75404793,146
+the care team provides a structured daily routine to help reduce her anxiety.,0,positive,0.62751985,0.20615233,0.16632777,146
+81-year-old has been a resident of a care home specializing in dementia care.,0,positive,0.48904598,0.27023202,0.240722,147
+she has a diagnosis of Lewy body dementia and has been experiencing a gradual decline in cognitive function.,2,negative,0.25595137,0.18072368,0.5633249,147
+"she is in the moderate stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.18350452,0.20834291,0.60815257,147
+78-year-old has a diagnosis of advanced Parkinson's disease.,2,negative,0.3668891,0.24567659,0.38743433,148
+she has been experiencing a gradual decline in cognitive function.,2,negative,0.2530811,0.20399627,0.5429226,148
+she is on a medication regimen and requires assistance with dressing and grooming.,0,positive,0.50644124,0.29600185,0.19755691,148
+a diagnosis of advanced Huntington's disease has led to a gradual decline in cognitive function.,2,negative,0.19505657,0.1882827,0.6166607,149
+the 80-year-old is in the late stages of the disease.,2,negative,0.3480266,0.26914498,0.38282835,149
+"she requires assistance with dressing and grooming, as well as supervision during meals.",0,positive,0.6889446,0.21195991,0.099095464,149
+83-year-old has been living in a long-term care facility for the past seven years.,0,positive,0.37397373,0.3099525,0.31607375,150
+she has a diagnosis of advanced multiple sclerosis and has been experiencing a gradual decline in cognitive function.,2,negative,0.28767267,0.18577404,0.5265532,150
+she is on a regular diet but needs assistance with dressing and grooming.,1,neutral,0.39525616,0.4357888,0.16895503,150
+89-year-old has advanced rheumatoid arthritis.,0,positive,0.4700368,0.20995855,0.3200046,151
+condition has significantly impacted her mobility and independence.,2,negative,0.3793106,0.07821737,0.542472,151
+"wheelchair-bound, she requires assistance with all activities of daily living.",0,positive,0.6308529,0.2524551,0.11669202,151
+93-year-old has a diagnosis of advanced kidney disease.,0,positive,0.40552148,0.24287167,0.35160685,152
+"she requires a nocturnal dialysis schedule, which involves dialysis treatments during the night.",0,positive,0.47834015,0.29595798,0.22570181,152
+"the care team monitors her condition closely, adjusting her treatment as needed.",0,positive,0.4687771,0.228289,0.30293393,152
+a diagnosis of Parkinson's disease has progressed to a stage where she requires assistance with all activities of daily living.,0,positive,0.56996274,0.20849274,0.22154455,153
+the 75-year-old suffers from stiffness and rigidity in her muscles.,2,negative,0.32428107,0.20012525,0.47559366,153
+"she is on a regimen of medications, including dopamine, to help her maintain her mobility and independence.",0,positive,0.7266482,0.11886791,0.15448388,153
+"81-year-old has a diagnosis of advanced dementia and chronic obstructive pulmonary disease (COPD) she experiences significant memory loss, confusion, and occasional agitation.",2,negative,0.22400452,0.19749889,0.5784966,154
+she needs full-time assistance with all activities of daily living.,0,positive,0.7156969,0.19515836,0.089144796,154
+"78-year-old has a diagnosis of advanced heart failure and chronic obstructive pulmonary disease (COPD) she is on a regimen of medications to manage her symptoms, including diuretics and beta-blockers.",0,positive,0.39513132,0.22820291,0.37666577,155
+82-year-old has been a resident of a care home specializing in dementia care.,0,positive,0.47772124,0.26932478,0.25295404,156
+she has a diagnosis of Alzheimer's disease and has been experiencing a gradual decline in cognitive function.,2,negative,0.2691401,0.17853807,0.5523218,156
+"she is in the moderate stages of the disease, with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.18350452,0.20834291,0.60815257,156
+81-year-old suffers from multiple myeloma and chronic obstructive pulmonary disease.,2,negative,0.28561783,0.1922242,0.52215797,157
+she is unable to move independently due to severe fatigue and numbness.,2,negative,0.15112141,0.30969793,0.53918064,157
+care team provides round-the-clock care including assistance with feeding.,0,positive,0.63719577,0.23217373,0.13063051,157
+a care home specializing in dementia care has helped her with memory loss.,0,positive,0.66833633,0.13865098,0.19301268,158
+she has been experiencing a gradual decline in cognitive function.,2,negative,0.25308108,0.20399633,0.5429226,158
+the care team provides support with dressing and grooming.,0,positive,0.8303433,0.1174401,0.05221663,158
+81-year-old has advanced Parkinson's disease and chronic kidney disease.,0,positive,0.3998572,0.20535463,0.39478818,159
+she uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.53836066,0.29741228,0.16422713,159
+"87-year-old has a diagnosis of advanced Parkinson's disease, chronic kidney disease.",2,negative,0.35722005,0.21187338,0.43090653,160
+"she also has mild depression, which affects her daily activities.",2,negative,0.1101203,0.09219842,0.79768133,160
+"she follows a renal-friendly diet, and has a renal-friendly diet.",0,positive,0.71164966,0.16688445,0.121465884,160
+"88-year-old has stroke, chronic heart failure, mild cognitive impairment.",2,negative,0.13475026,0.12777096,0.7374788,161
+"she also experiences memory loss, confusion, and difficulty with speech and language.",2,negative,0.13448998,0.17175464,0.6937554,161
+"care team visits her four times a day, providing assistance with personal care.",0,positive,0.7044466,0.18964346,0.105909914,161
+a care home for elderly woman with severe Parkinson's disease provides support.,0,positive,0.7602773,0.14456797,0.09515475,162
+she uses a walker for mobility and requires the help of two carers for transfers and mobility.,0,positive,0.6627606,0.22144711,0.115792304,162
+the facility is well-equipped to provide the care she needs.,0,positive,0.77548933,0.14797312,0.0765376,162
+84-year-old has been a resident of a long-term care facility for the past three years.,0,positive,0.39942726,0.31725562,0.28331706,163
+"she has a diagnosis of advanced dementia, chronic obstructive pulmonary disease (COPD), and osteoporosis.",0,positive,0.41000575,0.18152599,0.40846825,163
+"she experiences significant memory loss and confusion, often struggling to recognize her surroundings and familiar faces.",2,negative,0.2214367,0.14586392,0.6326994,163
+"86-year-old has Alzheimer's, chronic obstructive pulmonary disease, and osteoporosis.",2,negative,0.21999182,0.1569714,0.62303674,164
+she experiences significant memory loss and confusion.,2,negative,0.18634185,0.15689723,0.65676093,164
+she needs full-time assistance with all activities of daily living.,0,positive,0.7156969,0.19515836,0.089144796,164
+"89-year-old has dementia, type 2 diabetes, and hypertension.",2,negative,0.19865859,0.15391177,0.64742965,165
+she follows a diabetic-friendly diet and takes oral medications.,0,positive,0.6899081,0.18422756,0.12586433,165
+"87-year-old has advanced Parkinson's disease, type 2 diabetes, and hypertension.",2,negative,0.39075893,0.18397674,0.4252643,166
+"she needs assistance with all activities of daily living, including bathing, dressing, and eating.",0,positive,0.74112236,0.180105,0.0787727,166
+care team visits her three times a day to assist with these activities.,0,positive,0.62610006,0.21164165,0.16225827,166
+"despite her physical limitations, Mrs Smith remains mentally active.",1,neutral,0.2251359,0.41367632,0.36118782,167
+she participates in puzzles and participates in a variety of activities.,0,positive,0.795202,0.12629303,0.07850497,167
+specialized assisted living facility for elderly woman with kidney disease.,0,positive,0.65008724,0.20584732,0.14406542,168
+"she has type 2 diabetes, cognitive impairment and diabetes.",2,negative,0.29943487,0.21883802,0.4817271,168
+"her diabetes is managed through diet, oral medications, and insulin injections.",0,positive,0.65834314,0.19193012,0.14972676,168
+"81-year-old has advanced liver disease, type 2 diabetes, mild cognitive impairment.",2,negative,0.2806965,0.18565997,0.5336435,169
+she follows a restricted diet that limits foods high in fat and cholesterol.,2,negative,0.2084068,0.30530894,0.4862843,169
+"her diabetes is managed through a combination of diet, oral medications, and insulin injections.",0,positive,0.6489197,0.18458237,0.16649799,169
+"83-year-old has heart failure, type 2 diabetes, mild cognitive impairment.",2,negative,0.13495459,0.14678155,0.7182638,170
+she follows restricted diet that limits foods high in sodium and fluid.,2,negative,0.26124302,0.32751703,0.41123992,170
+"diabetes is managed through diet, oral medications, and insulin injections.",0,positive,0.68314403,0.18248154,0.13437444,170
+84-year-old has advanced Parkinson's disease and type 2 diabetes.,2,negative,0.37629074,0.2051583,0.418551,171
+she uses a wheelchair for mobility and requires the assistance of two carers.,0,positive,0.5383606,0.29741225,0.1642271,171
+"she has significant tremors, muscle rigidity, and difficulty with balance.",2,negative,0.23528771,0.13443261,0.6302797,171
+vascular dementia has progressed to a stage where she requires assistance with most activities of daily living.,0,positive,0.5232107,0.18302196,0.29376733,172
+"she experiences difficulty with memory, learning new information, and problem-solving.",2,negative,0.3447035,0.21753632,0.43776017,172
+the care team provides a structured daily routine to help manage her symptoms and reduce anxiety.,0,positive,0.6343646,0.19878687,0.16684856,172
+81-year-old has been a resident of a care home for the past five years.,0,positive,0.39577988,0.32048905,0.2837311,173
+"she has Parkinson's disease, chronic kidney disease, and mild cognitive impairment.",2,negative,0.2013783,0.14156389,0.6570578,173
+she receives regular dialysis treatments and takes medications to manage her symptoms.,0,positive,0.5484598,0.2665529,0.18498722,173
+a diagnosis of Huntington's disease has significantly impacted her mobility and independence.,2,negative,0.40089792,0.09607911,0.50302297,174
+she is wheelchair-bound and requires assistance with all activities of daily living.,0,positive,0.531162,0.31383955,0.15499845,174
+"the care team visits her four times a day, providing assistance with personal care.",0,positive,0.701342,0.19048782,0.108170174,174
+"87-year-old has frontotemporal dementia, a condition that affects language and behavior.",2,negative,0.19017513,0.13853887,0.671286,175
+she has been living in a specialized dementia care unit for the past two years.,0,positive,0.39416626,0.29307464,0.31275907,175
+"her care needs are complex, requiring a multidisciplinary approach involving neurologists, psychiatrists.",0,positive,0.57002646,0.1912231,0.23875046,175
+83-year-old has been living in a long-term care facility for the past six years.,0,positive,0.3701667,0.31346154,0.3163717,176
+she has advanced Parkinson's disease and chronic kidney disease.,0,positive,0.45710236,0.17709675,0.36580086,176
+"her condition requires careful management, including medications to control her symptoms.",0,positive,0.57432055,0.24144906,0.18423036,176
+78-year-old has been living in a long-term care facility for the past eight years.,0,positive,0.3731368,0.3172946,0.30956858,177
+she has advanced chronic obstructive pulmonary disease (COPD) and chronic kidney disease.,0,positive,0.58216375,0.18397121,0.23386501,177
+"her COPD requires careful management, including medications to control her symptoms.",0,positive,0.5940507,0.22444203,0.18150726,177
+83-year-old has been residing in a nursing home for the past three years.,2,negative,0.3343006,0.31223887,0.35346055,178
+"her dementia affects her cognitive function, causing memory loss and difficulty with communication.",2,negative,0.19512865,0.13104677,0.6738246,178
+"she relies on staff for feeding, bathing, dressing, and toileting.",0,positive,0.6191761,0.22885808,0.15196578,178
+"87-year-old has a diagnosis of advanced Parkinson's disease, chronic obstructive pulmonary disease (COPD), and moderate dementia.",2,negative,0.26949906,0.16174017,0.56876075,179
+"she uses a walker to move around the facility and requires assistance with tasks such as dressing, bathing, and meal preparation.",0,positive,0.6158608,0.23709789,0.14704128,179
+"92-year-old has a complex medical history, including advanced chronic kidney disease.",0,positive,0.5466027,0.18469496,0.26870236,180
+"she also experiences moderate hearing loss, which affects her ability to communicate.",2,negative,0.25643402,0.14030457,0.6032614,180
+the care team provides her with hearing aids and works closely with her audiologist.,0,positive,0.7627608,0.1492193,0.08801992,180
+87-year-old has a diagnosis of advanced chronic obstructive pulmonary disease.,0,positive,0.41066632,0.24257414,0.34675953,181
+she uses a portable oxygen concentrator during the day and a larger machine at night.,0,positive,0.45097393,0.27609113,0.27293497,181
+she also uses inhalers regularly and receives chest physiotherapy.,0,positive,0.5376611,0.23108771,0.2312512,181
+"86-year-old has a complex medical history including advanced dementia, type 2 diabetes.",0,positive,0.50201476,0.18131852,0.31666675,182
+she has moderate hearing loss and struggles with recognizing familiar faces.,2,negative,0.14390704,0.10456886,0.75152415,182
+she is socially active and enjoys participating in various activities offered by the facility.,0,positive,0.8773588,0.08676105,0.03588011,182
+a resident of a long-term care facility has been experiencing a gradual decline in physical function.,2,negative,0.20452705,0.22100784,0.5744651,183
+she has a diagnosis of Parkinson's disease and needs assistance with daily activities.,0,positive,0.44674593,0.21106349,0.3421906,183
+"the care team provides support with all activities of daily living, including personal care.",0,positive,0.86243314,0.098799184,0.03876772,183
+"87-year-old has a complex medical history, including severe peripheral artery disease.",2,negative,0.37762594,0.17708132,0.44529277,184
+she has type 2 diabetes and mild cognitive impairment.,2,negative,0.24763459,0.20377383,0.5485916,184
+"she requires assistance with all activities of daily living, including bathing, dressing, and grooming.",0,positive,0.7325036,0.18611088,0.08138554,184
+84-year-old has been living in her own home with a comprehensive domiciliary care package.,0,positive,0.5258299,0.26121706,0.212953,185
+"she has been diagnosed with stroke, hypertension, and chronic kidney disease.",2,negative,0.25696835,0.16659372,0.57643795,185
+"the care team assists her with all activities of daily living, including mobility.",0,positive,0.81545746,0.11699199,0.06755053,185
+83-year-old has been living in her own home with a comprehensive care package.,0,positive,0.539261,0.2593021,0.20143694,186
+"she has been diagnosed with Parkinson's disease, hypertension, and kidney disease.",2,negative,0.24008112,0.15409654,0.6058223,186
+"the care team assists her with all activities of daily living, including mobility.",0,positive,0.81545746,0.11699199,0.06755053,186
+a complex medical history has led to the death of a resident of a long-term care facility.,2,negative,0.16812192,0.145152,0.6867261,187
+"she has advanced Parkinson's disease, chronic obstructive bronchitis, and depression.",2,negative,0.2855512,0.15627322,0.5581756,187
+the nursing staff provide daily assistance with all activities of daily living.,0,positive,0.44460407,0.2720721,0.28332382,187
+"88-year-old has advanced chronic obstructive pulmonary disease (COPD) she has hypertension, depression and is on medication to control her symptoms.",2,negative,0.3334866,0.18120433,0.4853091,188
+she is also on medication to prevent exacerbations.,0,positive,0.47153592,0.23427735,0.29418668,188
+81-year-old has a diagnosis of advanced Parkinson's disease and hypertension.,0,positive,0.38489544,0.23254946,0.38255507,189
+"she has difficulty with daily activities such as dressing, grooming, and transferring.",2,negative,0.23460308,0.22599147,0.5394054,189
+the care team uses adaptive equipment and techniques to help her maintain her independence.,0,positive,0.75100046,0.13759284,0.111406654,189
+82-year-old has been living in a long-term care facility for the past four years.,0,positive,0.36144966,0.3178631,0.32068723,190
+"she has Parkinson's disease, dementia, and mild hearing loss.",2,negative,0.14430395,0.113944605,0.7417515,190
+the care team provides a structured daily routine to help manage her symptoms.,0,positive,0.6582666,0.2197347,0.12199866,190
+83-year-old has been living in a long-term care facility for the past four years.,0,positive,0.36684453,0.31457403,0.31858146,191
+"she has multiple sclerosis, depression, and chronic pain.",2,negative,0.1380836,0.11173735,0.750179,191
+the care team uses gentle approaches and cognitive stimulation to support her mental health.,0,positive,0.7466057,0.13364317,0.11975115,191
+81-year-old has been living in a long-term care facility for the past four years.,0,positive,0.368136,0.32134226,0.31052175,192
+"she has advanced stroke, chronic obstructive pulmonary disease (COPD), and depression.",2,negative,0.2970082,0.16886784,0.534124,192
+"83-year-old has multiple sclerosis, chronic obstructive pulmonary disease.",2,negative,0.20849462,0.15393658,0.63756883,193
+she is wheelchair-bound and requires assistance with all activities of daily living.,0,positive,0.531162,0.31383955,0.15499845,193
+facility provides her with portable oxygen tank and a portable wheelchair.,0,positive,0.5981525,0.24023356,0.16161391,193
+"78-year-old has a diagnosis of advanced chronic kidney disease, heart failure, and dementia.",2,negative,0.20969255,0.18607403,0.6042334,194
+she follows a renal-friendly diet and the care team helps her plan and prepare meals.,0,positive,0.7847324,0.1335984,0.08166919,194
+"she is on a regimen of medications to manage her symptoms, including diuretics.",0,positive,0.4474864,0.24468659,0.30782703,194
+"79-year-old has a diagnosis of advanced Parkinson's disease, chronic obstructive pulmonary disease (COPD), and a history of falls.",2,negative,0.3036542,0.1908736,0.5054721,195
+she uses a walker for mobility and requires assistance with transfers and personal care.,0,positive,0.6371401,0.24184419,0.12101565,195
+88-year-old has been residing in a long-term care facility for the past four years.,0,positive,0.38839728,0.3256009,0.28600177,196
+she has been experiencing a decline in her physical abilities.,2,negative,0.19393241,0.16835028,0.6377173,196
+she has type 2 diabetes and needs careful management.,0,positive,0.533229,0.21337749,0.2533935,196
+"a dementia patient, 85, has been residing in a long-term care facility for three years.",2,negative,0.2538521,0.21798675,0.52816117,197
+she has been experiencing a decline in her physical abilities.,2,negative,0.19393241,0.16835028,0.6377173,197
+she has type 2 diabetes and needs careful management.,0,positive,0.533229,0.21337749,0.2533935,197
+a diagnosis of advanced heart failure and chronic atrial fibrillation is made.,2,negative,0.3783971,0.21338768,0.40821522,198
+she is on a sodium-restricted diet and requires regular monitoring of her fluids.,0,positive,0.41804162,0.3403841,0.24157427,198
+the nursing staff monitor her closely for any changes in her condition.,0,positive,0.38049668,0.35829377,0.26120952,198
+specialized dementia care unit in a long-term care facility treats dementia patients.,0,positive,0.6125345,0.22181375,0.16565174,199
+she has been diagnosed with advanced Alzheimer's disease and chronic heart failure.,2,negative,0.2532519,0.17622739,0.5705207,199
+the care unit uses various therapeutic approaches to help manage her symptoms.,0,positive,0.6527255,0.20015506,0.14711946,199
+81-year-old has been residing in a long-term care facility for the past five years.,0,positive,0.3875172,0.33038643,0.28209633,200
+she has been diagnosed with advanced stroke and moderate cognitive impairment.,2,negative,0.25303784,0.20750554,0.53945667,200
+the facility staff are trained in stroke care and provide daily physiotherapy sessions.,0,positive,0.6364825,0.22455758,0.13895999,200
+83-year-old has been a resident of a long-term care facility for the past five years.,0,positive,0.3987877,0.31697702,0.28423527,201
+she has a history of falls and requires assistance with daily tasks.,0,positive,0.41724518,0.28361526,0.2991396,201
+she is on a regular diet and requires reminders and assistance to complete her meals.,0,positive,0.55129313,0.29695967,0.15174729,201
+82-year-old has been a resident of a long-term care facility for the past three years.,0,positive,0.3913091,0.32058534,0.2881055,202
+she has a history of wandering and requires close supervision and support.,0,positive,0.5317386,0.21558593,0.2526755,202
+she is on a regular diet and requires reminders and assistance to complete her meals.,0,positive,0.55129313,0.29695967,0.15174729,202
+84-year-old has been a resident of a long-term care facility for the past two years.,0,positive,0.39524773,0.32028595,0.28446633,203
+"she requires assistance with daily tasks such as dressing, bathing, and meal preparation.",0,positive,0.6905318,0.2141721,0.095296115,203
+she is on a regular diet and requires reminders and assistance to complete her meals.,0,positive,0.55129313,0.29695967,0.15174729,203

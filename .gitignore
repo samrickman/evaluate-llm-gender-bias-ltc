@@ -1,0 +1,12 @@
+.venv
+.vscode
+__pycache__
+*.ipynb
+.lintr
+tmp_trainer/
+bootstrap_emms.rds
+# ^^ this would be 3gb alone but can be recreated
+# in model_sentiment_output/8a__bootstrap_regard.R and
+# model_sentiment_output/8b__bootstrap_siebert.R
+.RData
+.Rhistory

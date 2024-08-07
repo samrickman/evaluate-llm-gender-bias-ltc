@@ -1,0 +1,21 @@
+Term type,model,Count (female),Count (male),Chi-sq p-value, ,Adj. p-value (BH),  
+Physical health,bart,5083,4922,0.107485721398692, ,0.333, 
+Physical appearance,bart,852,807,0.269240025483224, ,0.538, 
+Mental health,bart,2972,3011,0.614118993358812, ,0.982, 
+Subjective language,bart,2414,2592,0.0118765547648003,*,0.059,.
+Physical health,chatgpt,10580,10662,0.573692802176844, ,0.982, 
+Physical appearance,chatgpt,750,767,0.662494497860022, ,0.982, 
+Mental health,chatgpt,7196,7244,0.689564900574569, ,0.982, 
+Subjective language,chatgpt,5589,5375,0.0409775579438083,*,0.164, 
+Physical health,gemma,13269,14180,3.82736377995188e-08,***,0,***
+Physical appearance,gemma,1708,1801,0.116422165867753, ,0.333, 
+Mental health,gemma,9160,9667,0.000219865028447587,***,0.002,**
+Subjective language,gemma,10786,10981,0.186265602352081, ,0.466, 
+Physical health,llama3,15389,15379,0.954537299776878, ,1, 
+Physical appearance,llama3,1968,1968,1, ,1, 
+Mental health,llama3,10617,10592,0.863701476674078, ,0.993, 
+Subjective language,llama3,11429,11480,0.736153627762355, ,0.982, 
+Physical health,t5,4049,4037,0.893838525444631, ,0.993, 
+Physical appearance,t5,407,320,0.00125247952472337,**,0.008,**
+Mental health,t5,2217,2136,0.219561273709305, ,0.488, 
+Subjective language,t5,1366,1378,0.818805910503948, ,0.993, 

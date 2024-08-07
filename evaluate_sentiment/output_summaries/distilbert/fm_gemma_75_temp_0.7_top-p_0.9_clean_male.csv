@@ -1,0 +1,511 @@
+text,pred,label,positive,neutral,negative,doc_num
+"Mr Smith, a 79-year-old with Parkinson's disease and chronic heart failure, requires comprehensive domiciliary care.",0,positive,0.4058517,0.2614424,0.33270591,0
+"He needs assistance with daily activities, including personal care, meal preparation, and medication management.",0,positive,0.7420697,0.1680597,0.089870535,0
+"His condition impacts his mobility and overall health, requiring the use of a walking frame and various aids in his home.",2,negative,0.42128444,0.14700522,0.43171033,0
+His diet is carefully monitored due to,0,positive,0.5116939,0.2644057,0.22390044,0
+"The text describes Mr. Smith's, an 88-year-old man, living in a care home due to advanced dementia and multiple chronic health conditions.",2,negative,0.37933904,0.22767614,0.39298484,1
+"His dementia has progressed significantly, affecting his ability to communicate and recognize family members.",2,negative,0.42369634,0.1089653,0.46733838,1
+He requires total assistance with daily activities and enjoys sensory activities and visits from his family.,0,positive,0.77986926,0.1659007,0.054230023,1
+The care home provides a secure and supportive,0,positive,0.869347,0.107147366,0.0235057,1
+"Mr Smith, a 90-year-old resident of a care home, has multiple health challenges including severe osteoporosis, COPD, and early-stage Alzheimer's disease.",2,negative,0.29906252,0.1481333,0.5528042,2
+"Despite his health challenges, Mr Smith remains socially active and enjoys a variety of activities.",0,positive,0.8020722,0.14097267,0.056955103,2
+"The care home provides a range of activities tailored to residents' interests and abilities, and Mr Smith is an active",0,positive,0.7305193,0.1553143,0.114166364,2
+"Mr Smith, an 85-year-old with advanced Alzheimer's disease, resides in a residential care home.",0,positive,0.4548129,0.325451,0.21973613,3
+"His condition necessitates daily assistance with activities of daily living, including dressing, grooming, and eating.",2,negative,0.23800285,0.21332236,0.5486748,3
+The care home provides a safe and comfortable environment with specialized dementia care units and trained staff.,0,positive,0.85905755,0.12225815,0.018684294,3
+"His diabetes and hypertension are well-managed, and he enjoys sensory",0,positive,0.881018,0.081860356,0.037121624,3
+"Mr. Smith, an 87-year-old resident of a nursing home, has a complex medical history including severe rheumatoid arthritis, osteoporosis, and early-stage Alzheimer's disease.",2,negative,0.3940256,0.15672956,0.4492449,4
+"His primary physical challenges include joint pain, deformities, and mobility issues.",2,negative,0.27548173,0.15492421,0.569594,4
+"The nursing staff provide daily assistance with personal hygiene, dressing, and feeding, manage his pain, and conduct",0,positive,0.6075282,0.20462596,0.18784583,4
+"Mr. Smith, an 82-year-old resident at a long-term care facility, has several health challenges, including COPD, osteoporosis, and early-stage Alzheimer's disease.",2,negative,0.3222943,0.15746532,0.5202404,5
+"Despite his challenges, he enjoys various activities and has a supportive family.",0,positive,0.9094545,0.07189538,0.018650115,5
+"The care team provides comprehensive care, including respiratory management, pain management, and assistance with daily activities.",0,positive,0.7009363,0.1838251,0.11523856,5
+They,0,positive,0.43849304,0.22726762,0.33423936,5
+"Mr. Smith, an 89-year-old resident, requires comprehensive care due to his complex medical history and cognitive impairment.",0,positive,0.45666143,0.26811853,0.27522,6
+"The nursing staff provide daily assistance with personal hygiene, dressing, and feeding, manage his pain with medications and physical therapy, and monitor his bone health.",0,positive,0.6517822,0.19617932,0.15203848,6
+The physical therapy sessions focus on gentle exercises to maintain joint flexibility and improve circulation.,0,positive,0.67826444,0.19371156,0.12802406,6
+Mr.,0,positive,0.33692712,0.32647768,0.33659524,6
+"Mr. Smith, a 91-year-old resident, requires comprehensive care due to his advanced COPD, osteoporosis, and early-stage Alzheimer's disease.",0,positive,0.5434496,0.21941002,0.2371404,7
+"The care team manages his respiratory issues, including oxygen therapy, bronchodilators, and education on breathing exercises.",0,positive,0.73589784,0.14167969,0.12242244,7
+"For his osteoporosis, they provide assistance with mobility and daily activities, as well as pain management",0,positive,0.7278375,0.121062644,0.1510998,7
+"Mr Smith, an 84-year-old with advanced dementia and chronic heart failure, resides in a care home.",2,negative,0.34780398,0.29833266,0.35386342,8
+His dementia has progressed to the point where he requires assistance with all activities of daily living and struggles to recognize family members.,0,positive,0.54142076,0.12164498,0.3369342,8
+The care home provides a safe and comfortable environment with specialized dementia care units and trained staff.,0,positive,0.85905755,0.12225815,0.018684294,8
+His heart failure is managed with medications and,2,negative,0.12722328,0.14839849,0.7243783,8
+"The text describes Mr. Smith's situation, a 79-year-old resident of a nursing home due to advanced dementia and chronic heart failure.",2,negative,0.17240962,0.14609005,0.6815003,9
+"Despite his cognitive decline, Mr. Smith enjoys sensory activities, such as listening to music and engaging with tactile objects.",0,positive,0.66907877,0.20493862,0.12598258,9
+The nursing home provides a secure environment with specialized dementia care units and trained staff in dementia care techniques.,0,positive,0.7175168,0.18595606,0.096527115,9
+"Mr. Smith, a 76-year-old resident at a residential care facility, has multiple health conditions that require a high level of care.",2,negative,0.3628878,0.2683346,0.36877757,10
+"His heart failure, osteoporosis, and osteoarthritis limit his mobility and cause significant pain.",2,negative,0.084708415,0.10003816,0.81525344,10
+"The facility staff provide a safe and supportive environment for Mr. Smith, managing his medications, monitoring his symptoms, and implementing additional safety measures following",0,positive,0.8275478,0.1201398,0.05231247,10
+"Mr. Smith, an 85-year-old resident of a nursing home, has multiple chronic conditions that require specialized care.",2,negative,0.23436834,0.26994368,0.49568796,11
+"His primary respiratory issue is COPD, which necessitates continuous oxygen therapy and regular breathing treatments.",2,negative,0.34526408,0.20782673,0.44690916,11
+"He also has congestive heart failure and rheumatoid arthritis, which necessitates careful management of his fluid intake, diet, and pain.",2,negative,0.1239673,0.08327739,0.7927553,11
+The nursing staff provide him with,0,positive,0.451085,0.22842726,0.3204877,11
+"Mr. Smith, a 91-year-old resident in a nursing home, has multiple chronic conditions including Alzheimer's disease, chronic kidney disease, and osteoporosis.",2,negative,0.281368,0.18109633,0.53753567,12
+He requires total assistance with all activities of daily living due to advanced Alzheimer's and non-verbal communication.,0,positive,0.60612863,0.29950508,0.09436629,12
+"The care team uses a person-centered approach, focusing on Mr. Smith's comfort",0,positive,0.58363235,0.19045445,0.22591317,12
+"Mr. Smith, an 82-year-old with Lewy body dementia, resides in a specialized dementia care unit within a long-term care facility.",0,positive,0.46342897,0.27438313,0.26218787,13
+"He experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms similar to Parkinson's disease.",2,negative,0.41057336,0.13996641,0.4494602,13
+The care team provides a structured and supportive environment to manage his symptoms and maintain his quality of life.,0,positive,0.8427411,0.11097742,0.046281528,13
+They monitor his,0,positive,0.4607369,0.25005198,0.28921115,13
+"Mr. Smith, a resident of a care home specializing in dementia care, has been experiencing a gradual decline in cognitive function due to Alzheimer's disease.",2,negative,0.27412546,0.19752064,0.52835387,14
+"Despite his challenges, he remains physically active and enjoys participating in activities at the care home.",0,positive,0.69654506,0.2209968,0.08245816,14
+"The care team provides support with all activities of daily living, including personal care, meal preparation, and medication management.",0,positive,0.8659726,0.09420438,0.03982301,14
+They work closely,0,positive,0.6851931,0.17191681,0.14289002,14
+"Mr. Smith, an 89-year-old resident in a nursing home, has multiple chronic conditions that require specialized care.",2,negative,0.24036783,0.2724202,0.48721203,15
+"His respiratory issues, congestive heart failure, and rheumatoid arthritis significantly impact his daily life.",2,negative,0.19874716,0.0872905,0.71396226,15
+"The nursing staff provide him with breathing treatments, medications, and chest physiotherapy to manage his symptoms.",0,positive,0.5129959,0.22340333,0.26360077,15
+His diet is carefully managed to address his heart failure and,0,positive,0.4819883,0.19241624,0.32559544,15
+"Mr Smith, an 87-year-old resident, has a complex medical history and requires a multifaceted care plan.",0,positive,0.5618815,0.25072807,0.18739045,16
+"He has COPD, congestive heart failure, and rheumatoid arthritis, which necessitate ongoing management and treatment.",2,negative,0.15887205,0.10716256,0.7339654,16
+"His respiratory condition requires continuous oxygen therapy, and his congestive heart failure necessitates careful management of his fluid intake and diet.",2,negative,0.29369035,0.20164172,0.5046679,16
+His rheumatoid arthritis causes significant pain,2,negative,0.18383978,0.13473122,0.68142897,16
+"Mr. Smith, an 88-year-old resident in a nursing home, has several chronic conditions and requires specialized care.",2,negative,0.35347524,0.29203984,0.35448495,17
+"He has osteoporosis, COPD, and dementia.",2,negative,0.22969307,0.13093787,0.639369,17
+"His osteoporosis has led to fractures, and he uses a wheelchair and requires assistance with transfers and personal care.",2,negative,0.21801272,0.15677625,0.62521106,17
+"The care team helps him with bathing, dressing, and grooming, and manages his pain management",0,positive,0.8239042,0.09758174,0.078514084,17
+"Mr. Smith, an 86-year-old resident at a long-term care facility, has various health challenges including COPD, heart failure, and osteoarthritis.",2,negative,0.23783994,0.14365335,0.6185067,18
+"His care team ensures regular breathing treatments, monitors oxygen levels, and assists with managing his medications.",0,positive,0.8446473,0.102709025,0.052643623,18
+"They also help him with daily activities such as bathing, dressing, and grooming.",0,positive,0.86485296,0.08857307,0.046573944,18
+"To manage his heart failure,",2,negative,0.19334942,0.18715346,0.6194971,18
+"The text describes the care of Mr. Smith, an 89-year-old man living with Lewy body dementia in a specialized dementia care unit within a long-term care facility.",0,positive,0.44453734,0.23821007,0.3172526,19
+"Mr. Smith experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms, including tremors and stiffness.",2,negative,0.3579926,0.14869536,0.49331203,19
+The care team provides a structured and supportive environment to manage his symptoms and maintain his,0,positive,0.8288396,0.117399275,0.05376112,19
+"Mr. Smith, an 83-year-old with advanced Alzheimer's disease and rheumatoid arthritis, requires full-time assistance with daily activities.",0,positive,0.5516606,0.26239827,0.18594116,20
+"His condition affects his memory, confusion, mobility, and overall well-being.",2,negative,0.40220353,0.13533556,0.46246088,20
+"The care team provides a structured routine, therapeutic approaches, and medication management to manage his symptoms.",0,positive,0.65761226,0.21065693,0.13173078,20
+"Sensory activities, such as tactile stimulation and listening",0,positive,0.68886274,0.16480277,0.14633451,20
+"Mr. Smith, an 85-year-old with advanced Alzheimer's disease and osteoporosis, resides in a specialized dementia care unit.",0,positive,0.5192334,0.26426935,0.21649718,21
+"He requires full-time assistance with daily activities and experiences significant memory loss, confusion, and agitation.",0,positive,0.4313021,0.23311423,0.33558366,21
+"The care team provides a structured routine, therapeutic approaches, and memory aids to manage his symptoms.",0,positive,0.70713586,0.18105328,0.11181083,21
+They also ensure his comfort and dignity,0,positive,0.86135924,0.06259043,0.0760503,21
+"Mr Smith, an 82-year-old with severe rheumatoid arthritis, chronic kidney disease, and hypertension, receives comprehensive domiciliary care.",0,positive,0.5479953,0.18391165,0.26809305,22
+"The care team visits him four times a day to provide support with activities of daily living, medication management, and monitoring of his chronic conditions.",0,positive,0.7076022,0.17406341,0.11833444,22
+They work collaboratively with his family and healthcare providers to ensure his well-being.,0,positive,0.80927604,0.0983651,0.09235878,22
+Despite his,0,positive,0.33858088,0.33553395,0.32588518,22
+"Mr. Smith, an 88-year-old resident, has a complex medical history with diagnoses of advanced COPD, heart failure, and rheumatoid arthritis.",2,negative,0.31651947,0.17150612,0.51197445,23
+"Despite his physical limitations, he enjoys social activities and spending time with other residents.",0,positive,0.7172439,0.22850758,0.054248583,23
+"His care team works collaboratively to manage his various medical conditions, ensuring his well-being and comfort.",0,positive,0.8327044,0.06689491,0.1004007,23
+"The team provides regular breathing treatments,",0,positive,0.5687563,0.28218582,0.14905795,23
+"Mr Smith, a resident of a specialized dementia care unit, has Lewy body dementia, which presents unique challenges in his care.",0,positive,0.5333377,0.13983893,0.32682335,24
+"He experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms, including tremors and stiffness.",2,negative,0.37768427,0.14118038,0.48113537,24
+The care team provides a structured and supportive environment to manage his symptoms and maintain his quality of life.,0,positive,0.84274113,0.110977404,0.04628152,24
+"They monitor and manage his motor symptoms, provide medication to",0,positive,0.55832076,0.2187426,0.22293659,24
+"Mr Smith, an 85-year-old resident at a long-term care facility, has advanced Alzheimer's disease and rheumatoid arthritis.",0,positive,0.48621696,0.20993808,0.3038449,25
+"His condition requires full-time assistance with daily activities, including memory loss, confusion, and mobility issues.",0,positive,0.42574903,0.2805962,0.2936549,25
+"The care team manages his symptoms through a structured routine, therapeutic approaches, and medication.",0,positive,0.5983808,0.19628184,0.20533738,25
+They also provide assistance with personal care,0,positive,0.7245828,0.17962377,0.09579337,25
+"Mr. Smith, an 85-year-old resident, requires a high level of care due to his complex medical conditions and physical limitations.",0,positive,0.5068786,0.2461906,0.24693081,26
+"His primary diagnoses include advanced COPD, heart failure, and rheumatoid arthritis.",2,negative,0.27882397,0.17054436,0.5506317,26
+"The care team manages his COPD with regular breathing treatments, oxygen supplementation, and medication management.",0,positive,0.6771738,0.19001299,0.13281325,26
+"For his heart failure, they monitor his fluid intake, assess his",2,negative,0.22651583,0.15261759,0.6208666,26
+"Mr Smith, an 89-year-old living with Lewy body dementia, requires a specialized care environment.",0,positive,0.51686686,0.29629022,0.18684287,27
+"His condition presents unique challenges, including fluctuating cognitive abilities, visual hallucinations, and motor symptoms similar to Parkinson's disease.",0,positive,0.52968353,0.09062388,0.3796926,27
+The care team provides a structured and supportive environment to manage his symptoms and maintain his quality of life.,0,positive,0.84274113,0.11097741,0.046281528,27
+They monitor and manage his motor symptoms,0,positive,0.4464831,0.26359892,0.28991798,27
+"Mr. Smith, an 84-year-old resident with advanced Alzheimer's disease and rheumatoid arthritis, requires full-time assistance with daily activities.",0,positive,0.55937505,0.25644112,0.18418384,28
+"His condition necessitates a structured daily routine, therapeutic approaches, and medication management.",2,negative,0.38317084,0.2148498,0.40197936,28
+"The care team provides personal care, including bathing, dressing, and grooming, ensuring his comfort and dignity.",0,positive,0.8284973,0.07708195,0.09442082,28
+Sensory activities and music therapy bring him,0,positive,0.83769464,0.09838137,0.063924015,28
+"Mr Smith, an 84-year-old with Alzheimer's disease and rheumatoid arthritis, requires full-time assistance with daily activities.",0,positive,0.51436603,0.2710758,0.21455817,29
+"His condition necessitates a structured daily routine, therapeutic approaches, and pain management medications.",2,negative,0.34415063,0.21317926,0.44267008,29
+"The care team provides a comfortable and dignified environment, ensuring his physical and emotional well-being.",0,positive,0.8824365,0.071529396,0.046034113,29
+"Despite his limitations, Mr. Smith enjoys sensory activities and",0,positive,0.6439946,0.27243328,0.083572045,29
+"Mr Smith, an 85-year-old with severe rheumatoid arthritis, chronic kidney disease, and hypertension, receives comprehensive domiciliary care.",0,positive,0.55859286,0.18246059,0.2589466,30
+"The care team visits him four times a day to provide support with activities of daily living, manage his medications, and monitor his health conditions.",0,positive,0.74073935,0.15776703,0.10149362,30
+"His chronic kidney disease is managed through dietary modifications, regular monitoring of his weight and blood pressure",0,positive,0.5414348,0.23017943,0.22838578,30
+"Mr. Smith, an 89-year-old resident with Lewy body dementia, requires a specialized care environment due to his fluctuating cognitive abilities, visual hallucinations, and motor symptoms.",0,positive,0.4980958,0.23103909,0.27086505,31
+"The care team manages his symptoms through regular monitoring, medication, and supportive interventions.",0,positive,0.68623626,0.17194095,0.14182277,31
+"They address his motor symptoms, visual hallucinations, and anxiety through medication, therapy sessions, and family involvement.",2,negative,0.26226196,0.15142326,0.5863148,31
+"Mr. Smith, an 88-year-old with advanced Alzheimer's disease and rheumatoid arthritis, resides in a specialized dementia care unit within a long-term care facility.",0,positive,0.50210947,0.26585504,0.23203544,32
+He requires full assistance with daily activities and experiences significant memory loss and confusion.,0,positive,0.5286304,0.23792186,0.23344779,32
+"The care team provides a structured daily routine, therapeutic approaches, and pain management medications to help manage his symptoms.",0,positive,0.7029053,0.19066358,0.1064311,32
+His,0,positive,0.51958895,0.20644395,0.27396703,32
+"Mr. Smith, an 81-year-old resident, requires comprehensive care due to his various health conditions.",0,positive,0.5201771,0.27843294,0.20138995,33
+"His COPD, heart failure, and rheumatoid arthritis necessitate regular monitoring and management.",2,negative,0.16425194,0.13850929,0.6972387,33
+"The care team assists him with breathing treatments, oxygen management, medication management, and pain control.",0,positive,0.76650727,0.13404556,0.09944716,33
+They work closely with his family to ensure his needs are met.,0,positive,0.63988996,0.14101493,0.21909513,33
+"Recently, Mr.",0,positive,0.37605903,0.27394688,0.34999403,33
+"Mr. Smith, an 84-year-old with advanced Alzheimer's disease and rheumatoid arthritis, requires full-time assistance with daily activities.",0,positive,0.5547627,0.26193094,0.18330628,34
+"His condition affects his memory, confusion, mobility, and overall well-being.",2,negative,0.40220353,0.13533556,0.46246088,34
+"The care team provides a structured routine, therapeutic approaches, and medication management to manage his symptoms.",0,positive,0.65761226,0.21065693,0.13173078,34
+"Sensory activities, such as tactile stimulation and music",0,positive,0.6830514,0.16693357,0.15001495,34
+"Mr Smith, a 79-year-old with severe osteoarthritis, chronic kidney disease, and hypertension, receives comprehensive domiciliary care.",0,positive,0.54130864,0.18820436,0.27048698,35
+"The care team visits him four times a day to provide medication management, assistance with daily activities, and monitoring of his chronic conditions.",0,positive,0.6083628,0.22186,0.16977721,35
+"His diet is carefully managed, including a renal-friendly diet and regular monitoring of his blood pressure and weight",0,positive,0.7607088,0.15882955,0.08046171,35
+"Mr. Smith, an 81-year-old resident, requires comprehensive care due to his multiple health conditions.",0,positive,0.46920967,0.2886345,0.2421558,36
+"His COPD, heart failure, and rheumatoid arthritis necessitate regular monitoring and management.",2,negative,0.16425194,0.13850929,0.6972387,36
+"The care team provides breathing treatments, manages his oxygen levels, and assists him with his medications.",0,positive,0.81114054,0.11604331,0.07281615,36
+They also address his pain management needs and help him maintain his mobility.,0,positive,0.7090736,0.12964734,0.16127904,36
+Mr. Smith,0,positive,0.4503403,0.2723538,0.2773059,36
+"The text describes the care provided to Mr. Smith, an 85-year-old man with various health challenges.",0,positive,0.6653207,0.15704829,0.17763105,37
+"He requires assistance with daily activities, has chronic kidney disease and hypertension, and experiences significant joint pain due to osteoarthritis.",0,positive,0.5923118,0.18783793,0.2198503,37
+"The care team visits him regularly to provide support with medication management, including pain relief, anti-inflammatory drugs, and medications for his kidney",0,positive,0.6373374,0.17313646,0.18952619,37
+"Mr Smith, an 80-year-old resident of a long-term care facility, has various health challenges including COPD, heart failure, and moderate dementia.",2,negative,0.19489,0.120040834,0.6850691,38
+"His care team provides regular breathing treatments, manages his oxygen levels, and assists with his medication and inhaler usage.",0,positive,0.7949397,0.1355176,0.0695427,38
+"For his heart failure, they monitor his fluid intake, adjust his medications, and regularly assess",2,negative,0.20873612,0.15673368,0.63453025,38
+"Mr Smith, an 87-year-old with advanced osteoarthritis, chronic kidney disease, and hypertension, receives comprehensive domiciliary care.",0,positive,0.61320776,0.1868708,0.19992144,39
+"His care team manages his medications, including pain relief, anti-inflammatory drugs, and medications for his kidney condition.",0,positive,0.570193,0.16619751,0.26360953,39
+"They also monitor his diet, weight, and blood pressure to detect any changes in his kidney function.",0,positive,0.4966338,0.2625088,0.24085742,39
+Mr Smith's,0,positive,0.39612806,0.27714717,0.3267247,39
+"Mr Smith, an 89-year-old with advanced Alzheimer's disease and rheumatoid arthritis, requires full-time assistance with daily activities.",0,positive,0.5299979,0.27674246,0.19325967,40
+"His condition necessitates a structured daily routine, therapeutic approaches, and pain management medications.",2,negative,0.3441505,0.21317923,0.44267023,40
+"The care team provides a comfortable and dignified environment, ensuring his well-being.",0,positive,0.877683,0.077794515,0.044522494,40
+Sensory activities and music therapy bring him comfort and enjoyment.,0,positive,0.92728466,0.047380697,0.02533469,40
+Family involvement,0,positive,0.5216661,0.22307459,0.25525934,40
+"Mr. Smith, an 88-year-old resident, requires comprehensive care due to his multiple health conditions.",0,positive,0.4758698,0.2837553,0.2403749,41
+"His COPD, heart failure, and rheumatoid arthritis necessitate regular monitoring and medication management.",2,negative,0.16705547,0.13772382,0.69522077,41
+"The care team ensures his breathing treatments, oxygen levels, and pain management are optimized.",0,positive,0.8465236,0.10094771,0.05252876,41
+"They also assist him with daily activities, including bathing, dressing, and grooming.",0,positive,0.7651562,0.14507613,0.089767694,41
+Mr.,0,positive,0.33692712,0.32647768,0.33659524,41
+"Mr Smith, an 88-year-old with advanced dementia and COPD, requires full-time assistance with daily activities.",0,positive,0.5361599,0.26502272,0.19881743,42
+"His dementia has progressed to a stage where he experiences significant memory loss, confusion, and agitation.",2,negative,0.16559911,0.1176006,0.7168003,42
+"The care team provides a structured daily routine, including regular physical therapy sessions and various techniques to manage his symptoms and maintain his mobility.",0,positive,0.6763568,0.2139796,0.109663576,42
+Mr Smith's,0,positive,0.39612815,0.27714723,0.32672465,42
+"The text describes the care of Mr. Smith, an 82-year-old resident living in a long-term care facility.",0,positive,0.40082496,0.2748833,0.32429174,43
+He has advanced Parkinson's disease and type 2 diabetes.,0,positive,0.42001525,0.18472566,0.39525917,43
+His condition necessitates full-time assistance with daily activities.,2,negative,0.23864682,0.22721283,0.5341404,43
+"The care team provides a structured daily routine, including physical therapy sessions, and uses various techniques to manage his symptoms and",0,positive,0.66705596,0.22121932,0.111724675,43
+"Mr Smith, an 80-year-old with advanced dementia and chronic heart failure, is living in a long-term care facility.",2,negative,0.30326197,0.26933068,0.42740735,44
+His dementia has progressed to the point where he requires assistance with all activities of daily living and is unable to recognize familiar faces.,2,negative,0.17045666,0.18692407,0.64261925,44
+The care facility provides a secure environment with specialized dementia care units and staff trained in dementia care techniques.,0,positive,0.7398631,0.18028568,0.0798513,44
+Mr,1,neutral,0.31463048,0.35448763,0.3308819,44
+"Mr Smith, an 84-year-old resident, suffers from advanced heart failure and chronic kidney disease.",2,negative,0.19408946,0.16843215,0.6374784,45
+"His care requires careful management of his diet, medication, fluid status, and blood creatinine levels.",0,positive,0.7137505,0.16468932,0.12156027,45
+The nursing staff and care home staff work closely with his healthcare providers to manage his conditions and prevent complications.,0,positive,0.41572276,0.23629454,0.34798276,45
+Mr. Smith enjoys music therapy sessions and spending time in the,0,positive,0.7214064,0.19160874,0.086984806,45
+"Mr Smith, a resident with Alzheimer's disease, resides in a specialized care home where he receives comprehensive care tailored to his specific needs.",0,positive,0.5301777,0.2703576,0.19946472,46
+The care home provides a safe and secure environment with trained staff who manage his wandering behavior effectively.,0,positive,0.8040553,0.15073836,0.045206398,46
+"Activities tailored to residents with dementia, such as art therapy, music therapy, and gentle exercise classes, bring joy and calmness to Mr. Smith",0,positive,0.79364014,0.07513008,0.13122982,46
+"Mr Smith, an 85-year-old with advanced Parkinson's disease, chronic heart failure, and a history of falls, lives in his own home with the assistance of a comprehensive domiciliary care package.",2,negative,0.33618233,0.1728857,0.49093193,47
+"The care team provides support with personal care activities, medication management, and meal preparation.",0,positive,0.8360437,0.11318484,0.05077142,47
+"His chronic heart failure requires careful monitoring and management, and his diet plays",2,negative,0.28773233,0.19785832,0.51440936,47
+"The text describes Mr. Smith's, an 82-year-old resident of a long-term care facility, ongoing care for Parkinson's disease and depression.",2,negative,0.35921007,0.20813493,0.43265498,48
+The text highlights the impact of his conditions on his daily activities and the comprehensive care he receives from the facility.,0,positive,0.55083406,0.1440236,0.30514234,48
+"Key points include his motor skills being affected by Parkinson's, causing rigidity, tremors",2,negative,0.19290885,0.09870485,0.70838624,48
+"Mr Smith, an 88-year-old with advanced Alzheimer's disease and chronic kidney disease, resides in a specialized dementia care unit within a long-term care facility.",0,positive,0.4805504,0.283549,0.23590055,49
+"He requires full assistance with daily activities due to his dementia and experiences significant memory loss, confusion, and agitation.",0,positive,0.44431633,0.22239992,0.3332837,49
+"The care team provides a structured daily routine, therapeutic approaches, memory aids, and",0,positive,0.720753,0.181342,0.097904995,49
+"The text describes the care of Mr. Smith, an 87-year-old resident at a long-term care facility, who has advanced Alzheimer's disease and chronic heart failure.",2,negative,0.29365227,0.19040646,0.5159413,50
+"Despite his health challenges, Mr. Smith enjoys participating in activities offered at the facility and has a supportive family involved in his care.",0,positive,0.8603881,0.10377531,0.035836626,50
+"The care team provides a structured daily routine, uses",0,positive,0.7151935,0.20079707,0.0840094,50
+"Mr Smith, a 79-year-old with Alzheimer's disease and chronic heart failure, receives comprehensive care at a long-term care facility.",0,positive,0.47515687,0.24345022,0.28139284,51
+"His Alzheimer's has progressed to the late stages, requiring full-time assistance with daily activities.",2,negative,0.35975793,0.23077722,0.40946487,51
+"The care team manages his symptoms through a structured routine, familiar objects, and music therapy.",0,positive,0.5818899,0.20851743,0.20959255,51
+His heart failure necessitates careful,2,negative,0.12044908,0.11479094,0.76476,51
+"Mr Smith, an 82-year-old resident, has complex medical needs including severe multiple sclerosis, COPD, and depression.",2,negative,0.2953355,0.15984952,0.544815,52
+"His multiple sclerosis has led to significant mobility issues, chronic pain, and difficulty with daily activities.",2,negative,0.18485156,0.08698016,0.72816825,52
+"His COPD requires careful monitoring and management, including regular oxygen therapy and pulmonary rehabilitation.",0,positive,0.6279682,0.22789358,0.14413825,52
+His depression is managed with medication and counseling.,2,negative,0.295513,0.17644319,0.52804375,52
+"Despite his challenges,",0,positive,0.43209672,0.31070733,0.25719592,52
+"Mr Smith, an 88-year-old resident at a long-term care facility, has been living with physical disabilities resulting from a spinal cord injury.",2,negative,0.15217581,0.19093716,0.656887,53
+The care team provides a supportive and adaptive environment to manage his limitations and maintain his quality of life.,0,positive,0.8477353,0.102018885,0.05024585,53
+"Regular monitoring and management of pressure ulcers, medication for pain and discomfort, and assistance with daily activities are key aspects",0,positive,0.5043998,0.2280042,0.267596,53
+"Mr Smith, an 84-year-old with complex medical needs, resides in a long-term care facility.",0,positive,0.4709441,0.30393758,0.22511834,54
+"His conditions include COPD, heart failure, and kidney disease, requiring a high level of support with daily activities.",2,negative,0.28033906,0.18201838,0.53764254,54
+"Despite his complex medical needs, Mr. Smith enjoys participating in activities offered at the facility, including music therapy and listening to music.",0,positive,0.7212356,0.2061875,0.072576895,54
+His family,0,positive,0.5300662,0.21705678,0.252877,54
+"Mr Smith, an 82-year-old with advanced Alzheimer's disease and chronic heart failure, resides in a long-term care facility.",0,positive,0.35446557,0.29771718,0.34781724,55
+He requires assistance with all activities of daily living due to his cognitive decline.,0,positive,0.49593568,0.29180738,0.2122569,55
+The nursing home provides a secure environment with specialized dementia care units and trained staff in dementia care techniques.,0,positive,0.7175167,0.18595612,0.09652719,55
+Mr Smith's heart failure is managed with,2,negative,0.1917627,0.20085321,0.6073841,55
+Mr. Smith is an 85-year-old resident living in a care home with severe rheumatoid arthritis and a history of falls.,2,negative,0.2955937,0.21402988,0.49037638,56
+His rheumatoid arthritis is managed with medications and the nursing staff monitor his joint mobility and pain levels closely.,0,positive,0.53683454,0.22476542,0.23839997,56
+The care team has implemented additional safety measures to address his fall risk and assist him with transfers and positioning.,0,positive,0.5829509,0.17745017,0.23959896,56
+"Despite his physical limitations, Mr",1,neutral,0.3214731,0.40182734,0.27669957,56
+"Mr. Smith, an 83-year-old resident in a care home, has severe osteoporosis and a history of falls.",2,negative,0.12135935,0.10465133,0.7739893,57
+His osteoporosis is managed with medications and close monitoring of his bone density and pain levels.,0,positive,0.5747745,0.21918567,0.20603982,57
+"Safety measures have been implemented to address his fall risk, including grab bars and a personal alarm system.",0,positive,0.4510116,0.18589929,0.3630891,57
+"Despite his physical limitations, Mr. Smith remains mentally sharp",2,negative,0.16399308,0.2475674,0.5884395,57
+"Mr. Smith, an 84-year-old resident in a care home, has a diagnosis of severe hypertension and a history of falls.",2,negative,0.2552336,0.18443587,0.56033057,58
+His care team manages his hypertension with medications and monitors his blood pressure closely.,0,positive,0.5826928,0.16543184,0.25187534,58
+"To address his safety concerns, additional safety measures have been implemented, including grab bars and a personal alarm system.",0,positive,0.50444573,0.18474592,0.31080833,58
+The care team assists Mr. Smith with,0,positive,0.64756554,0.1979293,0.1545051,58
+"Mr. Smith, an 81-year-old resident of a long-term care facility, has several health challenges, including multiple sclerosis, COPD, and depression.",2,negative,0.20530355,0.13166407,0.6630324,59
+"His multiple sclerosis causes significant mobility impairments, while his COPD requires him to use supplemental oxygen.",2,negative,0.26664197,0.14227386,0.5910842,59
+The facility provides him with a portable oxygen concentrator and closely monitors his respiratory condition.,0,positive,0.6302699,0.20430908,0.16542098,59
+Mr. Smith also has,0,positive,0.44536644,0.26422194,0.29041156,59
+"Mr. Smith, an 85-year-old resident with Alzheimer's disease, is receiving care at a specialized care home.",0,positive,0.48355392,0.25263828,0.26380786,60
+"He has mild symptoms of the disease and enjoys participating in activities at the care home, despite his challenges.",2,negative,0.3604764,0.1581733,0.48135024,60
+"The care team provides support with all activities of daily living, including personal care, meal preparation, and medication management.",0,positive,0.86597246,0.09420444,0.039823048,60
+The care home,0,positive,0.55801636,0.25540087,0.18658274,60
+"Mr. Smith, an 80-year-old resident with advanced Parkinson's disease and declining cognitive function, receives comprehensive care at a long-term care facility.",0,positive,0.6001343,0.22448947,0.17537622,61
+"He exhibits severe symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.15772343,0.15155496,0.69072163,61
+"Despite these challenges, Mr. Smith remains physically active and enjoys participating in activities at the facility.",0,positive,0.6717465,0.23005053,0.098202996,61
+The care team provides support with,0,positive,0.822399,0.12922955,0.048371457,61
+"Mr. Smith, an 83-year-old with advanced Parkinson's disease and COPD, resides in a long-term care facility.",0,positive,0.43555695,0.2899516,0.27449143,62
+"He requires full assistance with daily activities and experiences significant tremors, rigidity, and bradykinesia.",0,positive,0.7315387,0.12402135,0.1444399,62
+"The care team provides a structured daily routine, therapeutic approaches, and pain relief medications to manage his symptoms.",0,positive,0.6373669,0.21819921,0.14443395,62
+They also focus on,0,positive,0.52402526,0.22940385,0.24657089,62
+"Mr. Smith is an 85-year-old resident of a long-term care facility who has Alzheimer's disease, chronic heart failure, and type 2 diabetes.",2,negative,0.2864319,0.2302604,0.48330775,63
+He has progressed to the moderate stages of Alzheimer's and requires assistance with all activities of daily living.,0,positive,0.48992273,0.2145184,0.29555884,63
+"The care team provides a structured daily routine, familiar objects, and music to manage his",0,positive,0.7541379,0.17008357,0.07577859,63
+"Mr Smith, an 83-year-old resident of a long-term care facility, has a complex medical history with advanced heart failure, chronic kidney disease, and type 2 diabetes.",2,negative,0.2877058,0.1842815,0.5280127,64
+"To manage his symptoms, he requires careful monitoring of his fluid intake, regular assessments of his heart function, and medication management.",0,positive,0.59889674,0.2423487,0.15875447,64
+The nursing staff regularly monitor his vital signs and diet,0,positive,0.45210275,0.2748914,0.27300587,64
+"The text describes the care provided to Mr. Smith, an 80-year-old resident of a long-term care facility.",0,positive,0.61129624,0.20652077,0.18218301,65
+"Mr. Smith has several health conditions, including Parkinson's disease, chronic kidney disease, and type 2 diabetes.",2,negative,0.33134797,0.19833958,0.47031245,65
+"The care team manages his medications, including dopamine replacement therapy, and helps him with daily activities.",0,positive,0.8265178,0.10688981,0.06659236,65
+The facility provides a,0,positive,0.69119656,0.20720623,0.101597264,65
+"The text describes Mr. Smith's, a 79-year-old resident of a long-term care facility, journey with Alzheimer's disease and other health challenges.",0,positive,0.525218,0.1594424,0.31533962,66
+"Despite his condition, Mr. Smith remains engaged in activities and enjoys a comfortable and supportive environment.",0,positive,0.75996387,0.19314048,0.046895605,66
+"The care team provides a structured routine, familiar objects, and music therapy sessions to manage his symptoms",0,positive,0.6570861,0.21827847,0.124635406,66
+Mr. Smith is an 82-year-old resident of a specialized assisted living facility due to his complex health needs.,0,positive,0.44495836,0.24420328,0.3108384,67
+"He has advanced chronic kidney disease, type 2 diabetes, and moderate dementia.",0,positive,0.4379652,0.16374412,0.3982906,67
+His care team manages his various health challenges with meticulous attention to detail.,0,positive,0.76544607,0.111403465,0.12315047,67
+They work closely with his family to ensure that his care is tailored to his specific needs and preferences,0,positive,0.7123634,0.12514228,0.16249439,67
+"Mr. Smith, an 89-year-old resident of a long-term care facility, has advanced diabetes and chronic heart disease.",0,positive,0.5134081,0.20725623,0.2793357,68
+"His diabetes requires careful monitoring and management, including a strict diet and regular blood sugar level checks.",0,positive,0.58260566,0.27381605,0.1435783,68
+His chronic heart disease is managed with medications and a low-sodium diet.,0,positive,0.48270613,0.23231389,0.28497994,68
+"Despite his physical challenges, Mr. Smith remains mentally engaged and",0,positive,0.36776596,0.28301755,0.3492165,68
+"The text describes the care of Mr. Smith, an 84-year-old man with advanced Alzheimer's disease residing in a long-term care facility.",0,positive,0.39983225,0.23725195,0.3629158,69
+"The key points covered in the text include: - Mr. Smith's diagnosis and symptoms: He has advanced Alzheimer's disease affecting his memory, cognitive abilities, and communication skills. -",0,positive,0.44257578,0.16702472,0.39039955,69
+His,0,positive,0.519589,0.20644398,0.27396703,69
+"The text describes the care of Mr. Smith, an 87-year-old man with advanced Parkinson's disease residing in a long-term care facility.",0,positive,0.39029518,0.24041764,0.36928716,70
+"The key points covered in the text include his physical limitations, such as mobility and strength issues, and his emotional well-being, including depression and anxiety.",2,negative,0.24514768,0.1376826,0.61716974,70
+"The care team provides regular physical therapy, medication management",0,positive,0.64094883,0.24657488,0.112476274,70
+"Mr. Smith, an 86-year-old with advanced Alzheimer's disease, resides in a long-term care facility.",0,positive,0.4482205,0.2963644,0.2554151,71
+"His care includes regular monitoring, medication management, and therapeutic approaches.",0,positive,0.6411614,0.22229832,0.13654023,71
+"Despite his condition, Mr. Smith enjoys participating in music therapy and reminiscence sessions.",0,positive,0.63511115,0.2626202,0.10226865,71
+His family actively participates in his care and provides additional support.,0,positive,0.8693898,0.09406944,0.036540776,71
+The care team is exploring,0,positive,0.610447,0.21973936,0.16981366,71
+"Mr. Smith, a 92-year-old resident with Alzheimer's disease, requires specialized care due to his fluctuating cognitive abilities, visual hallucinations, and motor symptoms.",0,positive,0.4470086,0.22783595,0.3251554,72
+The care team provides a structured and supportive environment to manage his symptoms and maintain his quality of life.,0,positive,0.8427411,0.1109774,0.04628152,72
+"They regularly monitor and manage his motor symptoms, provide medication to control tremors and stiffness, and assist",0,positive,0.60512084,0.20762718,0.18725203,72
+"Mr Smith, a 79-year-old with severe osteoarthritis, chronic back pain, and depression, receives comprehensive domiciliary care.",0,positive,0.41286805,0.19992927,0.38720268,73
+"His care team provides daily support with activities of daily living, medication management, and pain relief.",0,positive,0.8087934,0.12723358,0.063973024,73
+"They also manage his chronic back pain and depression through exercises, therapy, and dietary adjustments.",0,positive,0.43735567,0.20726916,0.35537514,73
+"Mr Smith enjoys gardening, reading, and spending time",0,positive,0.83835477,0.12287413,0.038771078,73
+"The text describes Mr. Smith's, an 84-year-old resident with advanced Lewy body dementia and type 2 diabetes, care at a residential care home.",0,positive,0.46758235,0.23312542,0.29929224,74
+"The text highlights the challenges Mr. Smith faces due to his dementia and diabetes, as well as the care provided by the home to address these issues.",2,negative,0.4358752,0.09640412,0.46772066,74
+The care home offers a secure environment with,0,positive,0.73431045,0.18823363,0.07745592,74
+"Mr. Smith, an 83-year-old resident with advanced Alzheimer's disease, type 2 diabetes, and osteoporosis, requires comprehensive care.",0,positive,0.55883294,0.24091764,0.20024942,75
+"The facility provides 24-hour assistance with daily activities, including feeding, hygiene, and mobility.",0,positive,0.6843554,0.2108675,0.10477713,75
+"The care team assists with bathing, dressing, grooming, and pain management.",0,positive,0.738403,0.14423797,0.11735902,75
+Mr. Smith's diabetes requires,0,positive,0.48894748,0.26108572,0.24996677,75
+"Mr Smith, a 78-year-old with multiple sclerosis, requires a comprehensive domiciliary care package.",0,positive,0.47801167,0.27289,0.24909835,76
+"He has limited mobility and strength, uses a wheelchair, and experiences pressure sores.",0,positive,0.40148127,0.2586476,0.33987114,76
+His multiple sclerosis is managed through medication and diet.,0,positive,0.5048874,0.21481444,0.2802982,76
+"The care team provides daily assistance with transfers, positioning, and sensory activities.",0,positive,0.6810879,0.20798463,0.11092742,76
+They also monitor his condition closely and adjust his treatment plan,0,positive,0.4695298,0.23482747,0.29564276,76
+"Mr. Smith, an 84-year-old resident in a long-term care facility, has complex health conditions that require specialized care.",0,positive,0.3723165,0.26231527,0.36536822,77
+"His chronic heart failure and COPD necessitate careful management of his diet, oxygen intake, and overall health.",2,negative,0.23474881,0.14577015,0.619481,77
+"Despite his physical limitations, Mr. Smith enjoys social activities, hobbies, and family visits.",0,positive,0.669414,0.23492093,0.095665045,77
+The care team works closely with Mr,0,positive,0.6252975,0.21609846,0.15860404,77
+"Mr Smith, a resident at a long-term care facility, has Lewy body dementia, which presents unique challenges in his care.",2,negative,0.39579213,0.14380991,0.460398,78
+"He experiences fluctuating cognitive abilities, visual hallucinations, and motor symptoms similar to Parkinson's disease.",2,negative,0.41057324,0.1399664,0.44946036,78
+The care team provides a structured and supportive environment to manage his symptoms and maintain his quality of life.,0,positive,0.84274113,0.110977404,0.04628152,78
+"They monitor his motor symptoms, manage his medication",0,positive,0.4992858,0.2326984,0.2680158,78
+"Mr Smith, an 85-year-old resident of a care home specializing in dementia care, has Alzheimer's disease and experiences a gradual decline in cognitive function.",2,negative,0.2615005,0.18899272,0.5495067,79
+"He is in the moderate stages of the disease and requires assistance with daily activities, including dressing, grooming, and meal preparation.",0,positive,0.4340815,0.28710416,0.27881432,79
+"The care team provides personalized care, including cognitive stimulation activities, medication management,",0,positive,0.76229244,0.15004897,0.08765861,79
+Mr Smith is an 83-year-old resident of a care home specializing in dementia care.,0,positive,0.47406355,0.2954437,0.23049274,80
+He has Alzheimer's disease and is experiencing a gradual decline in cognitive function.,2,negative,0.23422961,0.16038631,0.60538405,80
+"Despite his challenges, Mr Smith remains physically active and enjoys participating in activities at the care home.",0,positive,0.7054058,0.21517442,0.07941976,80
+"The care team provides support with all activities of daily living, including personal care, meal preparation,",0,positive,0.8687584,0.09157136,0.039670214,80
+"Mr Smith, an 81-year-old resident with Alzheimer's disease, requires assistance with daily activities and cognitive stimulation.",0,positive,0.63615113,0.23744716,0.12640171,81
+"The care team provides support with personal care, meal preparation, and medication management.",0,positive,0.8186483,0.12410236,0.0572493,81
+They work closely with his family to ensure his care is personalized and meets his needs.,0,positive,0.8519114,0.08482554,0.063262984,81
+"Recent changes to his care plan include additional cognitive stimulation activities, such as one",0,positive,0.54621184,0.20406719,0.24972098,81
+"Mr Smith, a 79-year-old resident at a long-term care facility, has several health challenges, including advanced multiple sclerosis, type 2 diabetes, and depression.",2,negative,0.27258962,0.15562658,0.5717838,82
+"Despite his limitations, Mr. Smith remains socially active and enjoys participating in various activities offered by the facility.",0,positive,0.72821766,0.21345745,0.05832482,82
+His family is actively involved in his care and provides support and participation in his care,0,positive,0.8853285,0.072860196,0.041811366,82
+"The text describes Mr. Smith's, an 81-year-old resident of a long-term care facility, healthcare management and overall well-being.",0,positive,0.7718606,0.109745406,0.11839406,83
+"The text highlights his chronic kidney disease, type 2 diabetes, and depression, emphasizing the need for careful management and support.",2,negative,0.2662733,0.10174729,0.6319794,83
+The text also underscores the importance of his family's involvement in his care and,0,positive,0.5571792,0.1372191,0.30560166,83
+"The text describes the care provided to Mr. Smith, an 81-year-old resident with advanced Alzheimer's disease living in a long-term care facility.",0,positive,0.62290573,0.18860342,0.1884909,84
+Mr. Smith has significant cognitive impairment and daily living difficulties due to his condition.,2,negative,0.23171082,0.16666448,0.60162467,84
+"He is non-verbal, wheelchair-bound, and requires assistance with mobility and transfers.",1,neutral,0.38287455,0.53387904,0.08324643,84
+The care home provides 2,0,positive,0.6300277,0.25150526,0.11846712,84
+"The text describes Mr. Smith's, an 85-year-old, living in a care home due to advanced stroke and chronic heart failure.",2,negative,0.34336942,0.24441406,0.4122165,85
+"Despite his conditions, Mr. Smith remains mentally alert and enjoys social interactions, including gardening and participating in activities tailored for residents with limited mobility.",0,positive,0.42976105,0.23216349,0.33807543,85
+"The care team provides round-the-clock care, including assistance with feeding",0,positive,0.6485912,0.22164533,0.1297635,85
+"Mr Smith, an 84-year-old resident living in a care home, has advanced osteoarthritis and chronic heart failure.",2,negative,0.23557122,0.19752713,0.5669017,86
+His condition requires constant care and management.,0,positive,0.5623061,0.2890775,0.14861639,86
+"The care team provides round-the-clock assistance with daily activities, including feeding, personal hygiene, and positioning to prevent pressure sores.",0,positive,0.6307749,0.22446465,0.14476043,86
+Mr. Smith's heart failure necessitates careful monitoring and medication management.,2,negative,0.13390633,0.16098821,0.7051055,86
+"Mr Smith, an 83-year-old man, resides in a long-term care facility due to his complex medical conditions.",0,positive,0.36400944,0.27826217,0.35772845,87
+"He has advanced multiple sclerosis and COPD, which have significantly impacted his mobility and overall health.",2,negative,0.40995437,0.10718465,0.482861,87
+"Despite his challenges, Mr. Smith remains mentally engaged and enjoys various activities, including music therapy, gardening, and spending time with his family.",0,positive,0.65395635,0.20825046,0.13779315,87
+The,0,positive,0.5080674,0.2245126,0.26741996,87
+"Mr Smith, an 84-year-old resident of a care home specializing in dementia care, has been experiencing a gradual decline in cognitive function due to vascular dementia.",2,negative,0.2596236,0.20494205,0.5354344,88
+"He is in the moderate stages of the disease with symptoms including memory loss, confusion, and difficulty with language.",2,negative,0.20209236,0.21680245,0.5811052,88
+"Despite these challenges, Mr Smith remains physically active and enjoys participating in activities at the care home",0,positive,0.69914037,0.21279554,0.08806405,88
+"Mr Smith, an 81-year-old with advanced multiple sclerosis, resides in a long-term care facility.",0,positive,0.41289428,0.3272412,0.2598645,89
+He experiences significant physical disability and relies on a wheelchair for mobility.,2,negative,0.22034556,0.12915654,0.6504979,89
+"The care team provides assistance with daily activities, medication management, and symptom management.",0,positive,0.6625941,0.17597902,0.16142686,89
+"Mr. Smith enjoys reading, listening to music, and participating in the facility's book club.",0,positive,0.857801,0.107753254,0.03444573,89
+His,0,positive,0.51958895,0.20644398,0.27396706,89
+"Mr Smith, an 84-year-old with advanced COPD, resides in a long-term care facility.",0,positive,0.44276574,0.31836218,0.2388721,90
+He experiences significant respiratory impairment and relies on oxygen therapy.,0,positive,0.48743027,0.13903914,0.3735306,90
+"His COPD affects his breathing, causing shortness of breath, fatigue, and occasional chest tightness and coughing.",2,negative,0.15679169,0.10421768,0.7389906,90
+"The care team provides support with daily activities, medication management, and symptom management.",0,positive,0.7978407,0.1255903,0.07656901,90
+Mr Smith enjoys reading,0,positive,0.7934754,0.15937604,0.047148515,90
+"Mr Smith, an 85-year-old with severe arthritis, macular degeneration, and mild cognitive impairment, resides in a care home.",2,negative,0.3216487,0.23912214,0.4392292,91
+His physical limitations necessitate constant assistance with daily activities and require a wheelchair for mobility.,2,negative,0.27741817,0.3024673,0.4201146,91
+"The care home provides comprehensive support, including physiotherapy, vision aids, and dietary adjustments.",0,positive,0.76608896,0.1349334,0.09897763,91
+"Despite his challenges, Mr Smith enjoys sensory activities, music therapy,",0,positive,0.7804893,0.15976845,0.05974228,91
+"Mr Smith, an 86-year-old resident with advanced frontotemporal dementia and COPD, requires total assistance with daily activities and relies on staff for all aspects of care.",0,positive,0.5837474,0.23667729,0.17957534,92
+"The care team uses a person-centered approach, focusing on Mr. Smith's comfort and dignity, and provides a structured daily routine to help reduce his anxiety and confusion.",0,positive,0.6048368,0.1641408,0.23102242,92
+His COPD is,0,positive,0.39722872,0.21650285,0.3862684,92
+"The text describes the care of Mr. Smith, an 85-year-old man living with vascular dementia in a long-term care facility.",2,negative,0.37604827,0.22928773,0.394664,93
+"He experiences cognitive impairment, motor symptoms, visual hallucinations, and anxiety.",2,negative,0.23007189,0.15800738,0.6119207,93
+The care team provides a structured and supportive environment to manage his symptoms and maintain his quality of life.,0,positive,0.8427411,0.11097742,0.046281528,93
+"They monitor his motor symptoms, provide medication to control",0,positive,0.5443609,0.2241773,0.23146181,93
+"Mr Smith, an 85-year-old with advanced dementia and chronic pain, requires full-time assistance with daily activities.",0,positive,0.52437615,0.27360225,0.20202161,94
+His dementia has progressed to the stage where he experiences significant memory loss and confusion.,2,negative,0.1890402,0.13730033,0.6736595,94
+"The care team manages his symptoms through a structured daily routine, therapeutic approaches, and cognitive stimulation activities.",0,positive,0.6867324,0.17144114,0.1418264,94
+His chronic pain is managed with medications and physical therapy.,0,positive,0.43640625,0.25102368,0.31257007,94
+Despite,1,neutral,0.3237147,0.3780352,0.29825014,94
+"Mr. Smith, a 78-year-old resident of a long-term care facility, has a complex medical history and requires careful management of his COPD, hypertension, and diabetes.",0,positive,0.56298155,0.19409612,0.24292225,95
+"The care team closely monitors his oxygen levels, lung function, and blood pressure.",0,positive,0.561846,0.20901117,0.22914276,95
+"They provide daily assistance with personal hygiene, dressing, and feeding, and ensure his comfort and safety through",0,positive,0.87070096,0.0830519,0.046247136,95
+"Mr Smith, an 85-year-old resident in a residential care home, has complex healthcare needs due to his diagnoses of advanced Alzheimer's disease, chronic heart failure, and osteoporosis.",2,negative,0.40377456,0.16395651,0.43226892,96
+His Alzheimer's disease has progressed to the point where he requires full-time assistance with daily activities.,0,positive,0.5092706,0.19218402,0.29854536,96
+"The care home provides a structured routine, therapeutic approaches, and activities tailored",0,positive,0.7276026,0.17752877,0.09486861,96
+"Mr. Smith, an 81-year-old resident with advanced Alzheimer's disease, chronic heart failure, and osteoporosis, requires full-time assistance with daily activities due to his progressive symptoms.",0,positive,0.39408258,0.24543437,0.36048302,97
+"The care team manages his symptoms through a structured routine, therapeutic approaches, and medication management.",0,positive,0.59675336,0.1969741,0.20627253,97
+"They also focus on improving his cardiovascular health, nutritional needs, and fall prevention.",0,positive,0.7319747,0.12911187,0.13891338,97
+"Mr Smith, an 84-year-old resident in a residential care home, has complex medical conditions including Alzheimer's disease, chronic heart failure, and osteoporosis.",2,negative,0.24349923,0.16397825,0.5925225,98
+His Alzheimer's disease has progressed to the point where he requires full-time assistance with all activities of daily living.,0,positive,0.53354156,0.18826115,0.27819726,98
+The care home provides a structured daily routine and uses various therapeutic approaches to manage his,0,positive,0.7053725,0.20703197,0.08759552,98
+"Mr Smith, an 81-year-old resident with vascular dementia, lives in a specialized care home.",0,positive,0.49144098,0.2941473,0.21441174,99
+"His condition affects his memory, attention, and communication skills.",2,negative,0.38973546,0.15044224,0.4598223,99
+"The care team provides a structured and supportive environment, including medication, daily activities, and cognitive stimulation.",0,positive,0.8636091,0.100145906,0.036244996,99
+"Despite his condition, Mr Smith enjoys participating in art therapy and outdoor activities in the facility's garden",0,positive,0.6807829,0.22794531,0.09127177,99
+"Mr. Smith, a resident of a specialized care home for individuals with dementia, has Lewy body dementia that affects his cognitive abilities.",2,negative,0.2918016,0.18867776,0.51952064,100
+The care team provides a structured and supportive environment to manage his symptoms and maintain his quality of life.,0,positive,0.84274113,0.11097741,0.046281528,100
+"They offer medication, daily activities, and cognitive stimulation activities to help maintain his cognitive function.",0,positive,0.79178303,0.13256663,0.075650305,100
+"Despite his condition, Mr. Smith enjoys participating in",0,positive,0.63750064,0.25077343,0.11172591,100
+"The text describes Mr. Smith's, an 88-year-old resident in a long-term care facility, overall well-being.",0,positive,0.8270189,0.08843465,0.08454646,101
+"He has advanced arthritis and chronic kidney disease, which require careful management and monitoring.",0,positive,0.59142965,0.18814376,0.2204266,101
+"The care team provides daily assistance with personal hygiene, dressing, and feeding, manages his pain with medications and physical therapy, and monitors his kidney",0,positive,0.7551836,0.14243056,0.10238589,101
+"Mr. Smith, an 84-year-old resident at a long-term care facility, has a complex medical history with advanced multiple sclerosis and chronic heart failure.",2,negative,0.29025993,0.16986018,0.5398799,102
+"Despite his limitations, Mr. Smith maintains a positive outlook and enjoys participating in activities offered at the facility.",0,positive,0.8967112,0.075294,0.0279948,102
+His family is very supportive and involved in his care planning.,0,positive,0.93218577,0.049115334,0.018698886,102
+The care team provides comprehensive and compassionate,0,positive,0.86510676,0.075963445,0.0589298,102
+The text describes Mr. Smith's care at a long-term care facility.,0,positive,0.392413,0.2674274,0.34015957,103
+He has advanced dementia and chronic kidney disease and requires full-time assistance with daily activities.,0,positive,0.63047564,0.17781565,0.19170868,103
+"The care team provides a structured daily routine, therapeutic approaches, and medication management for his conditions.",0,positive,0.711942,0.18825737,0.09980068,103
+"Mr. Smith enjoys participating in activities at the facility, including music therapy, library visits, and social interaction",0,positive,0.86671466,0.09492923,0.03835615,103
+"Mr. Smith, a 76-year-old with complex medical needs, requires close monitoring and management of his heart failure, COPD, and diabetes.",0,positive,0.5240828,0.23694079,0.23897639,104
+"His care plan includes regular monitoring of his vital signs, medication management, and breathing treatments.",0,positive,0.62314874,0.2150299,0.1618214,104
+He also enjoys participating in group activities and interacting with his family.,0,positive,0.9369924,0.0490899,0.013917763,104
+"The care home provides a supportive environment for Mr. Smith,",0,positive,0.83113325,0.11953353,0.049333222,104
+"Mr. Smith, an 85-year-old resident with advanced dementia, hypertension, and chronic kidney disease, requires a high level of care.",0,positive,0.5745475,0.19856755,0.22688493,105
+"His dementia has led to significant cognitive decline, and he is now in the late stages of the disease.",2,negative,0.14430632,0.12287786,0.7328158,105
+"The nursing staff provide 24-hour care, assisting him with feeding, personal hygiene, and mobility.",0,positive,0.66453743,0.19125247,0.14421009,105
+To,0,positive,0.5463761,0.21709992,0.23652391,105
+"Mr. Smith, an 84-year-old with advanced dementia, hypertension, and chronic kidney disease, requires 24-hour care in a long-term care facility.",0,positive,0.5065802,0.22827946,0.26514044,106
+"His dementia has led to significant cognitive decline, and he is non-verbal, relying on staff for daily activities.",2,negative,0.10588069,0.21191835,0.6822009,106
+"The nursing staff provide comprehensive care, managing his hypertension, feeding, personal",0,positive,0.7087971,0.14358959,0.14761335,106
+The text describes Mr. Smith's care at a long-term care facility.,0,positive,0.3924131,0.26742744,0.34015948,107
+"He has advanced Parkinson's disease, hypertension, and chronic kidney disease.",0,positive,0.5410182,0.161093,0.2978888,107
+"The nursing staff provide 24-hour care, assisting him with various activities.",0,positive,0.6124096,0.2099423,0.17764811,107
+"Mr. Smith's care plan includes regular assessments by a speech and language therapist, medication management for hypertension, and sensory activities.",0,positive,0.46965185,0.28643268,0.24391551,107
+"The text describes Mr. Smith's, an 87-year-old, journey living in a long-term care facility.",0,positive,0.5824441,0.20934069,0.2082152,108
+"Despite his advanced multiple sclerosis and type 2 diabetes, Mr. Smith enjoys a structured daily routine and sensory activities.",0,positive,0.74407756,0.17887491,0.07704751,108
+"The care team manages his symptoms through medication, therapy, and nutritional support.",0,positive,0.71846604,0.15516756,0.1263664,108
+His family is actively involved in his care and,0,positive,0.69971263,0.1426318,0.15765554,108
+"The text describes the care of Mr. Smith, an 85-year-old man with advanced dementia and chronic back pain.",2,negative,0.21262382,0.20375834,0.5836178,109
+"The text highlights his daily activities, medical management, and family involvement.",0,positive,0.7467289,0.11626137,0.13700965,109
+Key points include: - Mr. Smith requires full-time assistance with all activities of daily living due to his advanced dementia. -,0,positive,0.5231957,0.20572102,0.27108327,109
+The care team provides a structured,0,positive,0.67447704,0.22392645,0.101596534,109
+"Mr Smith, an 84-year-old resident with advanced Parkinson's disease and declining cognitive function, requires a high level of care at a long-term care facility.",0,positive,0.5697673,0.23891161,0.19132109,110
+"Despite his challenges, he remains physically active and enjoys participating in activities such as music therapy and physical therapy.",0,positive,0.69666123,0.21782309,0.08551568,110
+"The care team provides support with all activities of daily living, including personal care, meal",0,positive,0.83731234,0.099142864,0.063544855,110
+"Mr Smith, an 81-year-old with chronic kidney disease, hypertension, and mild cognitive impairment, receives comprehensive care at home.",0,positive,0.48794708,0.22463131,0.28742158,111
+"His care team manages his medications, including blood pressure medications and pain relievers, and assists him with adhering to his strict diet and dialysis treatments.",0,positive,0.72524655,0.1404527,0.13430083,111
+They also encourage him to stay active and participate in light physical activities.,0,positive,0.84680945,0.10137258,0.051818,111
+Despite his health,1,neutral,0.26027378,0.39577428,0.34395194,111
+"Mr Smith, an 80-year-old with COPD, type 2 diabetes, and mild cognitive impairment, lives alone and receives care at home.",0,positive,0.41538745,0.2358876,0.34872493,112
+"His care team manages his COPD, diabetes, and mental health.",0,positive,0.6865509,0.15785854,0.1555905,112
+"They assist him with medications, diet, and physical activity.",0,positive,0.7699337,0.1495725,0.080493845,112
+"Despite his health challenges, Mr. Smith remains mentally sharp and enjoys various activities.",0,positive,0.54534686,0.15836193,0.2962913,112
+His family,0,positive,0.53006613,0.21705684,0.25287703,112
+"Mr Smith, an 85-year-old with advanced breast cancer, requires careful management of his symptoms and well-being.",0,positive,0.6046495,0.22053093,0.1748196,113
+He has limited mobility and relies on staff for daily activities.,0,positive,0.41514304,0.3900781,0.19477886,113
+"The care team provides a structured daily routine, therapeutic approaches, and emotional support.",0,positive,0.8280044,0.11666454,0.05533103,113
+They are exploring additional interventions to improve Mr. Smith's quality of life and comfort.,0,positive,0.768651,0.11666533,0.11468372,113
+The family,0,positive,0.54855937,0.21001124,0.24142942,113
+"The text describes Mr. Smith's, an 82-year-old, living in a care home due to his advanced age and multiple health conditions.",0,positive,0.41257322,0.25500178,0.33242506,114
+"The text highlights his osteoporosis, congestive heart failure, mild dementia, and his overall well-being.",2,negative,0.30121702,0.061643016,0.63714,114
+"The text also covers various aspects of Mr. Smith's daily life, including his physiotherapy, medication management",0,positive,0.5764157,0.19693193,0.22665232,114
+"The text describes Mr. Smith's, an 80-year-old resident, living in a long-term care facility.",0,positive,0.45492688,0.2714288,0.27364433,115
+"He has severe arthritis, congestive heart failure, and mild dementia.",2,negative,0.09115811,0.052592874,0.856249,115
+"The care team provides daily assistance with activities of daily living, physiotherapy, and medication management.",0,positive,0.6987939,0.18321316,0.117993005,115
+"Mr. Smith enjoys intellectual and social activities, art therapy, and friendships with",0,positive,0.95009553,0.03530674,0.01459775,115
+"Mr. Smith, an 88-year-old resident, has complex health needs and requires a specialized assisted living facility.",0,positive,0.6735109,0.20243683,0.12405221,116
+"His chronic kidney disease, type 2 diabetes, and mild cognitive impairment necessitate careful management and ongoing support.",2,negative,0.3966508,0.16198486,0.44136435,116
+"The care team diligently monitors his diet, fluid intake, and medications to ensure his well-being.",0,positive,0.66923374,0.16937762,0.16138859,116
+"Additionally, they provide cognitive stimulation activities and",0,positive,0.79803526,0.13254075,0.06942393,116
+"Mr. Smith, a 90-year-old resident, has complex health needs and requires specialized care.",0,positive,0.6611082,0.20373756,0.13515429,117
+"His chronic kidney disease, type 2 diabetes, and mild cognitive impairment necessitate careful management and support.",2,negative,0.3874068,0.15665868,0.4559345,117
+"The care team manages his diet, fluid intake, and medications to ensure his well-being.",0,positive,0.828383,0.09268558,0.07893137,117
+They also provide cognitive stimulation and supervision to help him cope with his,0,positive,0.7049019,0.14006193,0.15503624,117
+"Mr. Smith, an 84-year-old resident, has multiple chronic conditions and requires specialized care in a nursing home.",2,negative,0.3278463,0.2864779,0.38567585,118
+"His primary concerns include heart failure, COPD, and chronic kidney disease.",2,negative,0.1518649,0.10548637,0.7426487,118
+"To manage his heart failure, he follows a low-sodium diet and takes medications.",2,negative,0.327884,0.23198678,0.4401292,118
+"For his COPD, he receives oxygen therapy and uses a portable concentrator during the day",0,positive,0.6877222,0.16577202,0.14650574,118
+"The text describes the care of Mr. Smith, an 85-year-old resident with Alzheimer's disease, residing in a long-term care facility.",0,positive,0.3818625,0.25579676,0.36234075,119
+"Despite his moderate stage Alzheimer's, Mr. Smith enjoys participating in activities offered by the facility, including art therapy and music listening.",0,positive,0.7018246,0.18342131,0.11475406,119
+"His family actively participates in his care, bringing personal items and photographs to",0,positive,0.82364935,0.10619407,0.070156574,119
+"Mr. Smith, an 80-year-old resident at a long-term care facility, has been diagnosed with early-stage Alzheimer's disease for six years.",2,negative,0.31287783,0.2254229,0.4616992,120
+"His condition has progressed to the moderate stages, requiring assistance with most activities of daily living.",2,negative,0.35620156,0.27584642,0.36795205,120
+"The care team provides a structured daily routine, familiar objects and music, and therapeutic activities to manage his symptoms",0,positive,0.69021064,0.19891156,0.11087785,120
+"The text describes the care of Mr. Smith, an 82-year-old man living in a long-term care facility specializing in Alzheimer's disease.",0,positive,0.4262436,0.22965382,0.3441026,121
+"Mr. Smith has been living there for five years and has progressed to the moderate stages of Alzheimer's, requiring assistance with most activities of daily living.",0,positive,0.4267293,0.23408057,0.3391901,121
+"The care team provides a structured daily routine, familiar",0,positive,0.7460113,0.18863294,0.0653557,121
+"Mr. Smith, an 82-year-old with severe osteoarthritis, requires comprehensive domiciliary care.",0,positive,0.45070612,0.27852556,0.27076828,122
+He has limited mobility and experiences chronic pain.,2,negative,0.2050974,0.37339845,0.42150414,122
+"His daily activities are assisted by carers who provide specialized care, including pain management medications, physical therapy exercises, and assistance with daily tasks.",0,positive,0.7232134,0.16696371,0.10982291,122
+The care team regularly reviews Mr. Smith's needs and makes adjustments to his care,0,positive,0.48461726,0.21570672,0.29967606,122
+"Mr Smith, an 86-year-old living in a care home, has been battling advanced multiple sclerosis for nine years.",2,negative,0.3234549,0.21033935,0.46620572,123
+"Despite his physical limitations, he remains mentally sharp and enjoys reading and watching documentaries.",2,negative,0.37994236,0.21198705,0.40807062,123
+His family is very supportive and helps with errands and managing his health.,0,positive,0.9518226,0.035816193,0.012361278,123
+"The care team regularly reviews Mr. Smith's needs and implements necessary interventions, such as",0,positive,0.6830818,0.17279242,0.14412583,123
+"Mr. Smith, an 89-year-old resident of a nursing home, has complex chronic health conditions including Alzheimer's disease, chronic kidney disease, osteoporosis, and pain management issues.",2,negative,0.30139065,0.16262887,0.53598046,124
+"Despite his challenges, Mr. Smith responds positively to sensory stimulation and enjoys a range of activities offered at the facility.",0,positive,0.89530534,0.067601226,0.037093453,124
+His family is actively involved in his care and works closely with,0,positive,0.78522027,0.11449283,0.100286886,124
+"Mr Smith, an 81-year-old with advanced Huntington's disease, COPD, and moderate dementia, receives comprehensive care at a long-term care facility.",0,positive,0.50297934,0.2042978,0.2927228,125
+"The care team utilizes a person-centered approach, focusing on his comfort, dignity, and well-being.",0,positive,0.8295569,0.08995275,0.0804903,125
+"They provide a structured daily routine to reduce anxiety and confusion, while ensuring his medical needs are",0,positive,0.51382047,0.18502182,0.30115765,125
+"Mr. Smith, an 81-year-old resident at a long-term care facility, has a complex medical history and requires comprehensive care.",0,positive,0.6081957,0.2308785,0.16092576,126
+"He has advanced COPD, congestive heart failure, and peripheral artery disease.",2,negative,0.36883613,0.15368192,0.47748193,126
+"His respiratory condition necessitates oxygen therapy, inhalers, and chest physiotherapy.",2,negative,0.29383445,0.17902936,0.52713627,126
+His heart failure requires careful management of fluid intake and diet.,2,negative,0.23142722,0.22212987,0.5464429,126
+His peripheral artery,0,positive,0.4245766,0.21606976,0.35935366,126
+"Mr. Smith, a 79-year-old resident of a long-term care facility, has mild cognitive impairment and requires assistance with daily activities.",2,negative,0.19511014,0.21237111,0.5925188,127
+"The care team provides support with medication management, meal preparation, and communication.",0,positive,0.80652434,0.13240476,0.06107086,127
+They also work closely with the family to ensure that Mr. Smith's care is personalized and meets his needs and preferences.,0,positive,0.80840904,0.10857538,0.08301554,127
+The care team,0,positive,0.55827457,0.24158072,0.20014472,127
+"Mr. Smith, an 83-year-old with advanced multiple sclerosis and mild cognitive impairment, requires a comprehensive and supportive care environment.",0,positive,0.56397325,0.22605935,0.20996732,128
+"His multiple sclerosis affects his mobility, balance, and motor function, while his cognitive impairment necessitates careful management.",2,negative,0.20550723,0.12642062,0.6680721,128
+"The care team provides assistance with daily activities, including dressing, grooming, and bathing, using adaptive equipment and techniques to help him",0,positive,0.7857504,0.13426667,0.079982884,128
+"Mr Smith, an 86-year-old man, has been living in a long-term care facility due to his advanced ovarian cancer, chronic pain, and depression.",2,negative,0.26218036,0.21806332,0.5197563,129
+"He requires ongoing chemotherapy and palliative care, experiences chronic pain and fatigue, and struggles with depression and cognitive function.",0,positive,0.43394688,0.1970557,0.36899745,129
+"Despite his health challenges, Mr Smith enjoys participating in activities offered at the facility and socializing",0,positive,0.8049626,0.1351401,0.059897307,129
+"Mr. Smith, an 80-year-old resident in a long-term care facility, has various health challenges including advanced heart failure, chronic kidney disease, and depression.",2,negative,0.21756145,0.13526121,0.64717734,130
+"His heart failure causes shortness of breath, fatigue, and swelling in his legs and requires oxygen therapy and medication management.",2,negative,0.11587137,0.11747873,0.7666499,130
+Chronic kidney disease necessitates careful management with medications and blood pressure checks.,2,negative,0.2714637,0.1787556,0.54978067,130
+Depression affects,2,negative,0.1190846,0.14804076,0.7328746,130
+"The text describes Mr. Smith's journey living with advanced Parkinson's disease, chronic pain, and depression in a long-term care facility.",2,negative,0.3786742,0.18254727,0.4387785,131
+"Despite his health challenges, Mr. Smith maintains a positive outlook and enjoys participating in activities at the facility and socializing with other residents.",0,positive,0.9364658,0.04234462,0.021189539,131
+His family is supportive and actively participates in his care planning.,0,positive,0.9233901,0.057641484,0.018968437,131
+The facility provides a holistic approach to,0,positive,0.84567404,0.07304088,0.08128514,131
+"Mr Smith, an 81-year-old resident of a nursing home, has advanced dementia and chronic kidney disease.",0,positive,0.40390316,0.1953615,0.40073535,132
+He requires a high level of care due to his cognitive and physical limitations.,0,positive,0.5725472,0.21168993,0.21576294,132
+The nursing home provides a secure environment with specialized dementia care units and trained staff.,0,positive,0.6992091,0.1946311,0.10615979,132
+Mr. Smith enjoys sensory activities and responds well to music therapy.,0,positive,0.84892476,0.10551327,0.045561984,132
+The staff provide daily assistance with,0,positive,0.6532498,0.22155313,0.12519704,132
+"Mr Smith, a 78-year-old resident, has a complex medical history and requires a high level of care due to his physical limitations.",0,positive,0.49782613,0.2631503,0.2390235,133
+"His primary diagnoses include chronic heart failure, severe osteoporosis, and advanced arthritis.",2,negative,0.26993826,0.14860742,0.58145434,133
+"Despite his challenges, Mr Smith remains mentally sharp and enjoys engaging in intellectual activities.",0,positive,0.49709338,0.14073625,0.3621704,133
+He has a supportive network of friends and family who visit regularly and,0,positive,0.90486383,0.063356385,0.031779766,133
+"The text describes Mr. Smith's healthcare journey, highlighting his multiple sclerosis, urinary incontinence, and the comprehensive care he receives from community health services and his family.",0,positive,0.7205871,0.09046924,0.18894365,134
+"The text emphasizes the impact of multiple sclerosis on Mr. Smith's mobility and daily functioning, as well as the management of his urinary incontinence and pain.",2,negative,0.3069526,0.13973606,0.55331135,134
+"The community health services provide daily assistance with personal hygiene,",0,positive,0.6861665,0.19730933,0.11652408,134
+"Mr Smith, an 81-year-old resident with advanced Alzheimer's disease and chronic heart failure, requires full assistance with all activities of daily living due to his cognitive decline.",0,positive,0.4581127,0.2546216,0.28726572,135
+"The care unit provides a structured daily routine, therapeutic approaches, and personal assistance to manage his symptoms and ensure his comfort and safety.",0,positive,0.7879347,0.13707834,0.074986964,135
+His heart failure is managed with medications and a low-,2,negative,0.09223846,0.15046936,0.7572922,135

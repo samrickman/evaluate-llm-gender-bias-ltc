@@ -1,0 +1,562 @@
+---
+title: "Evaluating gender bias in Large Language Models in long-term care"
+author: Sam Rickman
+format:
+  html:
+    toc: true
+    toc-expand: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
+options(knitr.kable.NA = "")
+library(knitr)
+library(kableExtra)
+library(data.table)
+
+make_bold <- function(txt, word) {
+    gsub(
+        word,
+        sprintf("\\\\textbf{%s}", word),
+        txt
+    )
+}
+``` 
+
+These are the results tables generated with the synthetic data. If you re-run the analysis with new data, you can regenerate this file. First install [Quarto](https://quarto.org/). Then run the following commands:
+
+```sh
+cd ./results_tables
+quarto render ./1__results_tables.qmd 
+```
+
+# Original documents: comparison of sentiment
+
+## Paired t-test: sentence-level
+
+We used a $t$-test to compare the scores between the continuous metrics, the _DistilBERT_-based measure and _Regard_. For the binary _SiEBERT_ model, we use McNemar's $\chi^2$ test for symmetry. As these documents are identical, other than gender, we use the paired implementation of these tests, using functions `t.test` and `mcnemar.test` R functions in the `stats` package. We set out in @tbl-tmcnemar the results comparing sentiment between genders for the original sentences. The null hypothesis that there are no differences in sentiment. We expect not to reject this hypothesis, as we know the needs and circumstances described in the male and female versions of the documents are identical. We do not reject the null in the case of _SiEBERT_ and _Regard_. However, the _DistilBERT_-based model has a larger effect size and the $p$-value indicates the null should be rejected, i.e. there are gender-based differences in how sentiment is measured by this model.
+
+```{r}
+#| label: tbl-tmcnemar
+#| tbl-cap: "t-test and Mcnemar test results (sentence level)"
+t_mcnemar_relevant <- fread("../model_sentiment_output/csv/original_models/final_output/t_test_mf_fm_sentences.csv")
+t_mcnemar_relevant[, metric := factor(metric, levels = c("distilbert", "regard", "siebert"))]
+
+setorder(t_mcnemar_relevant, -metric)
+grp_index <- table(forcats::fct_inorder(t_mcnemar_relevant$metric))
+coef_dt_clean <- copy(t_mcnemar_relevant)
+coef_dt_clean[, metric := NULL]
+
+numeric_cols <- names(coef_dt_clean)[sapply(coef_dt_clean, is.numeric)]
+coef_dt_clean[, (numeric_cols) := lapply(.SD, signif, 3), .SDcols = numeric_cols][
+    ,
+    `Pr(>|t|)` := as.character(`Pr(>|t|)`)
+][
+    ,
+    `Pr(>|t|)` := fifelse(`Pr(>|t|)` == "0", "<0.001", `Pr(>|t|)`)
+] |>
+    kableExtra::kbl(booktabs = TRUE) |>
+    kableExtra::kable_styling() |>
+    kableExtra::pack_rows(index = grp_index) |>
+    kableExtra::footnote(
+        "We use the t-test for the continuous metrics and the McNemar's test for the binary SieBERT metric",
+        threeparttable = TRUE
+    )
+```
+
+
+## Mixed effects model: sentence-level
+
+We also interrogate the sentiment metrics with a mixed effects model. We introduce a random intercept at sentence level, as each we know the sentiment of each sentence depends on what it describes. We also include in the model gender and a variable we call `gender_direction`, indicating whether the original text was written about a male and the generated text about a female, or vice versa. This is to control for any differences in texts that may be associated with the type content written about men and women. The mixed-effects model was specified as:
+
+\begin{align}
+\begin{split}
+\text{sentiment}_{ij} &= \beta_0 + \beta_1 \cdot \text{gender}_i + \beta_2 \cdot \text{gender\_direction}_i \\
+&\quad + u_{0j} + \epsilon_{ij}
+\label{eq:originalsmixed}
+\end{split}
+\end{align}
+
+Where:
+
+- $sentiment$ is a continuous indicator of the proportion of the text which contains non-negative sentiment
+- $gender$ is a binary indicator of whether a text is about a man or a woman.
+- $gender\_direction$ is a binary indicator of whether the original text was written about a male and the generated text about a female, or vice versa.
+- $u_{0j}$ is a random intercept for the $j$-th group (Sentence ID), accounting for the variability in sentiment across different sentences.
+- $\epsilon_{ij}$: Residual error term for the $j$-th observation within the $j$-th group.
+
+We allow the covariance of the random intercept be unstructured. We assume that the random intercepts $u_{0j}$ follow a normal distribution with mean 0 and variance $\sigma_{u0}^2$, the residuals $\epsilon_{ij}$ are independently and normally distributed with mean 0 and variance $\sigma^2$ and the random intercepts $u_{0j}$ are independent of the residuals $\epsilon_{ij}$. 
+
+The final activation layer of SiEBERT is softmax, meaning it produces binary predictions of sentiment (i.e. positive or negative). Therefore for the sentence-level SiEBERT predictions we use a generalized linear model of the above, with a logistic link function, i.e. we estimate $\text{logit}(P(sentiment=1))$, where sentiment can take the values of either 0 (negative) or 1 (positive). The right-hand side of the equation remains the same. 
+
+We show in @tbl-originalsmixed the results of the mixed model. These are consistent with the $t$-test results, i.e. that _Regard_ and _SiEBERT_ do not find systematic differences in sentiment of the original documents on the basis of gender, but the _DistilBERT_-based model does.
+
+
+```{r}
+#| label: tbl-originalsmixed
+#| tbl-cap: "Sentiment output: mixed model (sentence level)"
+coef_dt <- fread("../model_sentiment_output/csv/original_models/lmer_models_all.csv")
+coef_dt[, model := factor(model, levels = c("distilbert", "regard", "siebert"))]
+
+grp_index <- table(forcats::fct_inorder(coef_dt$model))
+coef_dt_clean <- copy(coef_dt)
+coef_dt_clean[, model := NULL]
+
+coef_dt_clean[Coef == "gendermale", Coef := "Gender: Male"]
+coef_dt_clean[Coef == "gender_directionmf", Coef := "Gender direction: mf"]
+
+numeric_cols <- names(coef_dt_clean)[sapply(coef_dt_clean, is.numeric)]
+coef_dt_clean[, (numeric_cols) := lapply(.SD, signif, 3), .SDcols = numeric_cols][
+    ,
+    `Pr(>|t|)` := as.character(`Pr(>|t|)`)
+][
+    ,
+    `Pr(>|t|)` := fifelse(`Pr(>|t|)` == "0", "<0.001", `Pr(>|t|)`)
+] |>
+    kableExtra::kbl(booktabs = TRUE, escape = FALSE) |>
+    kableExtra::kable_styling() |>
+    kableExtra::pack_rows(index = grp_index) |>
+    kableExtra::footnote(
+        "The SiEBERT binomial produces a z-value rather than t-value. For the purpose of presentation, we include this in the t-value column.",
+        threeparttable = TRUE
+    )
+```
+
+## Paired t-test: document-level
+
+It is reassuring that the mixed model results at sentence level are consistent with the $t$-test results. However, summaries do not necessarily have the same number of sentences (and if they do the sentences may not correspond). This means that sentiment for the male and female versions of each summary will need to be aggregated and compared at document level. To confirm that the metrics are appropriate, we also aggregated the sentiment results for the original texts at document level, taking the mean of sentence-level sentiment. 
+
+```{r}
+#| label: tbl-ttestdocsoriginals
+#| tbl-cap: "t-test results (document level)"
+t_mcnemar_relevant <- fread("../model_sentiment_output/csv/original_models/final_output/t_test_mf_fm_docs.csv")
+t_mcnemar_relevant[, metric := factor(metric, levels = c("distilbert", "regard", "siebert"))]
+
+setorder(t_mcnemar_relevant, -metric)
+grp_index <- table(forcats::fct_inorder(t_mcnemar_relevant$metric))
+coef_dt_clean <- copy(t_mcnemar_relevant)
+coef_dt_clean[, metric := NULL]
+
+numeric_cols <- names(coef_dt_clean)[sapply(coef_dt_clean, is.numeric)]
+coef_dt_clean[, (numeric_cols) := lapply(.SD, signif, 3), .SDcols = numeric_cols][
+    ,
+    `Pr(>|t|)` := as.character(`Pr(>|t|)`)
+][
+    ,
+    `Pr(>|t|)` := fifelse(`Pr(>|t|)` == "0", "<0.001", `Pr(>|t|)`)
+] |>
+    kableExtra::kbl(booktabs = TRUE) |>
+    kableExtra::kable_styling() |>
+    kableExtra::pack_rows(index = grp_index)
+```
+
+
+
+## Mixed effects model: document-level
+
+This is the same model as the sentence level regression, though clustering at Document ID rather than Sentence ID level, i.e. 
+\begin{align}
+\begin{split}
+\text{sentiment}_{ij} &= \beta_0 + \beta_1 \cdot \text{gender}_i + \beta_2 \cdot \text{gender\_direction}_i \\
+&\quad + u_{0j} + \epsilon_{ij}
+\label{eq:originalsmixedmean}
+\end{split}
+\end{align}
+
+Where:
+
+- $sentiment$ is a continuous indicator of the proportion of the text which contains non-negative sentiment (mean of each sentence across documents)
+- $gender$ is a binary indicator of whether a text is about a man or a woman.
+- $gender\_direction$ is a binary indicator of whether the original text was written about a male and the generated text about a female, or vice versa.
+- $u_{0j}$ is a random intercept for the $j$-th group (Document ID), accounting for the variability in sentiment across different sentences.
+- $\epsilon_{ij}$: Residual error term for the $j$-th observation within the $j$-th group.
+
+Once again, our assumptions are the same. allow the covariance of the random intercept be unstructured. We assume that the random intercepts $u_{0j}$ follow a normal distribution with mean 0 and variance $\sigma_{u0}^2$, the residuals $\epsilon_{ij}$ are independently and normally distributed with mean 0 and variance $\sigma^2$ and the random intercepts $u_{0j}$ are independent of the residuals $\epsilon_{ij}$. We used a linear model for SiEBERT here too, as the per-document average of binary sentence classifications is continuous. We show in @tbl-originalsmixedmeans the results aggregated at document level.
+
+
+```{r}
+#| label: tbl-originalsmixedmeans
+#| tbl-cap: "Sentiment output: mixed model (document level)"
+coef_dt <- fread("../model_sentiment_output/csv/original_models/lmer_models_all_means.csv")
+coef_dt[, model := factor(model, levels = c("distilbert", "regard", "siebert"))]
+
+grp_index <- table(forcats::fct_inorder(coef_dt$model))
+coef_dt_clean <- copy(coef_dt)
+coef_dt_clean[, model := NULL]
+
+coef_dt_clean[Coef == "gendermale", Coef := "Gender: Male"]
+coef_dt_clean[Coef == "gender_directionmf", Coef := "Gender direction: mf"]
+
+numeric_cols <- names(coef_dt_clean)[sapply(coef_dt_clean, is.numeric)]
+coef_dt_clean[, (numeric_cols) := lapply(.SD, signif, 3), .SDcols = numeric_cols][
+    ,
+    `Pr(>|t|)` := as.character(`Pr(>|t|)`)
+][
+    ,
+    `Pr(>|t|)` := fifelse(`Pr(>|t|)` == "0", "<0.001", `Pr(>|t|)`)
+] |>
+    kableExtra::kbl(booktabs = TRUE) |>
+    kableExtra::kable_styling() |>
+    kableExtra::pack_rows(index = grp_index)
+```
+
+Across all three measures, we see that the DistilBERT-based model finds significant differences in sentiment once gender is changed.  This means it is not an appropriate measure of sentiment for our analysis. This is why we do not use it to measure differences in sentiment of the summaries. However, we do not see significant differences using Regard or SiEBERT. This is why we use these metrics to evaluate the output of the summarisation models.
+
+# Summaries: comparison of sentiment
+
+## Mixed effects model
+
+```{r}
+models_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/final_models.csv")
+models_joined[, metric_regard := NULL][, metric_siebert := NULL]
+
+setnames(models_joined, \(x) gsub("_.+", "", x))
+
+kbl(
+    models_joined,
+    booktabs = TRUE,
+    caption = "Mixed effects model output",
+    label = "tbl-final-sentiment-models"
+) |>
+    kable_styling(latex_options = c("striped", "scale_down", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 5, "SiEBERT" = 5))
+```
+
+
+```{r}
+emmeans_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/emmeans.csv")
+
+setnames(emmeans_joined, \(x) gsub("_.+", "", x))
+
+kbl(
+    emmeans_joined,
+    booktabs = TRUE,
+    caption = "Mixed effects model: estimated marginal means (female - male)",
+    label = "tbl-emmeans"
+) |>
+    kable_styling(latex_options = c("striped", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 4, "SiEBERT" = 4))
+```
+
+## Comparison of themes
+
+We present in @tbl-chisqthemes the results of the $\chi^2$ test for each theme.
+
+```{r}
+#| label: tbl-chisqthemes
+#| tbl-cap: "Chi sq test of word counts per theme"
+coef_dt <- fread("../evaluate_themes/csv_output/chisq_themes.csv")
+coef_dt[, model := factor(model)]
+
+grp_index <- table(forcats::fct_inorder(coef_dt$model))
+coef_dt_clean <- copy(coef_dt)
+coef_dt_clean[, model := NULL]
+setnames(coef_dt_clean, "V6", " ")
+setnames(coef_dt_clean, "V8", " ")
+coef_dt_clean |>
+    kableExtra::kbl(
+        booktabs = TRUE
+    ) |>
+    kableExtra::kable_styling(latex_options = "HOLD_position") |>
+    kableExtra::pack_rows(index = grp_index)
+```
+
+## Evaluation of words
+
+We observed that different models exhibited varying degrees of bias. We present in Table \ref{tab:tbl-wordlevelboth} the results of the word-level analysis. We only include in the table below words which were significant according to the regression, and had an adjusted p-value of < 0.05 in the $\chi^2$ or Fisher's exact test. As we were conducting tests of many individual words, to reduce the chance of false positives we only include in the table words that showed significant differences using both the Benjamini-Hochburg chi-square tests and regression output.
+
+```{r}
+#| label: tbl-wordlevelboth
+#| tbl-cap: "Word level differences regression and $\\chi^2$ output"
+coef_dt <- fread("../bag_of_words/csv/word_level_both_models_firth.csv")
+coef_dt[, model := factor(model)]
+
+
+# https://stackoverflow.com/questions/51971908/match-grouping-variable-with-stripping-shading-using-kableextra
+coef_dt[, color := appears_more]
+ind_end <- cumsum(rle(as.character(coef_dt$color))$lengths)
+ind_start <- c(1, ind_end[-length(ind_end)] + 1)
+pos <- Map(seq, ind_start, ind_end)
+pos <- unlist(pos[1:length(pos) %% 2 == 0])
+coef_dt[, color := NULL]
+
+grp_index <- table(forcats::fct_inorder(coef_dt$model))
+coef_dt_clean <- copy(coef_dt)
+coef_dt_clean[, model := NULL]
+
+sd_cols <- names(coef_dt_clean)[sapply(coef_dt_clean, is.numeric)]
+coef_dt_clean[, (sd_cols) := lapply(.SD, \(x) round(x, 3)), .SDcols = sd_cols]
+
+# Column order
+coef_dt_clean <- coef_dt_clean[, .(
+    word, count_female, count_male, appears_more, estimate, p_stars, p.value, comb_p, comb_p_adj
+)]
+
+setnames(
+    coef_dt_clean,
+    c("word", "appears_more", "p_stars", "p.value", "comb_p", "comb_p_adj", "estimate", "count_female", "count_male"),
+    c(" ", ">", " ", "Pr(>|t|)", "Pr(>|t|)", "Adj. p", "Coef", "female", "male")
+)
+
+coef_dt_clean |>
+    kableExtra::kbl(
+        booktabs = TRUE, escape = FALSE
+    ) |>
+    kableExtra::kable_styling(latex_options = "repeat_header") |>
+    kableExtra::row_spec(pos, background = "#EEEEEE") |>
+    kableExtra::pack_rows(index = grp_index) |>
+    kableExtra::add_header_above(
+        c(" " = 1, "Counts" = 3, "Regression output" = 3, "Chi Sq / Fisher test" = 2)
+    )
+```
+
+
+# Robustness checks
+
+## Bootstrapped model output and estimated marginal means
+
+We generated bootstrapped datasets by creating 1,000 new datasets of the size of the original data. We did this through non-parametric sampling of the original with replacement, taking samples at Document ID level to preserve the correlation of sentiment within documents [@carpenter2000bootstrap]. We then ran our original linear mixed model for each bootstrapped dataset. The bootstrapped estimates are the mean of all 1,000 estimates. The results for the SiEBERT model are in Table \ref{tab:tbl-final-sentiment-models-siebert-bootstrap} and the Regard results are in Table \ref{tab:tbl-final-sentiment-models-regard-bootstrap}.  We calculated the additional columns in Table {tab:tbl-final-sentiment-models-siebert-bootstrap} as follows:
+
+\begin{align*}
+\text{Absolute Bias} &= \text{Bootstrapped Estimate} - \text{Original Estimate} \\
+\text{Relative Bias} &= \frac{\text{Absolute Bias}}{\text{Original Estimate}} \\
+\text{Standardized Bias} &= \frac{\text{Absolute Bias}}{\text{Standard Error}}
+\end{align*}
+
+We present in Table \ref{tab:tbl-emmeansbootstrap} the bootstrapped estimated marginal means. We also include in this table the number of times the $p$-values for the estimated marginal means were less than 0.05 and 0.01. The differences in gender in the Gemma model are greater using SiEBERT, with a larger $t$-value and with a $p$-value of less than 0.01 in all 1000 bootstrapped datasets. The difference is not quite as large in the case of Regard. However, $p < 0.05$ in 962 of 1000 simulated datasets. This happens around 30-40% in the case of the BART models and 40-60% with T5, suggesting that there is an effect of gender bias which is greater than random chance, though is not as strong a finding as the disparities in the Gemma model. There is nothing to indicate that there is a systematic effect of gender on sentiment in Llama3, with slightly under 5% of estimated marginal mean differences resulting in $p < 0.05$ Overall, the results of the bootstrapping confirm our assessment that there are some observable gender-based differences in BART and T5, but the largest differences are in the Gemma model. 
+
+
+```{r}
+out <- fread("../model_sentiment_output/csv/summaries_models/siebert/model_output_tables/bootstrap_estimates_siebert.csv")
+
+setnames(out, "model", " ")
+kbl(
+    out,
+    booktabs = TRUE,
+    caption = "Bootstrapped model output (SiEBERT)",
+    label = "tbl-final-sentiment-models-siebert-bootstrap"
+) |>
+    kable_styling(latex_options = c("striped", "scale_down", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, " " = 5, "Bias" = 3)) |>
+    kableExtra::add_header_above(c(" " = 1, "Original model" = 4, "Bootstrapped model" = 4))
+```
+
+
+```{r}
+out <- fread("../model_sentiment_output/csv/summaries_models/regard/model_output_tables/bootstrap_estimates_regard.csv")
+
+setnames(out, "model", " ")
+kbl(
+    out,
+    booktabs = TRUE,
+    caption = "Bootstrapped model output (Regard)",
+    label = "tbl-final-sentiment-models-regard-bootstrap"
+) |>
+    kable_styling(latex_options = c("striped", "scale_down", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, " " = 5, "Bias" = 3)) |>
+    kableExtra::add_header_above(c(" " = 1, "Original model" = 4, "Bootstrapped model" = 4))
+```
+
+
+
+## Robust mixed effects model
+
+
+```{r}
+models_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/final_models_robust.csv")
+models_joined[, metric_regard := NULL][, metric_siebert := NULL]
+
+setnames(models_joined, \(x) gsub("_.+", "", x))
+
+kbl(
+    models_joined,
+    booktabs = TRUE,
+    caption = "Robust mixed effects model output",
+    label = "tbl-final-sentiment-models-robust"
+) |>
+    kable_styling(latex_options = c("striped", "scale_down", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 3, "SiEBERT" = 3))
+```
+
+
+
+```{r}
+emmeans_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/emmeans_robust.csv")
+
+setnames(emmeans_joined, \(x) gsub("_.+", "", x))
+
+kbl(
+    emmeans_joined,
+    booktabs = TRUE,
+    caption = "Robust mixed effects model: estimated marginal means (female - male)",
+    label = "tbl-emmeansrobust"
+) |>
+    kable_styling(latex_options = c("striped", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 4, "SiEBERT" = 4))
+```
+
+
+
+## Variance-structured mixed effects model
+
+The Q-Q plots demonstrated deviations from normality, especially in the tails, which differ by model. To account for this heteroscedasticity and deviation from normality, we used the R `nlme` package to employ a linear mixed-effects model which allowed the variance to differ by model, i.e.
+
+\begin{equation}
+\text{Var}(\epsilon_{ij}) = \sigma^2_{\text{model}_i}
+\end{equation}
+
+This model would not converge with a random intercept and slope and this variance specification, so we removed the random slope. The model was therefore specified as follows:
+
+\begin{align}
+\begin{split}
+\text{sentiment}_{ij} &= \beta_0 + \beta_1 \cdot \text{model}_i + \beta_2 \cdot \text{gender}_j \\
+&\quad + \beta_3 \cdot (\text{model}_i \times \text{gender}_j) + \beta_4 \cdot \text{max\_tokens}_i \\
+&\quad + u_{0j} + \epsilon_{ij}
+\label{eq:robustlmm}
+\end{split}
+\end{align}
+
+where $\beta_0$ is the intercept, $\beta_1$, $\beta_2$, and $\beta_3$ are the coefficients for model, gender, and their interaction, $\beta_4$ is the coefficient for maximum tokens, $u_{0j}$ is the random intercept for document $j$ and $\epsilon_{ij}$ is the residual error term. We set out the results in Table \ref{tab:tbl-final-sentiment-models-nlme} and the estimated marginal means in Table \ref{tab:tbl-emmeansnlme}. The estimates and are very close to the output from the linear mixed model, though the $p$-values are slightly larger. The BART and T5 models are on the boundary of significance, but now the $p$-values are slightly larger than 0.05. Llama 3 has no significant differences in sentiment between men and women, and Gemma has the largest standardised estimates and smallest $p$-values. This model reduces the risk of Type 1 error, which we see in the larger $p$-values, so it is reassuring that our main findings about Llama 3 and Gemma remain consistent.  
+
+```{r}
+models_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/nlme_final_models.csv")
+models_joined[, metric_regard := NULL][, metric_siebert := NULL]
+
+setnames(models_joined, \(x) gsub("_.+", "", x))
+
+kbl(
+    models_joined,
+    booktabs = TRUE,
+    caption = "Variance-structured mixed effects model output",
+    label = "tbl-final-sentiment-models-nlme"
+) |>
+    kable_styling(latex_options = c("striped", "scale_down", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 5, "SiEBERT" = 5))
+```
+
+
+```{r}
+emmeans_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/nlme_final_models_emm.csv")
+
+setnames(emmeans_joined, \(x) gsub("_.+", "", x))
+
+kbl(
+    emmeans_joined,
+    booktabs = TRUE,
+    caption = "Variance-structured mixed effects: estimated marginal means (female - male)",
+    label = "tbl-emmeansnlme"
+) |>
+    kable_styling(latex_options = c("striped", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 4, "SiEBERT" = 4))
+```
+
+
+## Generalised Estimating Equations (GEE)
+
+We additionally used a Generalised Estimating Equations (GEE) model, which estimates population-averaged effects and adjusts for within-group correlation using robust sandwich estimators, using the `geepack` R package [@geepack]. This model estimates population-averaged effects and can be more robust to misspecified  correlation structures. The GEE model is specified as:
+
+\begin{align}
+\begin{split}
+y_{ij} &= \beta_0 + \beta_1 \text{model}_i + \beta_2 \text{gender}_j \\
+       &\quad + \beta_3 (\text{model}_i \times \text{gender}_j) + \beta_4 \text{max\_tokens}_i + \epsilon_{ij}
+\label{eq:summariesgee}
+\end{split}
+\end{align}
+
+where the correlation structure of the residuals $\epsilon_{i}$ is modelled as exchangeable within groups defined by Document ID.  We do not apply corrections to the standard errors to reduce the risk of Type 1 error, as we have 617 document-level clusters, and generally with 100 or more clusters such corrections are not necessary [@kahan2016increased]. We set out the results of the GEE model in Table \ref{tab:tbl-final-sentiment-models-gee}. We set out the estimated marginal means for the GEE model in Table \ref{tab:tbl-emmeansgee}. 
+The point estimates obtained from the mixed-effects and GEE models were identical, also indicating that the fixed effects are robust to the choice of modelling approach. However, the standard errors differed between the models. The mixed-effects model, which accounts for random effects, generally provided smaller standard errors compared to the GEE model. We attempted to fit a GEE model with an unstructured covariance matrix but the model would not converge, which may have contributed to the larger standard errors in the GEE model. The result of this difference is that we do not see significant differences in sentiment on the basis of gender in the BART and T5 models. The Gemma model is not affected by these differences, and summaries about women are still significantly less negative than those about men.
+
+```{r}
+models_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/gee_models.csv")
+models_joined[, metric_regard := NULL][, metric_siebert := NULL]
+
+setnames(models_joined, \(x) gsub("_.+", "", x))
+
+kableExtra::kbl(models_joined, booktabs = TRUE, label = "tbl-final-sentiment-models-gee", caption = "GEE model output") |>
+    kable_styling(latex_options = c("striped", "scale_down", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 5, "SiEBERT" = 5))
+```
+
+
+```{r}
+emmeans_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/gee_emm.csv")
+
+setnames(emmeans_joined, \(x) gsub("_.+", "", x))
+
+kbl(
+    emmeans_joined,
+    booktabs = TRUE,
+    caption = "GEE model: estimated marginal means (female - male)",
+    label = "tbl-emmeansgee"
+) |>
+    kable_styling(latex_options = c("striped", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 4, "SiEBERT" = 4))
+```
+
+
+## Linear models
+
+The mixed model contains an interaction, a random intercept and a random slope. While this specification makes theoretical sense, to check findings whether findings were sensitive to the model specification, we also split the data into separate tables for each combination of model (BART, Gemma, Llama 3 and T5) and metric (_Regard_ and _SiEBERT_). We then fitted a simple linear model for each of these eight datasets. The linear model can be expressed as:
+
+
+$$
+\text{sentiment}_i = \beta_0 + \beta_1 \cdot \text{gender}_i + \beta_2 \cdot \text{max\_tokens}_i + \beta_3 \cdot \text{doc\_id}_i + \epsilon_i
+$$
+
+where $\beta_0$ is the intercept, $\beta_1$, $\beta_2$, and $\beta_3$ are the coefficients for gender, maximum tokens, and document identifier respectively, and $\epsilon_i$ is the residual error term. We ran this model separately for each LLM and present the output for the Regard metric in Table \ref{tab:tbl-lm}, and for SiEBERT in \ref{tab:tbl-lmsiebert}. The models also produces a coefficient for each Document ID, which are not of interest, so we exclude them from the tables. Similarly to GEE, the point estimates are close to those in the mixed-effects model but with different standard errors, though in this case they are smaller. We present the estimated marginal means by gender for each of the models in Table \ref{tab:tbl-emmeanslm}. They are consistent with the findings from the mixed model.
+
+```{r}
+coef_dt <- fread("../model_sentiment_output/csv/summaries_models/siebert/model_output_tables/linear_model.csv")
+coef_dt[, model := factor(model)]
+
+grp_index <- table(forcats::fct_inorder(coef_dt$model))
+coef_dt_clean <- copy(coef_dt)
+coef_dt_clean[, model := NULL]
+setnames(coef_dt_clean, "p_stars", " ")
+coef_dt_clean |>
+    kableExtra::kbl(
+        booktabs = TRUE,
+        caption = "Linear model (Regard)",
+        label = "tbl-lm"
+    ) |>
+    kableExtra::kable_styling(latex_options = "HOLD_position") |>
+    kableExtra::pack_rows(index = grp_index)
+```
+
+
+
+```{r}
+coef_dt <- fread("../model_sentiment_output/csv/summaries_models/siebert/model_output_tables/linear_model_siebert.csv")
+coef_dt[, model := factor(model)]
+
+grp_index <- table(forcats::fct_inorder(coef_dt$model))
+coef_dt_clean <- copy(coef_dt)
+coef_dt_clean[, model := NULL]
+setnames(coef_dt_clean, "p_stars", " ")
+coef_dt_clean |>
+    kableExtra::kbl(
+        booktabs = TRUE,
+        caption = "Linear model (SiEBERT)",
+        label = "tbl-lmsiebert"
+    ) |>
+    kableExtra::kable_styling(latex_options = "HOLD_position") |>
+    kableExtra::pack_rows(index = grp_index)
+```
+
+
+
+```{r}
+emmeans_joined <- fread("../model_sentiment_output/csv/summaries_models/models_joined/lm_emm.csv")
+
+setnames(emmeans_joined, \(x) gsub("_.+", "", x))
+
+kbl(
+    emmeans_joined,
+    booktabs = TRUE,
+    caption = "Linear models: estimated marginal means (female - male)",
+    label = "tbl-emmeanslm"
+) |>
+    kable_styling(latex_options = c("striped", "HOLD_position")) |>
+    kableExtra::add_header_above(c(" " = 1, "Regard" = 4, "SiEBERT" = 4))
+```
