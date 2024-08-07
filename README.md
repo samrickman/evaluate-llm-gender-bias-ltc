@@ -43,11 +43,11 @@ We also found some differences in the benchmark models, BART and T5, though thes
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/samrickman/evaluate_llm_gender_bias.git
+   git clone https://github.com/samrickman/evaluate-llm-gender-bias-ltc.git
    ```
 2. Navigate into the directory:
    ```sh
-   cd evaluate_llm_gender_bias
+   cd evaluate-llm-gender-bias-ltc
    ```
 3. Build the Docker image:
    ```sh
