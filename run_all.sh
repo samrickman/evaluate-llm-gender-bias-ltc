@@ -1,8 +1,12 @@
 #!/bin/bash
 
-if [[ "$VIRTUAL_ENV" == "" ]]; then 
-    echo "Activating virtual env"
-    source .venv/bin/activate
+if [[ -d ".venv" ]]; then
+    if [[ "$VIRTUAL_ENV" == "" ]]; then 
+        echo "Activating virtual env"
+        source .venv/bin/activate
+    fi
+else
+    echo ".venv directory does not exist (you are probably in the Docker container). Skipping virtual environment activation."
 fi
 
 # * First ensure we can log in to Hugging Face to access the gated models
