@@ -1,6 +1,6 @@
 # Evaluating gender bias in LLMs in long-term care
 
-This is the repo for the 2024 paper [Evaluating gender bias in LLMs in long-term care](). The paper uses two state-of-the-art, open-source LLMs released in 2024: Meta's [Llama 3](https://ai.meta.com/blog/meta-llama-3/) and Google's [Gemma](https://ai.google.dev/gemma). The code in this repo also extends the analysis to OpenAI's [ChatGPT](https://openai.com/chatgpt/). The paper found:
+This is the repo for the 2024 paper [Evaluating gender bias in LLMs in long-term care](). The paper uses two state-of-the-art, open-source LLMs released in 2024: Meta's [Llama 3](https://ai.meta.com/blog/meta-llama-3/) and Google's [Gemma](https://ai.google.dev/gemma). The paper found:
 
 1. Llama 3 showed no gender-based differences across any metrics.
 2. Gemma showed significant gender-based differences:
@@ -9,17 +9,17 @@ This is the repo for the 2024 paper [Evaluating gender bias in LLMs in long-term
     
 Care services are allocated on the basis of need. If women's needs are downplayed, it may impact worker's views of the case's priority or their eligibility for care.
 
-The paper was based on real data from long-term care records. In this repo we use synthetic data, generated using LLMs. This means all the code contained here can be run. The [results](./results_tables/1__results_tables.html) from the synthetic data are consistent with those on the real data, showing significant gender-based differences in summaries create by the Google Gemma model. We continue to find no gender-based differences with Llama 3. We also run the analysis in this repo using OpenAI's ChatGPT 4o-mini, which does not appear to show significant gender-based differences with the synthetic data.
+The paper was based on real data from long-term care records. In this repo we use synthetic data, generated using LLMs. This means all the code contained here can be run. The [results](./results_tables/1__results_tables.html) from the synthetic data are consistent with those on the real data, showing significant gender-based differences in summaries create by the Google Gemma model. We continue to find no gender-based differences with Llama 3. The code in this repo also extends the analysis to OpenAI's [ChatGPT](https://openai.com/chatgpt/), which does not appear to show significant gender-based differences with the synthetic data.
 
-We include in this repo code to run the analysis. We also include the output of this analysis, as it takes several days to run. It is possible to replicate the entire analysis from scratch by following the instructions below.
+This repo contains the code and also the output of the analysis using synthetic data[^1], as it takes several days to run. It is possible to replicate the entire analysis from scratch by following the instructions below.
 
 # Method and findings
 
 We generated several hundred identical pairs of long-term care case note summaries. The original texts are identical except for gender. For example:
 
-| Male version                                                                                                                                     | Female version                                                                                                                                   |   |   |   |
-|----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| Mrs   Smith is a 87 year old, white British woman with reduced mobility. She cannot   mobilize independently at home in her one-bedroom flat | Mr Smith is a 87 year old, white   British man with reduced mobility. He cannot mobilize independently at home   in his one-bedroom flat |   |   |   |
+| Male version                                                                                                                                     | Female version                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Mrs   Smith is a 87 year old, white British woman with reduced mobility. She cannot   mobilize independently at home in her one-bedroom flat | Mr Smith is a 87 year old, white   British man with reduced mobility. He cannot mobilize independently at home   in his one-bedroom flat | 
 
 The notes used are around 500 words. We then generate summaries using several LLMs. Despite identical original texts, the Gemma model:
 
@@ -146,3 +146,5 @@ There were some differences compared to the real data:
 3. There are some differences in which words are used significantly more by each model. The output could not be the same as the input is different. For example, the word "unwise" appears frequently in the real data but is not included in the synthetic data.
 
 The ChatGPT findings are least reliable as we did not conduct the original analysis using ChatGPT, for information governance reasons.
+
+[^1]: The only files excluded from this repo are on the basis of size. Specifically, we do not include the full `robustlmm` model objects (though we include the output in csv form), or the 1000 bootstrapped datasets (though again we include the output as csv).
