@@ -53,11 +53,12 @@ We also found some differences in the benchmark models, BART and T5, though thes
    ```sh
    docker build . -t evaluate_gender_bias_image
    ```
-4. Run the Docker container:
+4. Test the Docker container:
    ```sh
-   docker run --rm -it --gpus all -it --entrypoint bash evaluate_gender_bias_image
+   docker run --rm --gpus all --entrypoint bash evaluate_gender_bias_image -c "python -c 'import torch; print(torch.cuda.is_available())'"
    ```
-    This will build the Docker container and enter it in a shell. This will not run the entire analysis as it takes several days. 
+   
+   This will build the Docker container and enter it in a shell. It will check that it has been successfully created and that PyTorch can access the GPU. If this is is the case, it will print `True`, and exit. This will not run the entire analysis, which takes several days. 
 
 5. To replicate the full analysis, you can use the synthetic data or replace it with your own data in the [`./raw_data`](./raw_data/) directory. Then:
 
