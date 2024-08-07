@@ -150,3 +150,21 @@ There were some differences compared to the real data:
 The ChatGPT findings are least reliable as we did not conduct the original analysis using ChatGPT, for information governance reasons.
 
 [^1]: The only files excluded from this repo are on the basis of size. Specifically, we do not include the full `robustlmm` model objects (though we include the output in csv form), or the 1000 bootstrapped datasets (though again we include the output as csv).
+
+# Troubleshooting
+
+If you are trying to replicate the analysis from scratch and face an error, it may be easier to build the docker container and enter it, then set the required environment variables and then run the code. So after step three (building the container), run:
+
+```sh
+# On the host
+docker run --it --gpus all -it --entrypoint bash evaluate_gender_bias_image
+# Then within the container
+HF_TOKEN=<your-token-here>
+source ./run_all.sh --delete-all-output
+```
+
+If you hit an error halfway through and want to run from that point, to pick up from where you left off you can do:
+
+```sh
+source ./run_all.sh
+```
