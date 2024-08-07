@@ -17,7 +17,7 @@ This repo contains the code and also the output of the analysis using synthetic 
 
 We generated several hundred identical pairs of long-term care case note summaries. The original texts are identical except for gender. For example:
 
-| Male version                                                                                                                                     | Female version                                                                                                                       |
+| Female version                                                                                                                                     | Male version                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Mrs   Smith is a 87 year old, white British woman with reduced mobility. She cannot   mobilize independently at home in her one-bedroom flat | Mr Smith is a 87 year old, white   British man with reduced mobility. He cannot mobilize independently at home   in his one-bedroom flat | 
 
@@ -35,7 +35,7 @@ We also found some differences in the benchmark models, BART and T5, though thes
 
 1.  **Docker**: To install Docker, follow the instructions at [Docker's official site](https://docs.docker.com/get-docker/).
 2. **GPU**: A machine with a [CUDA-compatible](https://developer.nvidia.com/cuda-gpus) Graphics Processing Unit (GPU) with at least 20GB VRAM.
-3. **NVIDIA Container Toolkit**: The code in this repo requires CUDA 12.1, which may differ from your global version. You can run this version in Docker on Linux with [NVIDIA container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).On Windows with WSL2 you can use [Docker Desktop](https://www.docker.com/products/docker-desktop/) (version `>=4.3.1`).
+3. **NVIDIA Container Toolkit**: The code in this repo requires CUDA 12.1, which may differ from your global version. You can run this version in Docker on Linux with [NVIDIA container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html). On Windows with WSL2 you can use [Docker Desktop](https://www.docker.com/products/docker-desktop/) (version `>=4.3.1`).
 4. **Access to gated models**. This uses the open-source but gated models [Meta Llama 3 8b instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct) and [Google Gemma 7b-it](https://huggingface.co/google/gemma-7b-it). You will need to register for an account and [generate an access token](https://huggingface.co/settings/tokens). This should then be saved in your shell environment as `$HF_TOKEN`.  
 5. **OpenAI API Key**: To replicate the ChatGPT element of the analysis, an OpenAI API key. This needs to be saved in your shell environment as `$OPENAI_API_KEY`. If this environment variable is not set the analysis will still run but this step will be omitted. The total cost of the analysis with the synthetic data was $0.34.
 
@@ -55,15 +55,16 @@ We also found some differences in the benchmark models, BART and T5, though thes
    ```
 4. Test the Docker container:
    ```sh
-   docker run --rm --gpus all --entrypoint bash evaluate_gender_bias_image -c "python -c 'import torch; print(torch.cuda.is_available())'"
+   docker run --rm --gpus all --entrypoint bash evaluate_gender_bias_image \
+   -c "python -c 'import torch; print(torch.cuda.is_available())'"
    ```
-   
-   This will build the Docker container and enter it in a shell. It will check that it has been successfully created and that PyTorch can access the GPU. If this is is the case, it will print `True`, and exit. This will not run the entire analysis, which takes several days. 
+
+   This will check the container has been successfully created and that PyTorch can access the GPU. If this is is the case, it will print `True`, and exit. This will not run the entire analysis, which takes several days. 
 
 5. To replicate the full analysis, you can use the synthetic data or replace it with your own data in the [`./raw_data`](./raw_data/) directory. Then:
 
     ```sh
-    docker run -d --gpus all --name evaluate_gender_bias \
+    docker run --gpus all --name evaluate_gender_bias \
     -e HF_TOKEN=$HF_TOKEN \
     evaluate_gender_bias_image ./run_all.sh --delete-all-output
     ```
