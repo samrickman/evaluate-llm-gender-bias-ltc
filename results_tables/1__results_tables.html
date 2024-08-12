@@ -630,7 +630,7 @@ Table&nbsp;4: Sentiment output: mixed model (document level)
 <div class="cell-output-display">
 <div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Mixed effects model output</caption>
+<caption>Effect of gender and explanatory variables on sentiment (mixed effects model)</caption>
 <colgroup>
 <col style="width: 9%">
 <col style="width: 9%">
@@ -671,7 +671,7 @@ SiEBERT
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">(Intercept)</td>
-<td style="text-align: right;">0.9300</td>
+<td style="text-align: right;">0.93000</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.00120</td>
 <td style="text-align: right;">760.0</td>
@@ -683,8 +683,21 @@ SiEBERT
 <td style="text-align: right;">0.0e+00</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">Model chatgpt</td>
+<td style="text-align: right;">0.00150</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">0.00140</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">2.7e-01</td>
+<td style="text-align: right;">0.24000</td>
+<td style="text-align: left;">***</td>
+<td style="text-align: right;">0.0100</td>
+<td style="text-align: right;">24.000</td>
+<td style="text-align: right;">0.0e+00</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Model gemma</td>
-<td style="text-align: right;">0.0130</td>
+<td style="text-align: right;">0.01300</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.00120</td>
 <td style="text-align: right;">10.0</td>
@@ -695,25 +708,25 @@ SiEBERT
 <td style="text-align: right;">35.000</td>
 <td style="text-align: right;">0.0e+00</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Model llama3</td>
-<td style="text-align: right;">0.0059</td>
+<td style="text-align: right;">0.00590</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.00130</td>
 <td style="text-align: right;">4.6</td>
-<td style="text-align: right;">5.3e-06</td>
+<td style="text-align: right;">5.6e-06</td>
 <td style="text-align: right;">0.26000</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.0100</td>
 <td style="text-align: right;">26.000</td>
 <td style="text-align: right;">0.0e+00</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Model t5</td>
-<td style="text-align: right;">0.0089</td>
+<td style="text-align: right;">0.00890</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.00120</td>
-<td style="text-align: right;">7.7</td>
+<td style="text-align: right;">7.6</td>
 <td style="text-align: right;">0.0e+00</td>
 <td style="text-align: right;">0.00980</td>
 <td style="text-align: left;"></td>
@@ -721,12 +734,12 @@ SiEBERT
 <td style="text-align: right;">0.900</td>
 <td style="text-align: right;">3.7e-01</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">gendermale</td>
-<td style="text-align: right;">0.0037</td>
+<td style="text-align: right;">0.00370</td>
 <td style="text-align: left;">***</td>
-<td style="text-align: right;">0.00048</td>
-<td style="text-align: right;">7.8</td>
+<td style="text-align: right;">0.00050</td>
+<td style="text-align: right;">7.5</td>
 <td style="text-align: right;">0.0e+00</td>
 <td style="text-align: right;">-0.00130</td>
 <td style="text-align: left;"></td>
@@ -734,76 +747,89 @@ SiEBERT
 <td style="text-align: right;">-0.280</td>
 <td style="text-align: right;">7.8e-01</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Max tokens 75</td>
-<td style="text-align: right;">0.0011</td>
-<td style="text-align: left;">**</td>
-<td style="text-align: right;">0.00042</td>
-<td style="text-align: right;">2.6</td>
-<td style="text-align: right;">8.4e-03</td>
+<td style="text-align: right;">0.00012</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">0.00039</td>
+<td style="text-align: right;">0.3</td>
+<td style="text-align: right;">7.6e-01</td>
 <td style="text-align: right;">0.07700</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.0037</td>
 <td style="text-align: right;">21.000</td>
 <td style="text-align: right;">0.0e+00</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Max tokens 100</td>
-<td style="text-align: right;">0.0018</td>
-<td style="text-align: left;">***</td>
-<td style="text-align: right;">0.00042</td>
-<td style="text-align: right;">4.2</td>
-<td style="text-align: right;">2.4e-05</td>
+<td style="text-align: right;">0.00043</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">0.00039</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">2.6e-01</td>
 <td style="text-align: right;">0.11000</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.0037</td>
 <td style="text-align: right;">30.000</td>
 <td style="text-align: right;">0.0e+00</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Max tokens 150</td>
-<td style="text-align: right;">0.0016</td>
-<td style="text-align: left;">***</td>
-<td style="text-align: right;">0.00042</td>
-<td style="text-align: right;">3.8</td>
-<td style="text-align: right;">1.7e-04</td>
+<td style="text-align: right;">0.00083</td>
+<td style="text-align: left;">*</td>
+<td style="text-align: right;">0.00039</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">3.2e-02</td>
 <td style="text-align: right;">0.14000</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.0037</td>
 <td style="text-align: right;">37.000</td>
 <td style="text-align: right;">0.0e+00</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Max tokens 300</td>
-<td style="text-align: right;">0.0018</td>
-<td style="text-align: left;">***</td>
-<td style="text-align: right;">0.00042</td>
-<td style="text-align: right;">4.4</td>
-<td style="text-align: right;">1.3e-05</td>
+<td style="text-align: right;">0.00100</td>
+<td style="text-align: left;">**</td>
+<td style="text-align: right;">0.00039</td>
+<td style="text-align: right;">2.6</td>
+<td style="text-align: right;">9.2e-03</td>
 <td style="text-align: right;">0.16000</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.0037</td>
 <td style="text-align: right;">43.000</td>
 <td style="text-align: right;">0.0e+00</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">Max tokens None</td>
-<td style="text-align: right;">0.0021</td>
-<td style="text-align: left;">***</td>
-<td style="text-align: right;">0.00042</td>
-<td style="text-align: right;">4.9</td>
-<td style="text-align: right;">8.0e-07</td>
+<td style="text-align: right;">0.00120</td>
+<td style="text-align: left;">**</td>
+<td style="text-align: right;">0.00039</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">1.8e-03</td>
 <td style="text-align: right;">0.17000</td>
 <td style="text-align: left;">***</td>
 <td style="text-align: right;">0.0037</td>
 <td style="text-align: right;">46.000</td>
 <td style="text-align: right;">0.0e+00</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">Model chatgpt : Male</td>
+<td style="text-align: right;">-0.00320</td>
+<td style="text-align: left;">***</td>
+<td style="text-align: right;">0.00071</td>
+<td style="text-align: right;">-4.5</td>
+<td style="text-align: right;">6.7e-06</td>
+<td style="text-align: right;">-0.00730</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">0.0067</td>
+<td style="text-align: right;">-1.100</td>
+<td style="text-align: right;">2.8e-01</td>
+</tr>
 <tr class="odd">
 <td style="text-align: left;">Model gemma : Male</td>
-<td style="text-align: right;">-0.0071</td>
+<td style="text-align: right;">-0.00710</td>
 <td style="text-align: left;">***</td>
-<td style="text-align: right;">0.00068</td>
+<td style="text-align: right;">0.00071</td>
 <td style="text-align: right;">-10.0</td>
 <td style="text-align: right;">0.0e+00</td>
 <td style="text-align: right;">-0.03600</td>
@@ -814,11 +840,11 @@ SiEBERT
 </tr>
 <tr class="even">
 <td style="text-align: left;">Model llama3 : Male</td>
-<td style="text-align: right;">-0.0035</td>
+<td style="text-align: right;">-0.00350</td>
 <td style="text-align: left;">***</td>
-<td style="text-align: right;">0.00068</td>
-<td style="text-align: right;">-5.1</td>
-<td style="text-align: right;">3.0e-07</td>
+<td style="text-align: right;">0.00071</td>
+<td style="text-align: right;">-5.0</td>
+<td style="text-align: right;">7.0e-07</td>
 <td style="text-align: right;">-0.00029</td>
 <td style="text-align: left;"></td>
 <td style="text-align: right;">0.0067</td>
@@ -827,11 +853,11 @@ SiEBERT
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Model t5 : Male</td>
-<td style="text-align: right;">-0.0011</td>
+<td style="text-align: right;">-0.00110</td>
 <td style="text-align: left;"></td>
-<td style="text-align: right;">0.00068</td>
-<td style="text-align: right;">-1.6</td>
-<td style="text-align: right;">1.2e-01</td>
+<td style="text-align: right;">0.00071</td>
+<td style="text-align: right;">-1.5</td>
+<td style="text-align: right;">1.3e-01</td>
 <td style="text-align: right;">0.00780</td>
 <td style="text-align: left;"></td>
 <td style="text-align: right;">0.0067</td>
@@ -849,7 +875,7 @@ SiEBERT
 <div class="cell-output-display">
 <div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Mixed effects model: estimated marginal means (female - male)</caption>
+<caption>Estimated marginal mean effect of gender on sentiment (female - male)</caption>
 <colgroup>
 <col style="width: 11%">
 <col style="width: 11%">
@@ -1180,7 +1206,7 @@ Table&nbsp;5: Chi sq test of word counts per theme
 </section>
 <section id="evaluation-of-words" class="level2">
 <h2 class="anchored" data-anchor-id="evaluation-of-words">Evaluation of words</h2>
-<p>We observed that different models exhibited varying degrees of bias. We present in Table <span class="math inline">\(\ref{tab:tbl-wordlevelboth}\)</span> the results of the word-level analysis. We only include in the table below words which were significant according to the regression, and had an adjusted p-value of &lt; 0.05 in the <span class="math inline">\(\chi^2\)</span> or Fisher’s exact test. As we were conducting tests of many individual words, to reduce the chance of false positives we only include in the table words that showed significant differences using both the Benjamini-Hochburg chi-square tests and regression output.</p>
+<p>We observed that different models exhibited varying degrees of bias. We present in <a href="#tbl-wordlevelboth" class="quarto-xref">Table&nbsp;6</a> the results of the word-level analysis. We only include in the table below words which were significant according to the regression, and had an adjusted p-value of &lt; 0.05 in the <span class="math inline">\(\chi^2\)</span> or Fisher’s exact test. As we were conducting tests of many individual words, to reduce the chance of false positives we only include in the table words that showed significant differences using both the Benjamini-Hochburg chi-square tests and regression output.</p>
 <div class="cell">
 <div id="tbl-wordlevelboth" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -2117,18 +2143,23 @@ Chi Sq / Fisher test
 <h1>Robustness checks</h1>
 <section id="bootstrapped-model-output-and-estimated-marginal-means" class="level2">
 <h2 class="anchored" data-anchor-id="bootstrapped-model-output-and-estimated-marginal-means">Bootstrapped model output and estimated marginal means</h2>
-<p>We generated bootstrapped datasets by creating 1,000 new datasets of the size of the original data. We did this through non-parametric sampling of the original with replacement, taking samples at Document ID level to preserve the correlation of sentiment within documents <span class="citation" data-cites="carpenter2000bootstrap">[@carpenter2000bootstrap]</span>. We then ran our original linear mixed model for each bootstrapped dataset. The bootstrapped estimates are the mean of all 1,000 estimates. The results for the SiEBERT model are in Table <span class="math inline">\(\ref{tab:tbl-final-sentiment-models-siebert-bootstrap}\)</span> and the Regard results are in Table <span class="math inline">\(\ref{tab:tbl-final-sentiment-models-regard-bootstrap}\)</span>. We calculated the additional columns in Table {tab:tbl-final-sentiment-models-siebert-bootstrap} as follows:</p>
+<p>We generated bootstrapped datasets by creating 1,000 new datasets of the size of the original data. We did this through non-parametric sampling of the original with replacement, taking samples at Document ID level to preserve the correlation of sentiment within documents. We then ran our original linear mixed model for each bootstrapped dataset. The bootstrapped estimates are the mean of all 1,000 estimates. The results for the SiEBERT model are in Table <a href="#tbl-final-sentiment-models-siebert-bootstrap" class="quarto-xref">Table&nbsp;7</a> and the Regard results are in <a href="#tbl-final-sentiment-models-regard-bootstrap" class="quarto-xref">Table&nbsp;8</a>. We calculated the additional columns in these tables as follows:</p>
 <p><span class="math display">\[\begin{align*}
 \text{Absolute Bias} &amp;= \text{Bootstrapped Estimate} - \text{Original Estimate} \\
 \text{Relative Bias} &amp;= \frac{\text{Absolute Bias}}{\text{Original Estimate}} \\
 \text{Standardized Bias} &amp;= \frac{\text{Absolute Bias}}{\text{Standard Error}}
 \end{align*}\]</span></p>
-<p>We present in Table <span class="math inline">\(\ref{tab:tbl-emmeansbootstrap}\)</span> the bootstrapped estimated marginal means. We also include in this table the number of times the <span class="math inline">\(p\)</span>-values for the estimated marginal means were less than 0.05 and 0.01. The differences in gender in the Gemma model are greater using SiEBERT, with a larger <span class="math inline">\(t\)</span>-value and with a <span class="math inline">\(p\)</span>-value of less than 0.01 in all 1000 bootstrapped datasets. The difference is not quite as large in the case of Regard. However, <span class="math inline">\(p &lt; 0.05\)</span> in 962 of 1000 simulated datasets. This happens around 30-40% in the case of the BART models and 40-60% with T5, suggesting that there is an effect of gender bias which is greater than random chance, though is not as strong a finding as the disparities in the Gemma model. There is nothing to indicate that there is a systematic effect of gender on sentiment in Llama3, with slightly under 5% of estimated marginal mean differences resulting in <span class="math inline">\(p &lt; 0.05\)</span> Overall, the results of the bootstrapping confirm our assessment that there are some observable gender-based differences in BART and T5, but the largest differences are in the Gemma model.</p>
+<p>We present in <a href="#tbl-final-sentiment-models-siebert-bootstrap" class="quarto-xref">Table&nbsp;7</a> the bootstrapped estimated marginal means for the SiEBERT. We also include in this table the number of times the <span class="math inline">\(p\)</span>-values for the estimated marginal means were less than 0.05 and 0.01. The differences in gender in the Gemma model are greater using SiEBERT, with a larger <span class="math inline">\(t\)</span>-value and with a <span class="math inline">\(p\)</span>-value of less than 0.01 in all 1000 bootstrapped datasets. The difference is not quite as large in the case of Regard, as set out in <a href="#tbl-final-sentiment-models-regard-bootstrap" class="quarto-xref">Table&nbsp;8</a>. However, <span class="math inline">\(p &lt; 0.05\)</span> in 962 of 1000 simulated datasets. This happens around 30-40% in the case of the BART models and 40-60% with T5, suggesting that there is an effect of gender bias which is greater than random chance, though is not as strong a finding as the disparities in the Gemma model. There is nothing to indicate that there is a systematic effect of gender on sentiment in Llama3, with slightly under 5% of estimated marginal mean differences resulting in <span class="math inline">\(p &lt; 0.05\)</span> Overall, the results of the bootstrapping confirm our assessment that there are some observable gender-based differences in BART and T5, but the largest differences are in the Gemma model.</p>
 <div class="cell">
+<div id="tbl-final-sentiment-models-siebert-bootstrap" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-final-sentiment-models-siebert-bootstrap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7: Bootstrapped model output (SiEBERT)
+</figcaption>
+<div aria-describedby="tbl-final-sentiment-models-siebert-bootstrap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Bootstrapped model output (SiEBERT)</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 11%">
@@ -2342,11 +2373,19 @@ Bias
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 <div class="cell">
+<div id="tbl-final-sentiment-models-regard-bootstrap" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-final-sentiment-models-regard-bootstrap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;8: Bootstrapped model output (Regard)
+</figcaption>
+<div aria-describedby="tbl-final-sentiment-models-regard-bootstrap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Bootstrapped model output (Regard)</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 11%">
@@ -2560,14 +2599,22 @@ Bias
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 </section>
 <section id="robust-mixed-effects-model" class="level2">
 <h2 class="anchored" data-anchor-id="robust-mixed-effects-model">Robust mixed effects model</h2>
 <div class="cell">
+<div id="tbl-final-sentiment-models-robust" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-final-sentiment-models-robust-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;9: Robust mixed effects model output
+</figcaption>
+<div aria-describedby="tbl-final-sentiment-models-robust-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Robust mixed effects model output</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 14%">
 <col style="width: 14%">
@@ -2740,11 +2787,19 @@ SiEBERT
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 <div class="cell">
+<div id="tbl-emmeansrobust" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-emmeansrobust-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10: Robust mixed effects model: estimated marginal means (female - male)
+</figcaption>
+<div aria-describedby="tbl-emmeansrobust-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Robust mixed effects model: estimated marginal means (female - male)</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 11%">
@@ -2841,6 +2896,9 @@ SiEBERT
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 </section>
 <section id="variance-structured-mixed-effects-model" class="level2">
 <h2 class="anchored" data-anchor-id="variance-structured-mixed-effects-model">Variance-structured mixed effects model</h2>
@@ -2857,12 +2915,17 @@ SiEBERT
 \label{eq:robustlmm}
 \end{split}
 \end{align}\]</span></p>
-<p>where <span class="math inline">\(\beta_0\)</span> is the intercept, <span class="math inline">\(\beta_1\)</span>, <span class="math inline">\(\beta_2\)</span>, and <span class="math inline">\(\beta_3\)</span> are the coefficients for model, gender, and their interaction, <span class="math inline">\(\beta_4\)</span> is the coefficient for maximum tokens, <span class="math inline">\(u_{0j}\)</span> is the random intercept for document <span class="math inline">\(j\)</span> and <span class="math inline">\(\epsilon_{ij}\)</span> is the residual error term. We set out the results in Table <span class="math inline">\(\ref{tab:tbl-final-sentiment-models-nlme}\)</span> and the estimated marginal means in Table <span class="math inline">\(\ref{tab:tbl-emmeansnlme}\)</span>. The estimates and are very close to the output from the linear mixed model, though the <span class="math inline">\(p\)</span>-values are slightly larger. The BART and T5 models are on the boundary of significance, but now the <span class="math inline">\(p\)</span>-values are slightly larger than 0.05. Llama 3 has no significant differences in sentiment between men and women, and Gemma has the largest standardised estimates and smallest <span class="math inline">\(p\)</span>-values. This model reduces the risk of Type 1 error, which we see in the larger <span class="math inline">\(p\)</span>-values, so it is reassuring that our main findings about Llama 3 and Gemma remain consistent.</p>
+<p>where <span class="math inline">\(\beta_0\)</span> is the intercept, <span class="math inline">\(\beta_1\)</span>, <span class="math inline">\(\beta_2\)</span>, and <span class="math inline">\(\beta_3\)</span> are the coefficients for model, gender, and their interaction, <span class="math inline">\(\beta_4\)</span> is the coefficient for maximum tokens, <span class="math inline">\(u_{0j}\)</span> is the random intercept for document <span class="math inline">\(j\)</span> and <span class="math inline">\(\epsilon_{ij}\)</span> is the residual error term. We set out the results in <a href="#tbl-final-sentiment-models-nlme" class="quarto-xref">Table&nbsp;11</a> and the estimated marginal means in <a href="#tbl-emmeansnlme" class="quarto-xref">Table&nbsp;12</a>. The estimates and are very close to the output from the linear mixed model, though the <span class="math inline">\(p\)</span>-values are slightly larger. The BART and T5 models are on the boundary of significance, but now the <span class="math inline">\(p\)</span>-values are slightly larger than 0.05. Llama 3 has no significant differences in sentiment between men and women, and Gemma has the largest standardised estimates and smallest <span class="math inline">\(p\)</span>-values. This model reduces the risk of Type 1 error, which we see in the larger <span class="math inline">\(p\)</span>-values, so it is reassuring that our main findings about Llama 3 and Gemma remain consistent.</p>
 <div class="cell">
+<div id="tbl-final-sentiment-models-nlme" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-final-sentiment-models-nlme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;11: Variance-structured mixed effects model output
+</figcaption>
+<div aria-describedby="tbl-final-sentiment-models-nlme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Variance-structured mixed effects model output</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 9%">
 <col style="width: 9%">
@@ -3103,11 +3166,19 @@ SiEBERT
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 <div class="cell">
+<div id="tbl-emmeansnlme" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-emmeansnlme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12: Variance-structured mixed effects: estimated marginal means (female - male)
+</figcaption>
+<div aria-describedby="tbl-emmeansnlme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Variance-structured mixed effects: estimated marginal means (female - male)</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 11%">
@@ -3204,10 +3275,13 @@ SiEBERT
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 </section>
 <section id="generalised-estimating-equations-gee" class="level2">
 <h2 class="anchored" data-anchor-id="generalised-estimating-equations-gee">Generalised Estimating Equations (GEE)</h2>
-<p>We additionally used a Generalised Estimating Equations (GEE) model, which estimates population-averaged effects and adjusts for within-group correlation using robust sandwich estimators, using the <code>geepack</code> R package <span class="citation" data-cites="geepack">[@geepack]</span>. This model estimates population-averaged effects and can be more robust to misspecified correlation structures. The GEE model is specified as:</p>
+<p>We additionally used a Generalised Estimating Equations (GEE) model, which estimates population-averaged effects and adjusts for within-group correlation using robust sandwich estimators, using the <code>geepack</code> R package. This model estimates population-averaged effects and can be more robust to misspecified correlation structures. The GEE model is specified as:</p>
 <p><span class="math display">\[\begin{align}
 \begin{split}
 y_{ij} &amp;= \beta_0 + \beta_1 \text{model}_i + \beta_2 \text{gender}_j \\
@@ -3215,12 +3289,17 @@ y_{ij} &amp;= \beta_0 + \beta_1 \text{model}_i + \beta_2 \text{gender}_j \\
 \label{eq:summariesgee}
 \end{split}
 \end{align}\]</span></p>
-<p>where the correlation structure of the residuals <span class="math inline">\(\epsilon_{i}\)</span> is modelled as exchangeable within groups defined by Document ID. We do not apply corrections to the standard errors to reduce the risk of Type 1 error, as we have 617 document-level clusters, and generally with 100 or more clusters such corrections are not necessary <span class="citation" data-cites="kahan2016increased">[@kahan2016increased]</span>. We set out the results of the GEE model in Table <span class="math inline">\(\ref{tab:tbl-final-sentiment-models-gee}\)</span>. We set out the estimated marginal means for the GEE model in Table <span class="math inline">\(\ref{tab:tbl-emmeansgee}\)</span>. The point estimates obtained from the mixed-effects and GEE models were identical, also indicating that the fixed effects are robust to the choice of modelling approach. However, the standard errors differed between the models. The mixed-effects model, which accounts for random effects, generally provided smaller standard errors compared to the GEE model. We attempted to fit a GEE model with an unstructured covariance matrix but the model would not converge, which may have contributed to the larger standard errors in the GEE model. The result of this difference is that we do not see significant differences in sentiment on the basis of gender in the BART and T5 models. The Gemma model is not affected by these differences, and summaries about women are still significantly less negative than those about men.</p>
+<p>where the correlation structure of the residuals <span class="math inline">\(\epsilon_{i}\)</span> is modelled as exchangeable within groups defined by Document ID. We do not apply corrections to the standard errors to reduce the risk of Type 1 error, as we have 617 document-level clusters. We set out the results of the GEE model in Table <a href="#tbl-final-sentiment-models-gee" class="quarto-xref">Table&nbsp;13</a>. We set out the estimated marginal means for the GEE model in Table <a href="#tbl-emmeansgee" class="quarto-xref">Table&nbsp;14</a>. The point estimates obtained from the mixed-effects and GEE models were identical, also indicating that the fixed effects are robust to the choice of modelling approach. However, the standard errors differed between the models. The mixed-effects model, which accounts for random effects, generally provided smaller standard errors compared to the GEE model. We attempted to fit a GEE model with an unstructured covariance matrix but the model would not converge, which may have contributed to the larger standard errors in the GEE model. The result of this difference is that we do not see significant differences in sentiment on the basis of gender in the BART and T5 models. The Gemma model is not affected by these differences, and summaries about women are still significantly less negative than those about men.</p>
 <div class="cell">
+<div id="tbl-final-sentiment-models-gee" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-final-sentiment-models-gee-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;13: GEE model output
+</figcaption>
+<div aria-describedby="tbl-final-sentiment-models-gee-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>GEE model output</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 9%">
 <col style="width: 9%">
@@ -3461,11 +3540,19 @@ SiEBERT
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 <div class="cell">
+<div id="tbl-emmeansgee" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-emmeansgee-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;14: GEE model: estimated marginal means (female - male)
+</figcaption>
+<div aria-describedby="tbl-emmeansgee-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>GEE model: estimated marginal means (female - male)</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 11%">
@@ -3562,6 +3649,9 @@ SiEBERT
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 </section>
 <section id="linear-models" class="level2">
 <h2 class="anchored" data-anchor-id="linear-models">Linear models</h2>
@@ -3569,12 +3659,17 @@ SiEBERT
 <p><span class="math display">\[
 \text{sentiment}_i = \beta_0 + \beta_1 \cdot \text{gender}_i + \beta_2 \cdot \text{max\_tokens}_i + \beta_3 \cdot \text{doc\_id}_i + \epsilon_i
 \]</span></p>
-<p>where <span class="math inline">\(\beta_0\)</span> is the intercept, <span class="math inline">\(\beta_1\)</span>, <span class="math inline">\(\beta_2\)</span>, and <span class="math inline">\(\beta_3\)</span> are the coefficients for gender, maximum tokens, and document identifier respectively, and <span class="math inline">\(\epsilon_i\)</span> is the residual error term. We ran this model separately for each LLM and present the output for the Regard metric in Table <span class="math inline">\(\ref{tab:tbl-lm}\)</span>, and for SiEBERT in <span class="math inline">\(\ref{tab:tbl-lmsiebert}\)</span>. The models also produces a coefficient for each Document ID, which are not of interest, so we exclude them from the tables. Similarly to GEE, the point estimates are close to those in the mixed-effects model but with different standard errors, though in this case they are smaller. We present the estimated marginal means by gender for each of the models in Table <span class="math inline">\(\ref{tab:tbl-emmeanslm}\)</span>. They are consistent with the findings from the mixed model.</p>
+<p>where <span class="math inline">\(\beta_0\)</span> is the intercept, <span class="math inline">\(\beta_1\)</span>, <span class="math inline">\(\beta_2\)</span>, and <span class="math inline">\(\beta_3\)</span> are the coefficients for gender, maximum tokens, and document identifier respectively, and <span class="math inline">\(\epsilon_i\)</span> is the residual error term. We ran this model separately for each LLM and present the output for the Regard metric in <a href="#tbl-lm" class="quarto-xref">Table&nbsp;15</a>, and for SiEBERT in <a href="#tbl-lmsiebert" class="quarto-xref">Table&nbsp;16</a>. The models also produces a coefficient for each Document ID, which are not of interest, so we exclude them from the tables. Similarly to GEE, the point estimates are close to those in the mixed-effects model but with different standard errors, though in this case they are smaller. We present the estimated marginal means by gender for each of the models in <a href="#tbl-emmeanslm" class="quarto-xref">Table&nbsp;17</a>. They are consistent with the findings from the mixed model.</p>
 <div class="cell">
+<div id="tbl-lm" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-lm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;15: Linear model (Regard)
+</figcaption>
+<div aria-describedby="tbl-lm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Linear model (Regard)</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Coef</th>
@@ -3888,11 +3983,19 @@ SiEBERT
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 <div class="cell">
+<div id="tbl-lmsiebert" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-lmsiebert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;16: Linear model (SiEBERT)
+</figcaption>
+<div aria-describedby="tbl-lmsiebert-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Linear model (SiEBERT)</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Coef</th>
@@ -4206,11 +4309,19 @@ SiEBERT
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 <div class="cell">
+<div id="tbl-emmeanslm" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-emmeanslm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;17: Linear models: estimated marginal means (female - male)
+</figcaption>
+<div aria-describedby="tbl-emmeanslm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Linear models: estimated marginal means (female - male)</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 11%">
@@ -4305,6 +4416,9 @@ SiEBERT
 
 
 </div>
+</div>
+</div>
+</figure>
 </div>
 </div>
 </section>

@@ -1,14 +1,16 @@
 Coef,Estimate_regard, _regard,Std. Error_regard,t_regard,p_vals_regard,metric_regard,Estimate_siebert, _siebert,Std. Error_siebert,t_siebert,p_vals_siebert,metric_siebert
 (Intercept),0.93,***,0.0012,760,0,regard,0.39,***,0.011,37,3.3e-133,siebert
-Model gemma,0.013,***,0.0012,10,1.1e-22,regard,0.36,***,0.01,35,1.1e-127,siebert
-Model llama3,0.0059,***,0.0013,4.6,5.3e-06,regard,0.26,***,0.01,26,4.7e-88,siebert
-Model t5,0.0089,***,0.0012,7.7,1.3e-13,regard,0.0098, ,0.011,0.9,0.37,siebert
-gendermale,0.0037,***,0.00048,7.8,7.3e-15,regard,-0.0013, ,0.0048,-0.28,0.78,siebert
-Max tokens 75,0.0011,**,0.00042,2.6,0.0084,regard,0.077,***,0.0037,21,1.1e-95,siebert
-Max tokens 100,0.0018,***,0.00042,4.2,2.4e-05,regard,0.11,***,0.0037,30,8.6e-189,siebert
-Max tokens 150,0.0016,***,0.00042,3.8,0.00017,regard,0.14,***,0.0037,37,1.1e-295,siebert
-Max tokens 300,0.0018,***,0.00042,4.4,1.3e-05,regard,0.16,***,0.0037,43,0,siebert
-Max tokens None,0.0021,***,0.00042,4.9,7.8e-07,regard,0.17,***,0.0037,46,0,siebert
-Model gemma : Male,-0.0071,***,0.00068,-10,3.1e-25,regard,-0.036,***,0.0067,-5.4,5.9e-08,siebert
-Model llama3 : Male,-0.0035,***,0.00068,-5.1,2.9e-07,regard,-0.00029, ,0.0067,-0.043,0.97,siebert
-Model t5 : Male,-0.0011, ,0.00068,-1.6,0.12,regard,0.0078, ,0.0067,1.2,0.24,siebert
+Model chatgpt,0.0015, ,0.0014,1.1,0.27,regard,0.24,***,0.01,24,3.6e-80,siebert
+Model gemma,0.013,***,0.0012,10,1.3e-22,regard,0.36,***,0.01,35,1.1e-127,siebert
+Model llama3,0.0059,***,0.0013,4.6,5.6e-06,regard,0.26,***,0.01,26,4.7e-88,siebert
+Model t5,0.0089,***,0.0012,7.6,1.5e-13,regard,0.0098, ,0.011,0.9,0.37,siebert
+gendermale,0.0037,***,5e-04,7.5,6.2e-14,regard,-0.0013, ,0.0048,-0.28,0.78,siebert
+Max tokens 75,0.00012, ,0.00039,0.3,0.76,regard,0.077,***,0.0037,21,1.1e-95,siebert
+Max tokens 100,0.00043, ,0.00039,1.1,0.26,regard,0.11,***,0.0037,30,8.6e-189,siebert
+Max tokens 150,0.00083,*,0.00039,2.1,0.032,regard,0.14,***,0.0037,37,1.1e-295,siebert
+Max tokens 300,0.001,**,0.00039,2.6,0.0092,regard,0.16,***,0.0037,43,0,siebert
+Max tokens None,0.0012,**,0.00039,3.1,0.0018,regard,0.17,***,0.0037,46,0,siebert
+Model chatgpt : Male,-0.0032,***,0.00071,-4.5,6.7e-06,regard,-0.0073, ,0.0067,-1.1,0.28,siebert
+Model gemma : Male,-0.0071,***,0.00071,-10,1.3e-23,regard,-0.036,***,0.0067,-5.4,5.9e-08,siebert
+Model llama3 : Male,-0.0035,***,0.00071,-5,7.4e-07,regard,-0.00029, ,0.0067,-0.043,0.97,siebert
+Model t5 : Male,-0.0011, ,0.00071,-1.5,0.13,regard,0.0078, ,0.0067,1.2,0.24,siebert

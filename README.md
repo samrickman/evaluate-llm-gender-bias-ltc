@@ -11,7 +11,7 @@ Care services are allocated on the basis of need. If men's needs are explicit wh
 
 The paper was based on real data from long-term care records. All the code contained here can be run as we include in this repo synthetic data, generated using LLMs[^1]. The [results from the synthetic data ](./results_tables/1__results_tables.html) are consistent with those from the real data, showing significant gender-based differences in summaries create by the Google Gemma model. We continue to find no gender-based differences with Llama 3.
 
-This repo contains the code and also, as it takes several days to run, the output of the analysis[^2] based on the [synthetic data](./raw_data/). It is possible to replicate the entire analysis from scratch by following the instructions below. The code in this repo also extends the analysis to OpenAI's [ChatGPT](https://openai.com/chatgpt/), which also does not appear to show significant gender-based differences with the synthetic data.
+This repo contains the code and also, as it takes several days to run, the output of the analysis[^2] based on the [synthetic data](./raw_data/). It is possible to replicate the entire analysis from scratch by following the instructions below. The code in this repo also extends the analysis to OpenAI's [ChatGPT](https://openai.com/chatgpt/).
 
 # Method and findings
 
@@ -149,7 +149,7 @@ There were some differences compared to the real data:
 2. The correlation between sentiment metrics Regard and SiEBERT was 0.09 in our original data, and 0.26 in the synthetic data.
 3. There are some differences in which words are used significantly more by each model. The output could not have been the same as the input is different. For example, the word "unwise" appears frequently in the real data but is not included in the synthetic data. In the real data, Gemma is the model with the the most words used differently. However, with the synthetic data, while the words used follow the same patterns as with real data, BART and T5 show more word-level differences than Gemma. The Llama 3 model also used one word significantly more for men in the synthetic output ("old"), versus no words in the real data.
 
-We did not find any sentiment differences in summaries about men and women in the ChatGPT output. The model did appear to use words related to subjective language more about women, and in particular the word challenge (491 times for women and 365 for men). It also uses the word Smith significantly more for men (3701 vs 3261 times), which was the name given to all individuals in the summaries. However, the ChatGPT findings are least reliable as, for information governance reasons, we did not conduct the analysis with real data using ChatGPT.
+Our primary model did not find any sentiment differences in summaries about men and women in the ChatGPT output. However, some of the [robustness checks](./results_tables/1__results_tables.html#variance-structured-mixed-effects-model) using the SiEBERT metric found the slightly less positive sentiment in male summaries was on the boundary of significance. ChatGPT summaries appear to use words related to subjective language more about women, and in particular the word challenge (491 times for women and 365 for men). It also uses the word Smith significantly more for men (3701 vs 3261 times), which was the name given to all individuals in the summaries. However, the ChatGPT findings are least reliable as, for information governance reasons, we did not conduct the analysis with real data using ChatGPT.
 
 # Troubleshooting
 
@@ -169,7 +169,7 @@ As the analysis can take several days, it may be prudent to let the image persis
 source ./run_all.sh
 ```
 
-Without the `--delete-all-output` flag, the script will see which files have already been created and to pick up from where you left off
+Without the `--delete-all-output` flag, the script will see which files have already been created and pick up from where you left off.
 
 [^1]: The synthetic data was generated with ChatGPT 4o and and Llama 3.
 [^2]: The only files excluded from this repo are on the basis of size. Specifically, we do not include the full `robustlmm` model objects (though we include the output in csv form), or the 1000 bootstrapped datasets (though again we include the output as csv).
