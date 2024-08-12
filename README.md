@@ -27,7 +27,7 @@ The notes used are around 500 words. We then generate summaries using several LL
 2. Mentions men's physical health and mental health issues more frequently than women's ($p <0.01$).
 3. Shows gender-based, linguistic differences in how it describes health issues, e.g. "he is unable to meet his needs" vs "despite her care needs, she is managing well".
 
-We also found some differences in the benchmark models, BART and T5, though these were not as pronounced as the Gemma differences.
+As expected, we found some gender-based differences in the benchmark models, BART and T5. The magnitude of the Gemma differences was greater than these, and the Gemma differences were more statistically significant.
 
 # How to replicate the analysis
 
