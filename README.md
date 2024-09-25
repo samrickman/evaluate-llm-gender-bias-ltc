@@ -1,33 +1,33 @@
 # Evaluating gender bias in LLMs in long-term care
 
-This is the repo for the 2024 paper [Evaluating gender bias in LLMs in long-term care](). The paper evaluates gender bias in LLMs used to summarise long-term care case notes. We measure bias two state-of-the-art, open-source LLMs released in 2024: Meta's [Llama 3](https://ai.meta.com/blog/meta-llama-3/) and Google's [Gemma](https://ai.google.dev/gemma), benchmarked against 2019 models from Meta and Google, [BART](https://huggingface.co/facebook/bart-large) and [T5](https://huggingface.co/docs/transformers/en/model_doc/t5). The paper found:
+This is the repo for the 2024 paper [Evaluating gender bias in LLMs in long-term care](). The paper evaluates gender bias in LLMs used to summarise long-term care case notes. It measures bias two state-of-the-art, open-source LLMs released in 2024: Meta's [Llama 3](https://ai.meta.com/blog/meta-llama-3/) and Google's [Gemma](https://ai.google.dev/gemma), benchmarked against 2019 models from Meta and Google, [BART](https://huggingface.co/facebook/bart-large) and [T5](https://huggingface.co/docs/transformers/en/model_doc/t5). The paper found:
 
 1. Llama 3 showed no gender-based differences across any metrics.
 2. Gemma showed significant gender-based differences:
     - Male summaries were more negative, with greater focus on physical and mental health needs.
-    - Language used for for men was more direct, compared with more euphemistic language for women. 
+    - Language used for men was more direct, compared with more euphemistic language for women. 
     
 Care services are allocated on the basis of need. If men's needs are explicit while women's are underemphasised, it may impact practitioner perception of the case's priority, or the person's eligibility for care.
 
-The paper was based on real data from long-term care records. All the code contained here can be run as we include in this repo synthetic data, generated using LLMs[^1]. The [results from the synthetic data ](./results_tables/1__results_tables.html) are consistent with those from the real data, showing significant gender-based differences in summaries create by the Google Gemma model. We continue to find no gender-based differences with Llama 3.
+The paper was based on real data from long-term care records. All the code contained here can be run as the repo includes synthetic data, generated using LLMs[^1]. The [results from the synthetic data ](./results_tables/1__results_tables.html) are consistent with those from the real data, showing significant gender-based differences in summaries create by the Google Gemma model. Consistent with the real data, the results from synthetic data also find no gender-based differences with Llama 3.
 
 This repo contains the code and also, as it takes several days to run, the output of the analysis[^2] based on the [synthetic data](./raw_data/). It is possible to replicate the entire analysis from scratch by following the instructions below. The code in this repo also extends the analysis to OpenAI's [ChatGPT](https://openai.com/chatgpt/).
 
 # Method and findings
 
-We generated several hundred identical pairs of long-term care case note summaries. The original texts are identical except for gender. For example:
+Llama 3 was used to generate gender-swapped versions of real case notes, which are identical except for gender. For example:
 
-| Female version                                                                                                                                     | Male version                                                                                                                       |
+| Female version (original)                                                                                                                                    | Male version (LLM-generated)                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Mrs   Smith is an 87 year old, white British woman with reduced mobility. She cannot   mobilise independently at home in her one-bedroom flat | Mr Smith is an 87 year old, white   British man with reduced mobility. He cannot mobilise independently at home   in his one-bedroom flat | 
 
-The notes used are around 500 words. We then generate summaries using several LLMs. Despite identical original texts, the Gemma model:
+The notes used are around 500 words. Summaries are then generated using Llama 3, Gemma, BART and T5. Despite identical care needs in the original texts, the Gemma model:
 
 1. Consistently produces summaries for men with more negative sentiment ($p <0.01$).
 2. Mentions men's physical health and mental health issues more frequently than women's ($p <0.01$).
 3. Shows gender-based, linguistic differences in how it describes health issues, e.g. "he is unable to meet his needs" vs "despite her care needs, she is managing well".
 
-As expected, we found some gender-based differences in the benchmark models, BART and T5. The magnitude of the Gemma differences was greater than these, and the Gemma differences were more statistically significant.
+As expected, there were some gender-based differences in the benchmark models, BART and T5. The magnitude of the Gemma differences was greater than these, and the Gemma differences were more statistically significant.
 
 # How to replicate the analysis
 
@@ -100,7 +100,7 @@ The analysis involves the following steps:
      - [Regard](https://huggingface.co/spaces/evaluate-measurement/regard)
      - [SiEBERT](https://github.com/j-hartmann/siebert)
      - [DistilBERT](https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student)
-   - Sentiment metrics are computed and statistical tests are conducted to compare sentiment across different gender-swapped versions to ensure any bias in sentiment does not arise from the metrics. We find that that Regard and SiEBERT models do not show gender-based differences. However, the DistilBERT-based model does so we do not use it to evaluate the summaries.
+   - Sentiment metrics are computed and statistical tests are conducted to compare sentiment across different gender-swapped versions to ensure any bias in sentiment does not arise from the metrics. Regard and SiEBERT models do not show gender-based differences. However, the DistilBERT-based model does so it is not used to evaluate the summaries.
 
 5. **Generate summaries**  
    - Summaries are generated using various models:
@@ -130,10 +130,10 @@ The analysis involves the following steps:
     - Comparison of frequency of words associated with each theme in the different versions of the summaries..
 
 13. **Count words in summaries**  
-    - Words are counted in the summaries to see whether any words are used significantly more often. The Benjamini-Hochberg adjustment of $p$-values is used as we conduct tests of thousands of words. Nevertheless, there are still significant differences in words used in some (but not all) models.
+    - Words are counted in the summaries to see whether any words are used significantly more often. The Benjamini-Hochberg adjustment of $p$-values is used as tests are conducted with of thousands of words. Nevertheless, there are still significant differences in words used in some (but not all) models.
 
 14. **Check for hallucination and omission**  
-    - The script checks whether differences in the summaries are due to hallucinations (incorrect additions) or omissions (missing content). We check for hallucination of medical diagnoses, seeing whether they appear in summaries without appearing in the originals. We find almost no hallucination, and conclude that inclusion bias differences are due to omission. 
+    - The script checks whether differences in the summaries are due to hallucinations (incorrect additions) or omissions (missing content). Checks are made for hallucination of medical diagnoses by seeing whether they appear in summaries without appearing in the originals. The results indicate there is almost no hallucination, and that inclusion bias differences are due to omission. 
 
 # Comparison between synthetic findings and real data
 
@@ -146,10 +146,10 @@ The [results from the synthetic data](./results_tables/1__results_tables.html) a
 There were some differences compared to the real data:
 
 1. The sentiment Regard results are more significant for BART and T5, while the SiEBERT results are less significant.
-2. The correlation between sentiment metrics Regard and SiEBERT was 0.09 in our original data, and 0.26 in the synthetic data.
+2. The correlation between sentiment metrics Regard and SiEBERT was 0.09 in the original data, and 0.26 in the synthetic data.
 3. There are some differences in which words are used significantly more by each model. The output could not have been the same as the input is different. For example, the word "unwise" appears frequently in the real data but is not included in the synthetic data. In the real data, Gemma is the model with the the most words used differently. However, with the synthetic data, while the words used follow the same patterns as with real data, BART and T5 show more word-level differences than Gemma. The Llama 3 model also used one word significantly more for men in the synthetic output ("old"), versus no words in the real data.
 
-Our primary model did not find any sentiment differences in summaries about men and women in the ChatGPT output. However, some of the [robustness checks](./results_tables/1__results_tables.html#variance-structured-mixed-effects-model) using the SiEBERT metric found the slightly less positive sentiment in male summaries was on the boundary of significance. ChatGPT summaries appear to use words related to subjective language more about women, and in particular the word challenge (491 times for women and 365 for men). It also uses the word Smith significantly more for men (3701 vs 3261 times), which was the name given to all individuals in the summaries. However, the ChatGPT findings are least reliable as, for information governance reasons, we did not conduct the analysis with real data using ChatGPT.
+The primary model did not find any sentiment differences in summaries about men and women in the ChatGPT output. However, some of the [robustness checks](./results_tables/1__results_tables.html#variance-structured-mixed-effects-model) using the SiEBERT metric found the slightly less positive sentiment in male summaries was on the boundary of significance. ChatGPT summaries appear to use words related to subjective language more about women, and in particular the word challenge (491 times for women and 365 for men). It also uses the word Smith significantly more for men (3701 vs 3261 times), which was the name given to all individuals in the summaries. However, the ChatGPT findings are least reliable as, for information governance reasons, the analysis was not conducted with real data using ChatGPT.
 
 # Troubleshooting
 
@@ -172,4 +172,4 @@ source ./run_all.sh
 Without the `--delete-all-output` flag, the script will see which files have already been created and pick up from where you left off.
 
 [^1]: The synthetic data was generated with ChatGPT 4o and and Llama 3.
-[^2]: The only files excluded from this repo are on the basis of size. Specifically, we do not include the full `robustlmm` model objects (though we include the output in csv form), or the 1000 bootstrapped datasets (though again we include the output as csv).
+[^2]: The only files excluded from this repo are on the basis of size. Specifically, the results do not include the full `robustlmm` model objects (though the output is included in csv form), or the 1000 bootstrapped datasets (though again the output is included as csv).
