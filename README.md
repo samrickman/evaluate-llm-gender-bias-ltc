@@ -1,6 +1,6 @@
 # Evaluating gender bias in LLMs in long-term care
 
-This is the repo for the 2024 paper [Evaluating gender bias in LLMs in long-term care](). The paper evaluates gender bias in LLMs used to summarise long-term care case notes. It measures bias two state-of-the-art, open-source LLMs released in 2024: Meta's [Llama 3](https://ai.meta.com/blog/meta-llama-3/) and Google's [Gemma](https://ai.google.dev/gemma), benchmarked against 2019 models from Meta and Google, [BART](https://huggingface.co/facebook/bart-large) and [T5](https://huggingface.co/docs/transformers/en/model_doc/t5). The paper found:
+This is the repo for the 2024 paper _Evaluating gender bias in LLMs in long-term care_ (link to follow upon publication). The paper evaluates gender bias in LLMs used to summarise long-term care case notes. It measures bias two state-of-the-art, open-source LLMs released in 2024: Meta's [Llama 3](https://ai.meta.com/blog/meta-llama-3/) and Google's [Gemma](https://ai.google.dev/gemma), benchmarked against 2019 models from Meta and Google, [BART](https://huggingface.co/facebook/bart-large) and [T5](https://huggingface.co/docs/transformers/en/model_doc/t5). The paper found:
 
 1. Llama 3 showed no gender-based differences across any metrics.
 2. Gemma showed significant gender-based differences:
