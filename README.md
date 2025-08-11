@@ -2,7 +2,7 @@
 
 # Evaluating gender bias in LLMs in long-term care
 
-This is the repo for the 2024 paper _Evaluating gender bias in LLMs in long-term care_ (link to follow upon publication). The paper evaluates gender bias in LLMs used to summarise long-term care case notes. It measures bias two state-of-the-art, open-source LLMs released in 2024: Meta's [Llama 3](https://ai.meta.com/blog/meta-llama-3/) and Google's [Gemma](https://ai.google.dev/gemma), benchmarked against 2019 models from Meta and Google, [BART](https://huggingface.co/facebook/bart-large) and [T5](https://huggingface.co/docs/transformers/en/model_doc/t5). The paper found:
+This is the repo for the 2025 paper [_Evaluating gender bias in LLMs in long-term care_](https://link.springer.com/article/10.1186/s12911-025-03118-0) in BMC Medical Informatics and Decision-Making and [covered](https://www.theguardian.com/technology/2025/aug/11/ai-tools-used-by-english-councils-downplay-womens-health-issues-study-finds) in The Guardian. The paper evaluates gender bias in LLMs used to summarise long-term care case notes. It measures bias two state-of-the-art, open-weight LLMs released in 2024: Meta's [Llama 3](https://ai.meta.com/blog/meta-llama-3/) and Google's [Gemma](https://ai.google.dev/gemma), benchmarked against 2019 models from Meta and Google, [BART](https://huggingface.co/facebook/bart-large) and [T5](https://huggingface.co/docs/transformers/en/model_doc/t5). The paper found:
 
 1. Llama 3 showed no gender-based differences across any metrics.
 2. Gemma showed significant gender-based differences:
@@ -13,7 +13,7 @@ Care services are allocated on the basis of need. If men's needs are explicit wh
 
 The paper was based on real data from long-term care records. All the code contained here can be run as the repo includes synthetic data, generated using LLMs[^1]. The [results from the synthetic data ](./results_tables/1__results_tables.html) are consistent with those from the real data, showing significant gender-based differences in summaries create by the Google Gemma model. Consistent with the real data, the results from synthetic data also find no gender-based differences with Llama 3.
 
-This repo contains the code and also, as it takes several days to run, the output of the analysis[^2] based on the [synthetic data](./raw_data/). It is possible to replicate the entire analysis from scratch by following the instructions below. The code in this repo also extends the analysis to OpenAI's [ChatGPT](https://openai.com/chatgpt/).
+This repo contains the code and also, as it takes several days to run, the output of the analysis[^2] based on the [synthetic data](./raw_data/). It is possible to replicate the entire analysis from scratch by following the instructions below. The code in this repo also extends the analysis to OpenAI's [GPT-4o](https://openai.com/index/hello-gpt-4o/).
 
 # Method and findings
 
@@ -38,8 +38,8 @@ As expected, there were some gender-based differences in the benchmark models, B
 1.  **Docker**: To install Docker, follow the instructions at [Docker's official site](https://docs.docker.com/get-docker/).
 2. **GPU**: A machine with a [CUDA-compatible](https://developer.nvidia.com/cuda-gpus) Graphics Processing Unit (GPU) with at least 20GB VRAM.
 3. **NVIDIA Container Toolkit**: The code in this repo requires CUDA 12.1, which may differ from your global version. You can run this version in Docker on Linux with [NVIDIA container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html). On Windows with WSL2 you can use [Docker Desktop](https://www.docker.com/products/docker-desktop/) (version `>=4.3.1`).
-4. **Access to gated models**. This uses the open-source but gated models [Meta Llama 3 8b-instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct) and [Google Gemma 7b-it](https://huggingface.co/google/gemma-7b-it). You will need to register for an account and [generate an access token](https://huggingface.co/settings/tokens). This should then be saved in your shell environment as `$HF_TOKEN`.  
-5. **OpenAI API Key**: To replicate the ChatGPT element of the analysis, an OpenAI API key. This needs to be saved in your shell environment as `$OPENAI_API_KEY`. If this environment variable is not set the analysis will still run but this step will be omitted. The total cost of the analysis with the synthetic data was $0.34.
+4. **Access to gated models**. This uses the open-weight but gated models [Meta Llama 3 8b-instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct) and [Google Gemma 7b-it](https://huggingface.co/google/gemma-7b-it). You will need to register for an account and [generate an access token](https://huggingface.co/settings/tokens). This should then be saved in your shell environment as `$HF_TOKEN`.  
+5. **OpenAI API Key**: To replicate the GPT-4o element of the analysis, an OpenAI API key. This needs to be saved in your shell environment as `$OPENAI_API_KEY`. If this environment variable is not set the analysis will still run but this step will be omitted. The total cost of the analysis with the synthetic data was $0.34.
 
 ## How to run the model
 
@@ -75,7 +75,7 @@ As expected, there were some gender-based differences in the benchmark models, B
 
     Note that this command will retain the [`./raw_data/`](raw_data) folder but otherwise delete all output of the analysis (and then recreate it). This command will run in the foreground and display the output in the terminal. If you want to run in the background, use the `-d` (detached) [option](https://docs.docker.com/reference/cli/docker/container/run/).
 
-    If you want to replicate the ChatGPT element you will need to pass your OpenAI API Key. The container expects it to be in the environment variable, `$OPENAI_API_KEY`. If it exists with the same name on the host machine:
+    If you want to replicate the GPT-4o element you will need to pass your OpenAI API Key. The container expects it to be in the environment variable, `$OPENAI_API_KEY`. If it exists with the same name on the host machine:
 
     ```sh
     docker run -d --gpus all --name evaluate_gender_bias \
@@ -110,7 +110,7 @@ The analysis involves the following steps:
      - Gemma
      - BART
      - T5
-     - ChatGPT (if API key is provided)
+     - GPT-4o (if API key is provided)
       
       This step takes around 3-4 days on a 20GB [GeForce RTX Ada](https://www.nvidia.com/en-gb/design-visualization/rtx-4000/) on WSL2.
 
@@ -151,7 +151,7 @@ There were some differences compared to the real data:
 2. The correlation between sentiment metrics Regard and SiEBERT was 0.09 in the original data, and 0.26 in the synthetic data.
 3. There are some differences in which words are used significantly more by each model. The output could not have been the same as the input is different. For example, the word "unwise" appears frequently in the real data but is not included in the synthetic data. In the real data, Gemma is the model with the the most words used differently. However, with the synthetic data, while the words used follow the same patterns as with real data, BART and T5 show more word-level differences than Gemma. The Llama 3 model also used one word significantly more for men in the synthetic output ("old"), versus no words in the real data.
 
-The primary model did not find any sentiment differences in summaries about men and women in the ChatGPT output. However, some of the [robustness checks](./results_tables/1__results_tables.html#variance-structured-mixed-effects-model) using the SiEBERT metric found the slightly less positive sentiment in male summaries was on the boundary of significance. ChatGPT summaries appear to use words related to subjective language more about women, and in particular the word challenge (491 times for women and 365 for men). It also uses the word Smith significantly more for men (3701 vs 3261 times), which was the name given to all individuals in the summaries. However, the ChatGPT findings are least reliable as, for information governance reasons, the analysis was not conducted with real data using ChatGPT.
+The primary model did not find any sentiment differences in summaries about men and women in the GPT-4o output. However, some of the [robustness checks](./results_tables/1__results_tables.html#variance-structured-mixed-effects-model) using the SiEBERT metric found the slightly less positive sentiment in male summaries was on the boundary of significance. GPT-4o summaries appear to use words related to subjective language more about women, and in particular the word challenge (491 times for women and 365 for men). It also uses the word Smith significantly more for men (3701 vs 3261 times), which was the name given to all individuals in the summaries. However, the GPT-4o findings are least reliable as, for information governance reasons, the analysis was not conducted with real data using GPT-4o.
 
 # Troubleshooting
 
@@ -173,5 +173,5 @@ source ./run_all.sh
 
 Without the `--delete-all-output` flag, the script will see which files have already been created and pick up from where you left off.
 
-[^1]: The synthetic data was generated with ChatGPT 4o and and Llama 3.
+[^1]: The synthetic data was generated with GPT-4o and Llama 3.
 [^2]: The only files excluded from this repo are on the basis of size. Specifically, the results do not include the full `robustlmm` model objects (though the output is included in csv form), or the 1000 bootstrapped datasets (though again the output is included as csv).
